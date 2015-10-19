@@ -31,6 +31,10 @@
 #include "PowerHintSession.h"
 #include "PowerSessionManager.h"
 
+#ifndef TAP_TO_WAKE_NODE
+#define TAP_TO_WAKE_NODE "/proc/touchpanel/double_tap_enable"
+#endif
+
 namespace aidl {
 namespace google {
 namespace hardware {
@@ -91,6 +95,11 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
     LOG(DEBUG) << "Power setMode: " << toString(type) << " to: " << enabled;
     PowerSessionManager::getInstance()->updateHintMode(toString(type), enabled);
     switch (type) {
+        case Mode::DOUBLE_TAP_TO_WAKE:
+            {
+            ::android::base::WriteStringToFile(enabled ? "1" : "0", TAP_TO_WAKE_NODE, true);
+            [[fallthrough]];
+            }
         case Mode::SUSTAINED_PERFORMANCE:
             if (enabled) {
                 endAllHints(mHintManager);
@@ -110,8 +119,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             mBatterySaverOn = enabled;
             break;
         case Mode::LAUNCH:
-            [[fallthrough]];
-        case Mode::DOUBLE_TAP_TO_WAKE:
             [[fallthrough]];
         case Mode::FIXED_PERFORMANCE:
             [[fallthrough]];
