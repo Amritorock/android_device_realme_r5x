@@ -182,10 +182,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
-
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
