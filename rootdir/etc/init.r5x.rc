@@ -54,3 +54,7 @@ on property:vendor.post_boot.parsed=1
     
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
+
+    # Override readahead to 128KiB
+    write /sys/block/mmcblk0/queue/read_ahead_kb 128
+    write /sys/block/mmcblk1/queue/read_ahead_kb 128
