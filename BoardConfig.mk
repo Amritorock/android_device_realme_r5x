@@ -217,4 +217,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/realme/r5x/BoardConfigVendor.mk
+include vendor/realme/r5x/BoardConfigVendor.mk
