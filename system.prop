@@ -50,6 +50,12 @@ debug.sf.latch_unsignaled=1
 persist.hwc.enable_vds=1
 debug.cpurend.vsync=false
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
