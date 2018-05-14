@@ -32,8 +32,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener \
-    tinymix
+    libvolumelistener
 
 PRODUCT_PACKAGES += \
     libbatterylistener \
