@@ -422,7 +422,6 @@ PRODUCT_PACKAGES += \
     rild \
     libjson \
     librmnetctl \
-    libxml2 \
     libprotobuf-cpp-full
 
 PRODUCT_PACKAGES += \
@@ -468,9 +467,7 @@ PRODUCT_COPY_FILES += \
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_cfg.xml
 
 # Improve performance
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
