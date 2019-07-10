@@ -168,6 +168,7 @@ ro.hardware.keystore_desede=true
 
 # Media
 debug.media.codec2=2
+debug.stagefright.c2inputsurface=-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
