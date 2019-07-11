@@ -2217,11 +2217,6 @@ vendor/etc/sensors/proto/sns_timer.proto|f6aef1b9a0f84906c6c9aad131975b4ace00204
 vendor/etc/sensors/proto/sns_ultra_violet.proto|60be3ed3b397385bd62e562b72f01fc7b887fb1e
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto|f35ad5c8ade4f36caa9a71dff2523ddaf2f2c7ed
 
-# Subsystem restart - from sweet V816.0.15.0.THGMIXM
-vendor/bin/ssr_diag|0c2b5b3205f0b660d07c42f2ac0c0d9165e22a58
-vendor/bin/ssr_setup|3951abf2697bf3d932d5a4677c42156ff8de33bf
-vendor/bin/subsystem_ramdump|f3e617bc091b191241c35961c4e73b7cc560343c
-
 # Thermal - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/bin/thermal-engine|c0f7dc730227266d9fbe01a4c730a1ee91a60254
 vendor/etc/thermal-engine-high.conf|646948a5d3a378feb1595c63c578407af6f70b90
