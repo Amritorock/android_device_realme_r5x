@@ -79,3 +79,7 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                                         u:object_r:public_adsprpcd_file:s0
 
+# RealmeParts
+/sys/bus/platform/drivers/kcal_ctrl/kcal_ctrl.[0-2](/.*)?        u:object_r:kcal_sysfs:s0
+/sys/devices/platform/kcal_ctrl.[0-2](/.*)?                      u:object_r:kcal_sysfs:s0
+/sys/kernel/fast_charge/force_fast_charge                        u:object_r:sysfs_usb_fastcharge:s0

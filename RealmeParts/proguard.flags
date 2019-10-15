@@ -1,0 +1,8 @@
+-keep class com.realmeparts.settings.* {
+  *;
+}
+
+# Keep keyhandler constructor
+-keep public class * implements com.android.internal.os.DeviceKeyHandler {
+   public <init>(android.content.Context);
+}

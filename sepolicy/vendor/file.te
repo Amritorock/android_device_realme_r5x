@@ -41,3 +41,6 @@ type sysfs_camera, fs_type, sysfs_type;
 
 type public_adsprpcd_file, file_type;
 
+# RealmeParts
+type kcal_sysfs, sysfs_type, fs_type;
+type sysfs_usb_fastcharge, sysfs_type, fs_type;

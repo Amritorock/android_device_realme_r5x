@@ -1,0 +1,50 @@
+//
+// Copyright (C) 2017-2018 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "RealmeParts",
+
+    // Include SettingsLib and it's dependencies
+    defaults: ["SettingsLibDefaults"],
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    platform_apis: true,
+    privileged: true,
+
+    static_libs: [
+        "androidx.annotation_annotation",
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "com.google.android.material_material",
+    ],
+
+    resource_dirs: ["res"],
+
+    required: [
+        "privapp-permissions-realmeparts.xml",
+        "init.realmeparts.rc",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
+
+prebuilt_etc_xml {
+    name: "privapp-permissions-realmeparts.xml",
+    src: "privapp-permissions-realmeparts.xml",
+    filename_from_src: true,
+    sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "init.realmeparts.rc",
+    src: "init.realmeparts.rc",
+    sub_dir: "init",
+    vendor: true,
+}

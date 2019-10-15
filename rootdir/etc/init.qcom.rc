@@ -31,6 +31,7 @@ import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
+import /vendor/etc/init/init.realmeparts.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -271,9 +272,6 @@ on boot
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
-
-    # OTG
-    write /sys/class/power_supply/usb/otg_switch 1
 
     # Touchpanel
     write /proc/touchpanel/double_tap_enable 1
