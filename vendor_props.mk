@@ -6,6 +6,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.a2dp_offload.disabled=false \
     persist.vendor.audio.ras.enabled=false \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
     ro.af.client_heap_size_kbyte=7168 \
     ro.bluetooth.a2dp_offload.supported=true \
     ro.vendor.audio.sdk.fluencetype=none \
