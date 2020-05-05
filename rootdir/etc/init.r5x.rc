@@ -20,6 +20,11 @@ on property:sys.boot_completed=1
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/schedtune.boost 0
 
+on property:persist.vendor.hvdcp_opti.start=1
+    chown root system /sys/class/power_supply/bms/soh
+    chown root system /sys/class/power_supply/bms/esr_actual
+    chown root system /sys/class/power_supply/bms/esr_nominal
+
 on property:vendor.post_boot.parsed=1
     # Setup cpusets
     write /dev/cpuset/top-app/cpus 0-7
