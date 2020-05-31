@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.volume.headset.gain.depcal=true \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
-    vendor.audio_hal.period_size=192 \
+    vendor.audio_hal.period_size=240 \
     vendor.voice.path.for.pcm.voip=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
