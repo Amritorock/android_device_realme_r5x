@@ -12,3 +12,6 @@ debug.sdm.support_writeback=0
 
 # IMS
 ro.telephony.block_binder_thread_on_incoming_calls=false
+
+# Incremental FS
+ro.incremental.enable=1
