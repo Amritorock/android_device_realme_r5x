@@ -4,3 +4,7 @@ get_prop(hal_audio_default, vendor_mpctl_prop);
 get_prop(hal_audio_default, oppo_debug_prop);
 
 allow hal_audio_default sysfs:dir { read open };
+
+# Dirac
+get_prop(hal_audio_default, dirac_prop)
+set_prop(hal_audio_default, dirac_prop)

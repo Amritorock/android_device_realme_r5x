@@ -54,9 +54,11 @@ persist.oppo.wlan.                      u:object_r:oppo_wlan_prop:s0
 # Thermal
 vendor.thermal.config                            u:object_r:vendor_thermal_prop:s0
 
-
 ro.max.                                       u:object_r:vendor_fling_prop:s0
 ro.media.                                       u:object_r:vendor_media_prop:s0
 persist.dbg.                                       u:object_r:vendor_ims_prop:s0
 persist.radio.                                       u:object_r:vendor_radio_prop:s0
 persist.vendor.delta.                                       u:object_r:vendor_time_prop:s0
+
+# Dirac
+persist.audio.dirac                           u:object_r:dirac_prop:s0

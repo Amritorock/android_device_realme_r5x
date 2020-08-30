@@ -9,3 +9,6 @@ type vendor_thermal_prop, property_type;
 type vendor_fling_prop, property_type;
 type vendor_media_prop, property_type;
 type vendor_time_prop, property_type;
+
+# Dirac
+type dirac_prop, property_type;
