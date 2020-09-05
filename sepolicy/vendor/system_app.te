@@ -4,6 +4,8 @@ allow system_app oppo_debug_prop:file { read open map getattr };
 r_dir_file(system_app, proc_touchpanel);
 allow system_app sysfs_battery_supply:dir { search };
 allow system_app sysfs_battery_supply:file { read open getattr };
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
 
 # RealmeParts
 allow system_app kcal_sysfs:file rw_file_perms;
@@ -23,3 +25,4 @@ allow system_app sysfs_speakergain:file rw_file_perms;
 
 get_prop(system_app, system_prop);
 set_prop(system_app, system_prop);
+
