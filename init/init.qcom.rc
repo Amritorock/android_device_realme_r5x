@@ -652,21 +652,6 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-service charger_monitor /system/bin/charger_monitor
-    user root
-    group root
-    disabled
-
-service qbcharger /charger -m 1
-    disabled
-    oneshot
-
-on property:sys.qbcharger.enable=true
-    start qbcharger
-
-on property:sys.qbcharger.enable=false
-    stop qbcharger
-
 service diag_mdlog_start /vendor/bin/diag_mdlog -c -u
     class late_start
     user shell
