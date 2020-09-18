@@ -51,3 +51,6 @@ type vibrator_dev, sysfs_type, fs_type;
 
 # Torch
 type sysfs_torch, fs_type, sysfs_type;
+
+# KernelSpace Battery Saver
+type sysfs_battery_saver, fs_type, sysfs_type;

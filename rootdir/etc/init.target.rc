@@ -107,6 +107,10 @@ on boot
 # access permissions for FPC service
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
+    
+    # Kernelspace battery saver
+    chown system system /sys/module/battery_saver/parameters/enabled
+    chmod 0660 /sys/module/battery_saver/parameters/enabled
 
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
