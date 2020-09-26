@@ -155,6 +155,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=0 \
+    persist.vendor.radio.mt_sms_ack=30 \
     persist.dbg.wfc_avail_ovr=1
 
 # IORap app launch prefetching using Perfetto traces and madvise
