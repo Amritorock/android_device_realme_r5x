@@ -142,9 +142,6 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc_ese
 ODM_MANIFEST_NFC_ESE_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc_ese.xml
 
-# Keystore
-TARGET_PROVIDES_KEYMASTER := true
-
 # Media
 TARGET_DISABLED_UBWC := true
 
