@@ -2245,10 +2245,6 @@ vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
 vendor/lib64/libsdmextension.so|76ef1430f700480509b5f991e031447fea9ddb01
 vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
-# Health
-vendor/bin/hw/android.hardware.health@2.0-service.oppo
-vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
-
 # IPA Firmware - from RMX2050_11_C.10
 vendor/firmware/ipa_fws.b00|aade3e72dc69e9649b73fa9363985c0997437854
 vendor/firmware/ipa_fws.b01|1707c0b81be17d3de24abf022db0ef3282afb393
