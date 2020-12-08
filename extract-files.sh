@@ -57,11 +57,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/bin/hw/android.hardware.health@2.0-service.oppo)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
-            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
-            ;;
         vendor/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
