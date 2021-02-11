@@ -422,16 +422,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <!-- IMS UCE Service -->
-    <hal format="hidl">
-        <name>com.qualcomm.qti.uceservice</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IUceService</name>
-            <instance>com.qualcomm.qti.uceservice</instance>
-        </interface>
-    </hal>
-
+   <hal format="hidl">
+       <name>com.qualcomm.qti.uceservice</name>
+       <transport>hwbinder</transport>
+       <version>2.3</version>
+       <interface>
+         <name>IUceService</name>
+         <instance>com.qualcomm.qti.uceservice</instance>
+       </interface>
+   </hal>
    <!-- IMS callinfo Service -->
    <hal format="hidl">
        <name>vendor.qti.ims.callinfo</name>
