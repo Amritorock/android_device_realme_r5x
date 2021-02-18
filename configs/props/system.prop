@@ -31,6 +31,10 @@ ro.vendor.qti.va_aosp.support=1
 # Launcher
 ro.launcher.blur.appLaunch=0
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+
 # Logs
 persist.log.tag.OpenGLRenderer=S
 persist.log.tag.AnalyticsService=S
