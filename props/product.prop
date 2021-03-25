@@ -1,6 +1,5 @@
 # LMKD
 ro.config.low_ram=false
-ro.lmk.log_stats=true
 ro.config.per_app_memcg=false
 
 # Graphics
