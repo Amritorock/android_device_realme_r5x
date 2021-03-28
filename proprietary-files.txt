@@ -2927,7 +2927,6 @@ vendor/lib/libgpudataproducer.so|10cbfcf4df4209486232562b0542797536e7ce16
 vendor/lib/libgsl.so|45709c4fbd1770e74cd4378e354e797c9585b967
 vendor/lib/libllvm-glnext.so|9e8f8124b6515111affacc69d26e5585628f4f34
 vendor/lib/libllvm-qcom.so|7774ae98c2be2e624a7e1a63c278d4c22cc4ff50
-vendor/lib/librs_adreno.so|dcb174815c3ece87980e431d77320d094a76cd9b
 vendor/lib64/egl/eglSubDriverAndroid.so|9d394831a411a6b91297090c823421df20087a6d
 vendor/lib64/egl/libEGL_adreno.so|b63a4e8b532211787d414f92cdb5fcaba7f69e27
 vendor/lib64/egl/libGLESv1_CM_adreno.so|e2e8a079e680bf92f686fb79146651c158f6e130
@@ -2946,7 +2945,6 @@ vendor/lib64/libgpudataproducer.so|966f7b359f0e0a4b3b0f41ca1a607f1f143128dd
 vendor/lib64/libgsl.so|ebbddc7368cd1876cc15aa842bc3eee2069479bd
 vendor/lib64/libllvm-glnext.so|24ba1f5aa2fa7006e0a9af6d7b0704a2f973ced2
 vendor/lib64/libllvm-qcom.so|be3d463626da9929fd68b9b30c7e702c0d3dc548
-vendor/lib64/librs_adreno.so|d8bee70cc12ab5c6a979427e24fb7843fddae08b
 
 # Graphics - SDM - from LA.UM.9.11.r1-03900-NICOBAR.0
 vendor/lib/libdisp-aba.so|539ac8ff89fd51fa0ce8a11d9c476843291392bc
