@@ -82,11 +82,9 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/lib/hw/audio.primary.trinket.so
 vendor/lib/libaudioEngineerTest.so
 vendor/lib/libaudio_log_utils.so
-vendor/lib/libtinycompress.so
 vendor/lib64/hw/audio.primary.trinket.so
 vendor/lib64/libaudioEngineerTest.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libtinycompress.so
 
 # Audio Power Amplifier
 vendor/firmware/tfa98xx.cnt
