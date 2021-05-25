@@ -1,0 +1,3 @@
+allow vold mnt_vendor_file:dir { open read ioctl };
+allow vold unlabeled:dir { write add_name ioctl };
+allow vold system_data_file:lnk_file { read };

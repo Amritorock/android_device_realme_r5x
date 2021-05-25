@@ -1,0 +1,6 @@
+allow vendor_sensors_qti vendor_persist_sensors_file:dir { search write };
+allow vendor_sensors_qti vendor_persist_sensors_file:file { read write };
+allow vendor_sensors_qti vendor_persist_sensors_file:fifo_file { read open };
+allow vendor_sensors_qti vendor_persist_sensors_file:dir { add_name };
+allow vendor_sensors_qti vendor_persist_sensors_file:file { open };
+allow vendor_sensors_qti vendor_persist_sensors_file:file { create };

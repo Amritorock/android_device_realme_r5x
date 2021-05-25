@@ -1,0 +1,2 @@
+allow vold_prepare_subdirs vold_prepare_subdirs:capability { fsetid };
+allow vold_prepare_subdirs self:capability { fsetid };

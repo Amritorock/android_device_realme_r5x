@@ -1,0 +1,23 @@
+typeattribute vendor_init data_between_core_and_vendor_violators;
+
+allow vendor_init {
+  system_data_file
+  tombstone_data_file
+  nfc_data_file
+}:dir { create_dir_perms relabelfrom };
+
+allow vendor_init block_device:lnk_file setattr;
+allow vendor_init camera_data_file:dir { create getattr setattr };
+allow vendor_init persist_debug_prop:file { read };
+allow vendor_init powerctl_prop:file { read };
+allow vendor_init proc_touchpanel:file { write };
+allow vendor_init system_data_file:lnk_file { create };
+allow vendor_init wifi_data_file:dir { getattr };
+allow vendor_init vendor_camera_prop:property_service { set };
+allow vendor_init default_prop:file { read };
+
+set_prop(vendor_init, vendor_fling_prop)
+set_prop(vendor_init, vendor_media_prop)
+set_prop(vendor_init, vendor_ims_prop)
+set_prop(vendor_init, vendor_radio_prop)
+set_prop(vendor_init, vendor_time_prop)

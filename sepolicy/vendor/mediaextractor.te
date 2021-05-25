@@ -1,0 +1,5 @@
+allow mediaextractor vendor_media_prop:file { read };
+allow mediaextractor vendor_media_prop:file { getattr };
+allow mediaextractor vendor_media_prop:file { map };
+allow mediaextractor vendor_media_prop:file { open };
+

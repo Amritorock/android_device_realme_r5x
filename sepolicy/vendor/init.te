@@ -1,0 +1,8 @@
+allow init bt_firmware_file:filesystem { getattr };
+allow init firmware_file:filesystem { getattr };
+allow init vendor_file:file { execute };
+allow init socket_device:sock_file { create setattr unlink };
+allow init same_process_hal_file:file { execute };
+allow init hwservicemanager:binder { call };
+allow init vendor_data_file:dir { mounton };
+allow init vendor_sysfs_graphics:lnk_file { read };

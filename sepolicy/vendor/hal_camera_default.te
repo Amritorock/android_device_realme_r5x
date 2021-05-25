@@ -1,0 +1,24 @@
+allow hal_camera_default proc_meminfo:file { read open getattr };
+allow hal_camera_default persist_camera_file:file rw_file_perms;
+allow hal_camera_default persist_camera_file:file create_file_perms;
+allow hal_camera_default persist_camera_file:dir rw_dir_perms;
+allow hal_camera_default proc_flash:file rw_file_perms;
+allow hal_camera_default hal_oppo_hwservice:hwservice_manager { find };
+allow hal_camera_default mnt_vendor_file:dir { search };
+allow hal_camera_default oppoalgo_daemon:binder { call transfer };
+allow hal_camera_default oppoalgo_service:service_manager find;
+allow hal_camera_default sysfs:file { read open };
+allow hal_camera_default proc_devinfo:dir { search };
+allow hal_camera_default proc_devinfo:file { read open };
+allow hal_camera_default default_prop:file { read open };
+allow hal_camera_default radio_prop:file { read open };
+allow hal_camera_default default_prop:file { getattr map };
+allow hal_camera_default radio_prop:file { getattr map };
+
+get_prop(hal_camera_default, vendor_camera_prop)
+get_prop(hal_camera_default, oppo_debug_prop)
+
+r_dir_file(hal_camera_default, proc_oppoversion);
+r_dir_file(hal_camera_default, sysfs_net)
+
+set_prop(hal_camera_default, vendor_camera_prop)

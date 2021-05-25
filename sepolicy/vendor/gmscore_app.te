@@ -1,0 +1,31 @@
+allow gmscore_app vendor_camera_prop:file { read };
+allow gmscore_app unlabeled:dir { search };
+allow gmscore_app linkerconfig_file:dir { getattr };
+allow gmscore_app mnt_vendor_file:lnk_file { getattr };
+allow gmscore_app exported_camera_prop:file { read open getattr };
+allow gmscore_app hal_memtrack_default:binder call;
+allow gmscore_app postinstall_mnt_dir:dir { getattr };
+allow gmscore_app init_exec:lnk_file { getattr };
+allow gmscore_app configfs:dir { read };
+allow gmscore_app apex_mnt_dir:dir { read };
+allow gmscore_app mnt_sdcard_file:lnk_file { getattr };
+allow gmscore_app mnt_pass_through_file:dir { getattr };
+allow gmscore_app adbd_prop:file { read getattr open };
+allow gmscore_app bt_firmware_file:filesystem getattr;
+allow gmscore_app firmware_file:filesystem getattr;
+allow gmscore_app apexd_prop:file { getattr open };
+allow gmscore_app apk_verity_prop:file { getattr open };
+allow gmscore_app adbd_prop:file { map };
+allow gmscore_app apexd_prop:file { map };
+allow gmscore_app apk_verity_prop:file { map };
+allow gmscore_app bluetooth_a2dp_offload_prop:file { open };
+allow gmscore_app bluetooth_a2dp_offload_prop:file { getattr };
+allow gmscore_app bluetooth_a2dp_offload_prop:file { map };
+allow gmscore_app bluetooth_audio_hal_prop:file { open };
+allow gmscore_app bluetooth_prop:file { getattr };
+allow gmscore_app bluetooth_prop:file { map };
+allow gmscore_app bluetooth_prop:file { open };
+
+dontaudit gmscore_app hal_memtrack_hwservice:hwservice_manager find;
+
+dontaudit gmscore_app hal_memtrack_hwservice:binder {call};

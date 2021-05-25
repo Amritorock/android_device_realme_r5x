@@ -1,0 +1,3 @@
+allow ueventd debugfs:dir { read };
+allow ueventd metadata_file:dir { search };
+

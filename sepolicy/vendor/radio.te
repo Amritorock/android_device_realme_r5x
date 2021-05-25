@@ -1,0 +1,2 @@
+allow radio oppo_debug_prop:file { read open getattr map };
+allow radio vendor_ims_prop:file { read open getattr map };

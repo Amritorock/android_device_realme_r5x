@@ -1,0 +1,2 @@
+allow untrusted_app_29 mnt_sdcard_file:lnk_file { read };
+allow untrusted_app_29 untrusted_app_29:fifo_file { ioctl };
