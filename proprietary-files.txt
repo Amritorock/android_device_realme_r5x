@@ -2819,19 +2819,11 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|c82d3f7c0e6f9f30a42a0e4158077
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|eafe7c9254077253ad9512fa5622948954769420
 
 # Fingerprint
-vendor/bin/hw/vendor.oppo.hardware.biometrics.face@1.0-service
 vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
-vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service
-vendor/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc
 vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprintpay@1.0-service.rc
-vendor/etc/permissions/vendor-oppo-hardware.biometrics.fingerprintpay.xml
-vendor/lib/android.frameworks.faceservice@1.0.so
 vendor/lib/libalipay_factory.so
 vendor/lib/libhypnusclient.so
 vendor/lib/librpmbengclient.so
-vendor/lib/libstfaceunlockocl.so
-vendor/lib/vendor.oppo.hardware.biometrics.face@1.0.so
 vendor/lib/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib/vendor.oppo.hardware.hypnus@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
@@ -2842,7 +2834,6 @@ vendor/lib64/librpmbengclient.so
 vendor/lib64/libRbsFlow.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
