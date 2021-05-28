@@ -143,6 +143,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
     $(LOCAL_PATH)/configs/component-overrides-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
 
+# Dirac
+PRODUCT_PACKAGES += \
+    KharaMeDirac
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
