@@ -10,8 +10,6 @@ allow hal_camera_default oppoalgo_service:service_manager find;
 allow hal_camera_default sysfs:file { read open };
 allow hal_camera_default proc_devinfo:dir { search };
 allow hal_camera_default proc_devinfo:file { read open };
-allow hal_camera_default default_prop:file { read open };
-allow hal_camera_default radio_prop:file { read open };
 allow hal_camera_default default_prop:file { getattr map };
 allow hal_camera_default radio_prop:file { getattr map };
 

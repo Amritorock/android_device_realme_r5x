@@ -1,2 +1,1 @@
 allow kernel kernel:socket { create };
-allow kernel mnt_vendor_file:dir { search };

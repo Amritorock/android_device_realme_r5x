@@ -18,13 +18,6 @@ allow gmscore_app apk_verity_prop:file { getattr open };
 allow gmscore_app adbd_prop:file { map };
 allow gmscore_app apexd_prop:file { map };
 allow gmscore_app apk_verity_prop:file { map };
-allow gmscore_app bluetooth_a2dp_offload_prop:file { open };
-allow gmscore_app bluetooth_a2dp_offload_prop:file { getattr };
-allow gmscore_app bluetooth_a2dp_offload_prop:file { map };
-allow gmscore_app bluetooth_audio_hal_prop:file { open };
-allow gmscore_app bluetooth_prop:file { getattr };
-allow gmscore_app bluetooth_prop:file { map };
-allow gmscore_app bluetooth_prop:file { open };
 
 dontaudit gmscore_app hal_memtrack_hwservice:hwservice_manager find;
 
