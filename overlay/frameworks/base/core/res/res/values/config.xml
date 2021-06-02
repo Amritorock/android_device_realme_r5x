@@ -275,14 +275,6 @@
     -->
      <string name="config_mainBuiltInDisplayCutout">M -38,0 L -38,56 L 38,56 L 38,0 Z</string>
 
-    <!-- Height of the status bar -->
-    <dimen name="rounded_corner_radius_bottom">128.0px</dimen>
-    <dimen name="rounded_corner_radius_bottom_adjustment">46.0px</dimen>
-    <dimen name="rounded_corner_radius_top">144.0px</dimen>
-    <dimen name="rounded_corner_radius_top_adjustment">79.0px</dimen>
-    <dimen name="status_bar_height_landscape">24dp</dimen>
-    <dimen name="status_bar_height_portrait">32.0dip</dimen>
-
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
