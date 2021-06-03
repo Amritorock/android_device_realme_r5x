@@ -1,1 +1,2 @@
 allow hal_health_default sysfs:file { read open getattr };
+allow hal_health_default sysfs_usb_supply:file { read open getattr };

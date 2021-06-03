@@ -23,7 +23,7 @@
 /dev/block/platform/soc/4744000.sdhci/by-name/oppo_sec                                                u:object_r:modem_efs_partition_device:s0
 /dev/block/platform/soc/4804000.ufshc/by-name/oppostanvbk		                                              u:object_r:modem_efs_partition_device:s0
 /dev/block/platform/soc/4804000.ufshc/by-name/oppodycnvbk		                                              u:object_r:modem_efs_partition_device:s0
- /dev/block/mmcblk0p36                                u:object_r:modem_efs_partition_device:s0
+/dev/block/mmcblk0p36                                u:object_r:modem_efs_partition_device:s0
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                             u:object_r:persist_camera_file:s0
@@ -43,3 +43,9 @@
 
 # sysfs uio
 /sys/devices(/platform)?/soc/[a-f0-9]+.qcom,oembackup_sharedmem/uio/uio[0-9]+(/.*)?         u:object_r:sysfs_uio_file:s0
+
+# Power
+/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pmi632@2:qcom,qpnp-smb5/power_supply/ac/online  u:object_r:sysfs_usb_supply:s0
+
+# Oppo Health
+/vendor/bin/hw/android\.hardware\.health@2\.0-service\.oppo		u:object_r:hal_health_default_exec:s0
