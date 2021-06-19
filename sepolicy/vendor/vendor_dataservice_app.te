@@ -1,1 +1,0 @@
-allow vendor_dataservice_app vendor_default_prop:file { open getattr };

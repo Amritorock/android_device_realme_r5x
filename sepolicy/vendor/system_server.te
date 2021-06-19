@@ -1,3 +1,2 @@
 allow system_server hal_light_default:process signal;
-allow system_server sysfs:file { getattr };
 allow system_server app_zygote:process { getpgid };

@@ -24,3 +24,13 @@ type nv_data_file, file_type, data_file_type, core_data_file_type;
 type modem_efs_partition_device, dev_type;
 
 type sysfs_uio_file, fs_type, sysfs_type;
+
+type sysfs_vendor_rmt_storage, fs_type, sysfs_type;
+
+type sysfs_hal_health_default, fs_type, sysfs_type;
+
+type sysfs_hal_power_stats_default, fs_type, sysfs_type;
+
+type sysfs_hal_camera_default, fs_type, sysfs_type;
+
+type sysfs_hal_fingerprint_default, fs_type, sysfs_type;

@@ -3,24 +3,20 @@ r_dir_file(vendor_rmt_storage, vendor_persist_file)
 get_prop(vendor_rmt_storage, vendor_radio_prop)
 
 allow vendor_rmt_storage vendor_modem_block_device:blk_file { open read write };
-allow vendor_rmt_storage unlabeled: { file lnk_file } read;
 allow vendor_rmt_storage vendor_persist_rfs_file:dir search;
 allow vendor_rmt_storage vendor_persist_rfs_file:file rw_file_perms;
 allow vendor_rmt_storage proc_oppoversion:file { read open };
-allow vendor_rmt_storage sysfs:file { read };
 allow vendor_rmt_storage oppo_debug_prop:file { read };
 allow vendor_rmt_storage mdmreason_device:chr_file { read };
 allow vendor_rmt_storage modem_efs_partition_device:blk_file { read write };
 allow vendor_rmt_storage mdmreason_device:chr_file { open };
 allow vendor_rmt_storage oppo_debug_prop:file { open };
-allow vendor_rmt_storage sysfs:file { open };
 allow vendor_rmt_storage modem_efs_partition_device:blk_file { open };
 allow vendor_rmt_storage oppo_debug_prop:file { getattr };
-allow vendor_rmt_storage sysfs:file { getattr };
 allow vendor_rmt_storage oppo_debug_prop:file { map };
 allow vendor_rmt_storage proc_oppoversion:dir { search };
 allow vendor_rmt_storage sysfs_uio_file:dir { search };
 allow vendor_rmt_storage sysfs_uio_file:file { getattr };
 allow vendor_rmt_storage sysfs_uio_file:file { open };
 allow vendor_rmt_storage sysfs_uio_file:file { read };
-
+allow vendor_rmt_storage sysfs_vendor_rmt_storage:file { read open getattr };

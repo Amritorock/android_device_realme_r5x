@@ -1,2 +1,0 @@
-allow vendor_thermal-engine system_prop:file { getattr };
-allow vendor_thermal-engine system_prop:file { map };

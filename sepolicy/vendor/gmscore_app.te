@@ -1,5 +1,4 @@
 allow gmscore_app vendor_camera_prop:file { read };
-allow gmscore_app unlabeled:dir { search };
 allow gmscore_app linkerconfig_file:dir { getattr };
 allow gmscore_app mnt_vendor_file:lnk_file { getattr };
 allow gmscore_app exported_camera_prop:file { read open getattr };
