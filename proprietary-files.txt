@@ -2854,6 +2854,17 @@ vendor/firmware/f_1511.b06
 vendor/firmware/f_1511.b07
 vendor/firmware/f_1511.mdt
 
+# Fingerprint firmware Egis
+vendor/firmware/egista.b00
+vendor/firmware/egista.b01
+vendor/firmware/egista.b02
+vendor/firmware/egista.b03
+vendor/firmware/egista.b04
+vendor/firmware/egista.b05
+vendor/firmware/egista.b06
+vendor/firmware/egista.b07
+vendor/firmware/egista.mdt
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
