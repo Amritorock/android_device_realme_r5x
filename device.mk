@@ -260,6 +260,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
+    set_baseband.sh \
     ueventd.qcom.rc
 
 # IPv6
