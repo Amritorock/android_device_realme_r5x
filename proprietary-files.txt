@@ -2599,7 +2599,6 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
 # Ril- from X2
 -product/app/QtiTelephonyService/QtiTelephonyService.apk|42a392ebebf4046dbd0939da10cc72903aed1d80
--product/app/datastatusnotification/datastatusnotification.apk|8ad2fea91aaa573c13d179562b445c341ef5372b
 product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
 product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
