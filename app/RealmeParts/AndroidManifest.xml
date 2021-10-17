@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
-                   2017-2018 The LineageOS Project
+                   2017-2023 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -58,6 +58,7 @@
 
         <service
             android:name=".RealmePartsTileService"
+            android:exported="true"
             android:icon="@drawable/ic_realmeparts_tile"
             android:label="@string/realmeparts"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -75,6 +76,7 @@
 
         <service
             android:name=".UsbFastChgToggleService"
+            android:exported="true"
             android:icon="@drawable/ic_usb_fastcharge"
             android:label="@string/fastcharge_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -86,6 +88,7 @@
 
         <service
             android:name=".OtgToggleService"
+            android:exported="true"
             android:icon="@drawable/ic_otg_tile"
             android:label="@string/tile_otg_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
