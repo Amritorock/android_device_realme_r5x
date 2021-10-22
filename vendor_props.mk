@@ -202,6 +202,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
 
+# Recovery
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
