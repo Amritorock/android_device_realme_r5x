@@ -143,6 +143,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     KharaMeDirac
 
+# Crypto
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
