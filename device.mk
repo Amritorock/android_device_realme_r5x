@@ -265,8 +265,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    apex_metadata.rc \
-    fix_ex_sdcard.sh \
+    apex_metadata.rc
 
 # IPv6
 PRODUCT_PACKAGES += \
