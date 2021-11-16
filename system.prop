@@ -54,6 +54,9 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
 
+# VSync
+debug.cpurend.vsync=false
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
