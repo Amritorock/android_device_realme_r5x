@@ -1,3 +1,4 @@
 allow ueventd debugfs:dir { read };
 allow ueventd metadata_file:dir { search };
-
+allow ueventd vfat:file { getattr open read };
+allow ueventd vfat:dir { search };

@@ -10,11 +10,16 @@ allow hal_camera_default oppoalgo_service:service_manager find;
 allow hal_camera_default proc_devinfo:dir { search };
 allow hal_camera_default proc_devinfo:file { read open };
 allow hal_camera_default sysfs_hal_camera_default:file { read open };
+allow hal_camera_default sysfs_camera:file { read open };
 
 get_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, oppo_debug_prop)
+get_prop(hal_camera_default, bootanim_system_prop)
 
 r_dir_file(hal_camera_default, proc_oppoversion);
 r_dir_file(hal_camera_default, sysfs_net)
 
 set_prop(hal_camera_default, vendor_camera_prop)
+
+allow hal_camera_default default_prop:file { getattr map open read };
+dontaudit hal_camera_default radio_prop:file read;

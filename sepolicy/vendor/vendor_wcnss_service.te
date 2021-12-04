@@ -3,3 +3,4 @@ allow vendor_wcnss_service mnt_vendor_file:dir { search read };
 allow vendor_wcnss_service init:unix_stream_socket { connectto };
 allow vendor_wcnss_service mnt_vendor_file:file { read open getattr };
 allow vendor_wcnss_service mnt_vendor_file:file { read };
+allow vendor_wcnss_service vendor_default_prop:property_service { set };
