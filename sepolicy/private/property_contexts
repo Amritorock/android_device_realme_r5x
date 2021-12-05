@@ -1,0 +1,2 @@
+# Hardware
+ro.hardware.chipname           u:object_r:exported_default_prop:s0
