@@ -1,1 +1,0 @@
-allow vendor_thermal-engine system_prop:file { getattr map open read };

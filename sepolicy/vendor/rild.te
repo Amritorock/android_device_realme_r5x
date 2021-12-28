@@ -1,8 +1,6 @@
 allow rild hal_oppo_hwservice:hwservice_manager find;
 
 allow rild block_device:dir { search };
-allow rild cache_file:file { write create open };
-allow rild cache_file:dir { search getattr write add_name create open };
 #allow rild nv_data_file:dir { getattr search add_name write create open };
 
 get_prop(rild, oppo_debug_prop);

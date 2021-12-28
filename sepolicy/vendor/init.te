@@ -15,4 +15,3 @@ allow init hwservicemanager:binder { transfer };
 allow init init:capability2 { block_suspend };
 allow init init:capability2 { wake_alarm };
 allow init sysfs_usb_supply:file { read open };
-allow init hal_drm_hwservice:hwservice_manager { add find };
