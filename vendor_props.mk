@@ -132,6 +132,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.disable_ubwc=0 \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1
+    persist.sys.sf.color_saturation=1.1 \
+    persist.sys.sf.native_mode=0 \
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
