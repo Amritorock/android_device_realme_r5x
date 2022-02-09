@@ -187,6 +187,10 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor \
     libqti_vndfwk_detect.vendor
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 # GNSS/GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
