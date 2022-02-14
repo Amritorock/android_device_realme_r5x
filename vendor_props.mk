@@ -34,6 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.a2dp_offload.enable=false \
     vendor.audio.feature.afe_proxy.enable=true \
     persist.bluetooth.a2dp_offload.disabled=true \
+    persist.vendor.bluetooth.modem_nv_support=true \
     vendor.audio.feature.anc_headset.enable=true \
     vendor.audio.feature.audiozoom.enable=false \
     vendor.audio.feature.battery_listener.enable=false \
