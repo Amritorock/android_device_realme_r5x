@@ -271,7 +271,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.realme_r5x
+    android.hardware.lights-service.r5x
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
