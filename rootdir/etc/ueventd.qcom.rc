@@ -177,6 +177,9 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
 /sys/bus/platform/devices/egis_input navigation_event  0660  system  system
 #endif VENDOR_EDIT
 
+#rawdump
+/dev/block/platform/soc/*/by-name/rawdump       0660   root     system
+
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
