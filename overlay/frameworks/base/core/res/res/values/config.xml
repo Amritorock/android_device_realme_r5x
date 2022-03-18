@@ -356,6 +356,11 @@
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
      <integer name="config_shutdownBatteryTemperature">680</integer>
 
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+          manually by the user. Off by default, since the expected haptic feedback may not be
+          available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
+
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
