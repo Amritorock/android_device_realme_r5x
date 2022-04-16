@@ -74,3 +74,5 @@ oppo.wifirftest.enable                  u:object_r:oppo_debug_prop:s0
 persist.usb.hvdcp.detect                  u:object_r:oppo_debug_prop:s0
 ro.oppo.nw.singlecard                  u:object_r:oppo_debug_prop:s0
 ro.logdumpd.enabled                  u:object_r:oppo_debug_prop:s0
+
+persist.radio.is_vonr_enabled_1      u:object_r:radio_prop:s0
