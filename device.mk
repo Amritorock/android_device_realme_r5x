@@ -473,10 +473,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mock
