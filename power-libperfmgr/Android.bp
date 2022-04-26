@@ -21,7 +21,6 @@ cc_library {
     name: "libdisppower-r5x",
     proprietary: true,
     srcs: [
-        "disp-power/DisplayLowPower.cpp",
         "disp-power/InteractionHandler.cpp",
     ],
      shared_libs: [
