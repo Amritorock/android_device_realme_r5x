@@ -101,13 +101,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
-	dalvik.vm.dex2oat64.enabled=true \
-    dalvik.vm.heapgrowthlimit=384m \
+    dalvik.vm.dex2oat64.enabled=true \
+    dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapmaxfree=8m \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapsize=448m \
-    dalvik.vm.heapstartsize=4m \
-    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=2m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heaptargetutilization=0.75
 
 # Data
 PRODUCT_PROPERTY_OVERRIDES += \
