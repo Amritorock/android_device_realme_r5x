@@ -120,11 +120,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.callstack=1 \
-    debug.egl.hw=0 \
-    debug.mdpcomp.logs=0 \
-    debug.sf.hw=1 \
     debug.sf.latch_unsignaled=0 \
+    debug.sf.disable_client_composition_cache=1 \
+    debug.sf.enable_gl_backpressure=1 \
     ro.opengles.version=196610 \
     ro.vendor.display.cabl=0 \
     vendor.display.disable_scaler=0 \
