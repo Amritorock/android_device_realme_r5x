@@ -15,5 +15,4 @@ vendor.oppo.hardware.hypnus::IHypnusUtil                        u:object_r:hal_o
 vendor.oppo.hardware.commondcs::ICommonDcsHalService            u:object_r:hal_oppo_hwservice:s0
 vendor.oppo.hardware.radio.opporadio::IOppoRadio                u:object_r:hal_oppo_hwservice:s0
 vendor.oppo.hardware.radio.oppoappradio::IOppoAppRadio          u:object_r:hal_oppo_hwservice:s0
-vendor.oppo.hardware.ktv::IKtv                                               u:object_r:hal_camera_hwservice:s0
 android.OPPO.IOppoAlgoDaemon                                                 u:object_r:oppoalgo_daemon_hwservice:s0

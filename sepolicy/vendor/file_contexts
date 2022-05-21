@@ -31,7 +31,6 @@
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                             u:object_r:persist_camera_file:s0
-/vendor/bin/hw/vendor\.oppo\.hardware\.ktv@1\.0-service                                                 u:object_r:hal_camera_default_exec:s0
 /sys/devices/platform/soc/5c0c000.qcom,cci/5c0c000.qcom,cci:qcom,camera@([0-9])+/video4linux/video([0-9])+/name       u:object_r:sysfs_hal_camera_default:s0
 
 # Fingerprint

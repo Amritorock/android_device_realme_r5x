@@ -91,12 +91,6 @@ vendor/lib64/libtinycompress.so
 # Audio Power Amplifier
 vendor/firmware/tfa98xx.cnt
 
-# Audio KTV
-vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service
-vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc
-vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so
-vendor/lib64/vendor.oppo.hardware.ktv@1.0.so
-
 # Bluetooth - from sunfish-user 11 RP1A.200720.011 6746289 release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2aa101db92b5d447604da82e80241ca1ff90e1e0
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|d5fcb9c2cf5538b9c946b9263b144e714433a578
