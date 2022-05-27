@@ -139,12 +139,17 @@ LOC_HIDL_VERSION := 3.0
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
+ODM_MANIFEST_SKUS += nfc
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc.xml
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
 # Media
 TARGET_DISABLED_UBWC := true
+
+# NFC
+TARGET_USES_NQ_NFC := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)

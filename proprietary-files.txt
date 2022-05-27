@@ -3074,6 +3074,24 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so|dcb6014f2823634fcece391e97f0fa800eff
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|7b52d9cb6ccc2c4bb5b76d5c69f37fddf7408d11
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|9243e5231bd684db5874334e2c5b10b2432aed00
 
+# NFC (Configs)
+vendor/etc/sn100u_bootup.pnscr
+vendor/etc/sn100u_ese_disableIso.pnscr
+vendor/etc/sn100u_ese_disableIsoRead.pnscr
+vendor/etc/sn100u_nfcon.pnscr
+vendor/etc/sn100u_pnx_chr.pnscr
+vendor/etc/sn100u_pnx_cui.pnscr
+vendor/etc/sn100u_pnx_ese_3.pnscr
+vendor/etc/sn100u_pnx_ese_aclog.pnscr
+vendor/etc/sn100u_pnx_ese_cplc.pnscr
+vendor/etc/sn100u_pnx_ese_fabkey.pnscr
+vendor/etc/sn100u_pnx_ese_free.pnscr
+vendor/etc/sn100u_pnx_ese_keyset.pnscr
+vendor/etc/sn100u_pnx_ese_sn.pnscr
+vendor/etc/sn100u_pnx_ndi.pnscr
+vendor/etc/sn100u_pnx_pcv.pnscr
+vendor/etc/sn100u_pnx_sst.pnscr
+
 # Pasrmanager
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
