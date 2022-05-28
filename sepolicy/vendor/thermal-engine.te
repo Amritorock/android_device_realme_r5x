@@ -1,2 +1,2 @@
-set_prop(thermal-engine, vendor_thermal_prop);
-r_dir_file(thermal-engine, sysfs_thermal)
+set_prop(vendor_thermal-engine, vendor_thermal_prop);
+r_dir_file(vendor_thermal-engine, sysfs_thermal)
