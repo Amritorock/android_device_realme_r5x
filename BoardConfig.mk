@@ -47,7 +47,6 @@ TARGET_NO_BOOTLOADER := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Camera
-USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.r5x
 
 # Display
