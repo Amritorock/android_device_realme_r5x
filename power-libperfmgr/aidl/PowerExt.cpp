@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power-service.pixel.ext-libperfmgr"
+#define LOG_TAG "android.hardware.power-service.r5x.ext-libperfmgr"
 
 #include "PowerExt.h"
 #include "PowerSessionManager.h"
