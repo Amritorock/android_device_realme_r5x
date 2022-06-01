@@ -1127,30 +1127,13 @@ case "$target" in
             echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
             # Setting b.L scheduler parameters
-            echo 67 > /proc/sys/kernel/sched_downmigrate
-            echo 77 > /proc/sys/kernel/sched_upmigrate
             echo 85 > /proc/sys/kernel/sched_group_downmigrate
             echo 100 > /proc/sys/kernel/sched_group_upmigrate
 
-            # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
-            echo 0-3 > /dev/cpuset/system-background/cpus
-
-
-            # configure governor settings for little cluster
+            # configure governor settings for both cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-            echo 1305600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
-            echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-
-            # configure governor settings for big cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-            echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
-            echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-
+            
 	    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
             # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
