@@ -15,7 +15,10 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/qcom/opensource/commonsys-intf/display \
+    vendor/qcom/opensource/wfd-commonsys \
+    vendor/nxp/opensource/pn5xx
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_props.mk
