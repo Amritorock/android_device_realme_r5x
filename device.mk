@@ -125,7 +125,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libtinyxml \
     libtinyxml2 \
-    libvulkan \
     memtrack.trinket \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@2.0.vendor
