@@ -66,3 +66,7 @@
 
 /sys/devices/platform/soc/4744000.sdhci/mmc_host/mmc0/mmc0:0001/serial				u:object_r:sysfs_vendor_rmt_storage:s0
 /sys/devices/platform/soc/5c00000.qcom,msm-cam/video4linux/v4l-subdev[0-26]+/name                    u:object_r:sysfs_camera:s0
+
+# NFC
+/dev/p73                  u:object_r:nfc_device:s0
+/dev/pn553                u:object_r:nfc_device:s0
