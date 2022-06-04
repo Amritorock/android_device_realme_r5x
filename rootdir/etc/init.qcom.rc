@@ -1163,8 +1163,15 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     disabled
 
 on property:ro.boot.product.hardware.sku=nfc_ese
+#vendor/etc/init/init.pn8x.nfc.rc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
     chmod 0666 /dev/pn553
     chown nfc nfc /dev/pn553
+
+#vendor/etc/init/init.pn8x.se.rc
+    mkdir /data/vendor/secure_element 0777 secure_element secure_element
     chmod 0666 /dev/p73
     chown secure_element secure_element /dev/p73
+
     start vendor.nfc_hal_service
