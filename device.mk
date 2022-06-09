@@ -492,6 +492,50 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.biometrics.face@1.0.vendor \
+    android.hardware.biometrics.fingerprint@2.2.vendor \
+    android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.broadcastradio@2.0.vendor \
+    android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.metadata@3.5.vendor \
+    android.hardware.camera.provider@2.6.vendor \
+    android.hardware.common-V1-ndk_platform.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.fastboot@1.0.vendor \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.graphics.common-V1-ndk_platform.vendor \
+    android.hardware.graphics.composer@2.4.vendor \
+    android.hardware.health@2.1.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.light@2.0.vendor \
+    android.hardware.media.bufferpool@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.nfc@1.2.vendor \
+    android.hardware.oemlock@1.0.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardwareundtrigger@2.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor \
+    android.hardware.usb@1.2.vendor \
+    android.hardware.vibrator@1.3.vendor \
+    android.hardware.wifi.hostapd@1.2.vendor \
+    android.hardware.wifi.offload@1.0.vendor \
+    android.hardware.wifi.supplicant@1.3.vendor \
+    android.hardware.wifi@1.4.vendor \
+    android.hidl.allocator@1.0.vendor \
+    android.system.net.netd@1.1.vendor \
+    libadf.vendor \
+    libtinyxml.vendor
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/r5x/r5x-vendor.mk)
 
