@@ -28,7 +28,6 @@ ro.camera.sensor.aux2m=1
 ro.camera.temperature.limit=450
 
 # Charger
-ro.charger.disable_init_blank=true
 ro.charger.enable_suspend=true
     
 # CNE/DPM
