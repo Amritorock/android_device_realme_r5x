@@ -1162,5 +1162,5 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     disabled
 
-on property:ro.boot.product.hardware.sku=r5x
+on property:ro.boot.product.hardware.sku=nfc_ese
     start vendor.nfc_hal_service
