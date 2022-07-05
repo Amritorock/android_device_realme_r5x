@@ -1,6 +1,5 @@
 runtime_resource_overlay {
     name: "BluetoothOverlayR5x",
     theme: "BluetoothOverlayR5x",
-    sdk_version: "current",
     vendor: true,
 }

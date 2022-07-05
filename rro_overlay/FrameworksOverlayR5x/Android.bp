@@ -1,6 +1,5 @@
 runtime_resource_overlay {
     name: "FrameworksOverlayR5x",
     theme: "FrameworksOverlayR5x",
-    sdk_version: "current",
     vendor: true,
 }
