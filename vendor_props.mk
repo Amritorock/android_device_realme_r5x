@@ -165,7 +165,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+    ro.iorapd.enable=false
 
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
