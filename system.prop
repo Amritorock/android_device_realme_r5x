@@ -50,9 +50,9 @@ debug.cpurend.vsync=false
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Iorap
-vendor.iop.enable_prefetch_ofr=1
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
+vendor.iop.enable_prefetch_ofr=0
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
 
 # VSync
 debug.cpurend.vsync=false
