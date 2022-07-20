@@ -50,7 +50,6 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.r5x
 
 # Display
-USE_OPENGL_RENDERER := true
 TARGET_SCREEN_DENSITY := 288
 
 # Filesystem
