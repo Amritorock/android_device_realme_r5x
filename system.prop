@@ -96,6 +96,9 @@ persist.sys.fflag.override.settings_network_and_internet_v2=true
 persist.sys.fflag.override.settings_provider_model=false
 telephony.lteOnCdmaDevice=1
 
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
