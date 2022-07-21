@@ -16,35 +16,35 @@
 -->
 <resources>
     <!-- Device specific settings -->
-    <string name="device_settings_app_name">realme Dirac</string>
+    <string name="device_settings_app_name">Realme Dirac</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_enable">Enable dirac</string>
-    <string name="dirac_title">realme Dirac Sound Enhancer</string>
-    <string name="dirac_summary">Optimize audio quality</string>
-    <string name="dirac_headset_title">Choose headphones type</string>
-    <string name="dirac_preset_title">Choose a preset</string>
+    <string name="dirac_enable">Enable Dirac</string>
+    <string name="dirac_title">Realme Dirac Sound Enhancer</string>
+    <string name="dirac_summary">Optimize Audio Quality</string>
+    <string name="dirac_headset_title">Choose Headphones Type</string>
+    <string name="dirac_preset_title">Choose a Preset</string>
 
     <string name="dirac_headset_default">Default</string>
-    <string name="dirac_headset_earbuds">realme Buds</string>
-    <string name="dirac_headset_in_ear_2013">realme Buds Neo</string>
-    <string name="dirac_headset_piston_1">realme Buds Wired</string>
+    <string name="dirac_headset_earbuds">Realme Buds</string>
+    <string name="dirac_headset_in_ear_2013">Realme Buds Neo</string>
+    <string name="dirac_headset_piston_1">Realme Buds Wired</string>
     <string name="dirac_headset_general">General Earbuds</string>
     <string name="dirac_headset_general_inear">General In-Ear</string>
     <string name="dirac_headset_piston_basic">Basic Edition</string>
-    <string name="dirac_headset_piston_2">realme Buds 2</string>
-    <string name="dirac_headset_piston_standard">realme Buds 2 Neo</string>
-    <string name="dirac_headset_headphone">realme Buds Q</string>
+    <string name="dirac_headset_piston_2">Realme Buds 2</string>
+    <string name="dirac_headset_piston_standard">Realme Buds 2 Neo</string>
+    <string name="dirac_headset_headphone">Realme Buds Q</string>
     <string name="dirac_headset_piston_youth">Youth Edition</string>
     <string name="dirac_headset_piston_color">Color Edition</string>
     <string name="dirac_headset_in_ear"> In-Ear</string>
     <string name="dirac_headset_capsule">Capsule</string>
-    <string name="dirac_headset_in_ear_pro">realme Buds Q2</string>
+    <string name="dirac_headset_in_ear_pro">Realme Buds Q2</string>
     <string name="dirac_headset_comfort">Comfort</string>
     <string name="dirac_headset_reduction_noise">Noise Cancellation (Type-C)</string>
     <string name="dirac_headset_cancelling">Noise Cancellation (3.5mm)</string>
-    <string name="dirac_headset_half_in_ear">realme Buds Air</string>
-    <string name="dirac_headset_in_ear2">realme Buds Air 2</string>
+    <string name="dirac_headset_half_in_ear">Realme Buds Air</string>
+    <string name="dirac_headset_in_ear2">Realme Buds Air 2</string>
     <string name="dirac_headset_earphone_basic">Earphones Basic</string>
     <string name="dirac_headset_earphone">Default Earphones</string>
 
@@ -68,5 +68,5 @@
     <string name="dirac_preset_soft_treble">Soft Treble</string>
 
     <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">realme Dirac</string>
+    <string name="dirac_qs_tile_title">Realme Dirac</string>
 </resources>
