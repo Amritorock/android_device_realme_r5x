@@ -39,5 +39,7 @@ type vendor_sysfs_iio, fs_type, sysfs_type;
 
 type sysfs_camera, fs_type, sysfs_type;
 
+type public_adsprpcd_file, file_type;
+
 # Power-Libperfmgr
 type pps_socket, file_type;
