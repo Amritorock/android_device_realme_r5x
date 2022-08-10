@@ -14,6 +14,8 @@ allow hal_camera_default sysfs_camera:file { read open };
 allow hal_camera_default sysfs:file { open  read };
 allow hal_camera_default default_prop:file { getattr map };
 
+allow hal_camera_default public_adsprpcd_file:file r_file_perms;
+
 get_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, oppo_debug_prop)
 get_prop(hal_camera_default, bootanim_system_prop)
