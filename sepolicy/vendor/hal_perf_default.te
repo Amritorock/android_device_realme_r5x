@@ -1,1 +1,1 @@
-r_dir_file(hal_perf_default, proc_meminfo);
+r_dir_file(vendor_hal_perf_default, proc_meminfo);
