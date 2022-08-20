@@ -6,3 +6,6 @@ type mdmreason_device, dev_type;
 
 # EGIS device
 type egis_device, dev_type;
+
+# Latency device
+type latency_device, dev_type;

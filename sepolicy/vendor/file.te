@@ -38,3 +38,6 @@ type sysfs_hal_fingerprint_default, fs_type, sysfs_type;
 type vendor_sysfs_iio, fs_type, sysfs_type;
 
 type sysfs_camera, fs_type, sysfs_type;
+
+# Power-Libperfmgr
+type pps_socket, file_type;

@@ -1,11 +1,10 @@
-#type sysfs_io_sched_tuneable, fs_type, sysfs_type;
-
 allow vendor_qti_init_shell ctl_stop_prop:property_service { set };
 allow vendor_qti_init_shell sysfs_hal_fingerprint_default:file { write setattr };
 allow vendor_qti_init_shell configfs:dir { write };
-#allow vendor_qti_init_shell sysfs_io_sched_tuneable:file { write };
 allow vendor_qti_init_shell configfs:dir { add_name };
 allow vendor_qti_init_shell configfs:file { create };
-#allow vendor_qti_init_shell sysfs_io_sched_tuneable:file { write };
 allow vendor_qti_init_shell vfat:file { getattr open read };
 allow vendor_qti_init_shell vfat:dir { search open read };
+
+# To set powerhal init property
+set_prop(vendor_qti_init_shell, vendor_power_prop)
