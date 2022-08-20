@@ -43,6 +43,9 @@ genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wma/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup u:object_r:sysfs_wakeup:s0
 
+# Power
+genfscon proc /sys/kernel/sched_energy_aware     u:object_r:proc_sched_energy_aware:s0
+
 # Devinfo
 genfscon proc /devinfo        u:object_r:proc_devinfo:s0
 
