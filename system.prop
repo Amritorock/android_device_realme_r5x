@@ -41,6 +41,9 @@ persist.data.df.dev_name=rmnet_usb0
 # Fwk detect
 ro.vendor.qti.va_odm.support=1
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 debug.sf.disable_hwc_vds=1
 persist.hwc.enable_vds=1
@@ -110,3 +113,4 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 persist.vendor.sys.memplus.enable=false
 ro.vendor.qti.sys.fw.bg_apps_limit=30
 ro.vendor.qti.sys.fw.bservice_limit=60
+
