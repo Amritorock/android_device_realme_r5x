@@ -349,11 +349,11 @@
     <ctl name="TX SMIC MUX7" value="ZERO" />
 
     <!-- Volume controls -->
-    <ctl name="WSA_RX0 Digital Volume" value="84" />
-    <ctl name="WSA_RX1 Digital Volume" value="84" />
-    <ctl name="RX_RX0 Digital Volume" value="84" />
-    <ctl name="RX_RX1 Digital Volume" value="84" />
-    <ctl name="RX_RX2 Digital Volume" value="84" />
+    <ctl name="WSA_RX0 Digital Volume" value="95" />
+    <ctl name="WSA_RX1 Digital Volume" value="95" />
+    <ctl name="RX_RX0 Digital Volume" value="95" />
+    <ctl name="RX_RX1 Digital Volume" value="95" />
+    <ctl name="RX_RX2 Digital Volume" value="95" />
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
@@ -367,9 +367,9 @@
     <ctl name="TX_DEC6 Volume" value="102" />
     <ctl name="TX_DEC7 Volume" value="102" />
 
-    <ctl name="ADC1 Volume" value="12" />
-    <ctl name="ADC2 Volume" value="12" />
-    <ctl name="ADC3 Volume" value="12" />
+    <ctl name="ADC1 Volume" value="20" />
+    <ctl name="ADC2 Volume" value="20" />
+    <ctl name="ADC3 Volume" value="20" />
 
     <!-- Compander controls -->
     <ctl name="WSA_COMP1 Switch" value="0" />
@@ -2542,7 +2542,7 @@
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="ADC1_MIXER Switch" value="1" />
-        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="20" />
     </path>
     <!-- endif ODM_WT_EDIT -->
 
@@ -2555,7 +2555,7 @@
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="ADC2_MIXER Switch" value="1" />
         <ctl name="ADC2 MUX" value="INP2" />
-        <ctl name="ADC2 Volume" value="12" />
+        <ctl name="ADC2 Volume" value="20" />
     </path>
     <!-- endif ODM_WT_EDIT -->
 
@@ -2713,7 +2713,7 @@
     <path name="handset-mic">
         <path name="amic1" />
         <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL.1919162, 2020/03/27, Modify for audio -->
-        <ctl name="ADC1 Volume" value="4" />
+        <ctl name="ADC1 Volume" value="20" />
     </path>
 
 <!--#ifdef VENDOR_EDIT-->
@@ -2734,7 +2734,7 @@
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
         <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="ADC1_MIXER Switch" value="1" />
-        <ctl name="ADC1 Volume" value="4" />
+        <ctl name="ADC1 Volume" value="20" />
     </path>
 
 <!-- Feng.Zhou@PSW.MM.AudioDriver, 2019/12/28, Modify for weixin and qq handset mic -->
@@ -2805,14 +2805,14 @@
     <path name="headset-mic">
         <path name="amic2" />
         <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL.1919162, 2020/03/27, Modify for audio -->
-        <ctl name="ADC2 Volume" value="12" />
+        <ctl name="ADC2 Volume" value="20" />
         <ctl name="TX_DEC0 Volume" value="84" />
     </path>
 
     <!-- KTV headset mic -->
     <path name="headset-mic-ktv">
         <path name="amic2" />
-        <ctl name="TX_DEC0 Volume" value="80" />
+        <ctl name="TX_DEC0 Volume" value="90" />
     </path>
 
     <path name="usb-headset-mic-ktv">
@@ -2830,7 +2830,7 @@
     <path name="voice-speaker">
         <path name="speaker-mono" />
         <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for voice -->
-        <ctl name="RX_RX2 Digital Volume" value="82" />
+        <ctl name="RX_RX2 Digital Volume" value="95" />
     </path>
 
     <path name="voice-speaker-stereo">
@@ -2864,8 +2864,8 @@
         <ctl name="HPHL_RDAC Switch" value="1" />
         <ctl name="HPHR_RDAC Switch" value="1" />
         <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for voice -->
-        <ctl name="RX_RX0 Digital Volume" value="84" />
-        <ctl name="RX_RX1 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="95" />
+        <ctl name="RX_RX1 Digital Volume" value="95" />
     </path>
 
     <path name="voice-line">
@@ -2875,8 +2875,8 @@
     <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for voice -->
     <path name="voice-headset-mic">
         <path name="amic2" />
-        <ctl name="ADC2 Volume" value="12" />
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="ADC2 Volume" value="20" />
+        <ctl name="TX_DEC0 Volume" value="95" />
     </path>
 
 <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL.2069753, 2020/03/27, Modify for ringtone -->
@@ -3008,19 +3008,19 @@
     <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for audio -->
     <path name="handset-dmic-endfire">
         <path name="amic1" />
-        <ctl name="ADC1 Volume" value="4" />
+        <ctl name="ADC1 Volume" value="20" />
     </path>
 
     <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for voip -->
     <path name="speaker-dmic-endfire">
         <path name="amic1" />
-        <ctl name="ADC1 Volume" value="2" />
+        <ctl name="ADC1 Volume" value="20" />
     </path>
 
     <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for voip -->
     <path name="dmic-endfire">
         <path name="amic1" />
-        <ctl name="ADC1 Volume" value="2" />
+        <ctl name="ADC1 Volume" value="20" />
         <ctl name="IIR0 INP0 MUX" value="DEC0" />
     </path>
 
@@ -3039,14 +3039,14 @@
     <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for voice -->
     <path name="voice-dmic-ef">
         <path name="amic1" />
-        <ctl name="ADC1 Volume" value="2" />
+        <ctl name="ADC1 Volume" value="20" />
         <ctl name="IIR0 INP0 MUX" value="DEC0" />
     </path>
 
     <!-- Yue.Li@ODM_WT.MM.Audiodriver.HAL, 2020/03/27, Modify for voice -->
     <path name="voice-speaker-dmic-ef">
         <path name="amic1" />
-        <ctl name="ADC1 Volume" value="0" />
+        <ctl name="ADC1 Volume" value="20" />
     </path>
 
     <path name="voice-rec-dmic-ef">
@@ -3157,7 +3157,7 @@
         <!-- #else /* VENDOR_EDIT */ -->
         <path name="amic1" />
         <ctl name="TX_DEC0 Volume" value="84" />
-        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="20" />
         <!-- #endif /* VENDOR_EDIT */ -->
     </path>
 
