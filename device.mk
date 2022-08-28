@@ -387,6 +387,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Platform 
+TARGET_BOARD_PLATFORM := trinket
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
