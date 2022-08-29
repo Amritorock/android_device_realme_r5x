@@ -18,22 +18,5 @@
 */
 -->
 <resources>
-
-    <!-- Height of the status bar in portrait -->
-    <dimen name="status_bar_height">32.0dip</dimen>
-
-    <!-- Height of the status bar in landscape -->
-    <dimen name="status_bar_height_landscape">24dp</dimen>
-
-    <!-- Radius of the software rounded corners at the top of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">58.0px</dimen>
-
-    <!-- Radius of the software rounded corners at the bottom of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">58.0px</dimen>
-
-    <!-- Adjust the icon padding in status bar for rounded corners --> 
-    <dimen name="rounded_corner_content_padding">14.0dip</dimen>
-
+    <dimen name="rounded_corner_content_padding">16dp</dimen>
 </resources>
