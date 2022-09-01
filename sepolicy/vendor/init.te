@@ -15,3 +15,4 @@ allow init hwservicemanager:binder { transfer };
 allow init init:capability2 { block_suspend };
 allow init init:capability2 { wake_alarm };
 allow init sysfs_usb_supply:file { read open };
+allow init { proc_oppoversion proc_oppo_fp }:file { read open getattr };
