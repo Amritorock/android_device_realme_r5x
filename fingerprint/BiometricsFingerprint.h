@@ -45,7 +45,6 @@ using ::android::OK;
 using ::android::sp;
 using ::android::status_t;
 
-class OppoClientCallback;
 struct BiometricsFingerprint : public IBiometricsFingerprint {
 public:
     BiometricsFingerprint();
@@ -64,7 +63,7 @@ public:
 
 private:
     sp<vendor::oppo::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint> mOppoBiometricsFingerprint;
-    sp<OppoClientCallback> mOppoClientCallback;
+    sp<vendor::oppo::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback> mOppoClientCallback;
     static Return<RequestStatus> OppoToAOSPRequestStatus(vendor::oppo::hardware::biometrics::fingerprint::V2_1::RequestStatus req);
 };
 
