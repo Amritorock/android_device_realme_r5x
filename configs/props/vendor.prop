@@ -220,12 +220,17 @@ ro.soc.model=SM6125
 # Time
 persist.vendor.delta_time.enable=true
 
-# Usb    
-persist.vendor.usb.config.extra=none
+# USB
+vendor.usb.controller=4e00000.dwc3
+vendor.usb.device=4e00000.ssusb
+vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
-vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.qdss.inst.name=qdss
+vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
-vendor.usb.rndis.func.name=rndis_bam
+vendor.usb.rndis.func.name=gsi
+vendor.usb.use_ffs_mtp=0
+vendor.usb.use_gadget_hal=0
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
