@@ -123,7 +123,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=0 \
-    persist.sys.sf.color_saturation=1.0 \
     ro.opengles.version=196610 \
     ro.vendor.display.cabl=0 \
     ro.hardware.vulkan=adreno \
@@ -133,7 +132,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1
     persist.sys.sf.color_saturation=1.1 \
-    persist.sys.sf.native_mode=0 \
+    persist.sys.sf.native_mode=0 
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
