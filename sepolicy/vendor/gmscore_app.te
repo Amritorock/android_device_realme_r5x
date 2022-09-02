@@ -9,12 +9,11 @@ allow gmscore_app configfs:dir { read };
 allow gmscore_app apex_mnt_dir:dir { read };
 allow gmscore_app mnt_sdcard_file:lnk_file { getattr };
 allow gmscore_app mnt_pass_through_file:dir { getattr };
-allow gmscore_app adbd_prop:file { read getattr open };
+allow gmscore_app adbd_config_prop:file { read getattr open map };
 allow gmscore_app bt_firmware_file:filesystem getattr;
 allow gmscore_app firmware_file:filesystem getattr;
 allow gmscore_app apexd_prop:file { getattr open };
 allow gmscore_app apk_verity_prop:file { getattr open };
-allow gmscore_app adbd_prop:file { map };
 allow gmscore_app apexd_prop:file { map };
 allow gmscore_app apk_verity_prop:file { map };
 
