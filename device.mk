@@ -118,10 +118,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Dirac
-PRODUCT_PACKAGES += \
-    KharaMeDirac
-
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.volume.filenames_mode=aes-256-cts
