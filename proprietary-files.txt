@@ -125,7 +125,6 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 vendor/lib/hw/camera.trinket.so
 vendor/lib/libalgo.public.so
 vendor/lib/libbase64.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcamera_core_hwi.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
@@ -175,7 +174,6 @@ vendor/lib/libvideoutils.so
 vendor/lib/imx386_PdafLibrary.so
 vendor/lib64/libalgo.public.so
 vendor/lib64/libbase64.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libDxHdcp.so
