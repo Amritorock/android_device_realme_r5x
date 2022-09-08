@@ -1,25 +1,30 @@
-# ADSP - from LA.UM.9.11.r1-03900-NICOBAR.0
-vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|77f5aaf6d773ee545e39bc5fdc99c65434c05379
-vendor/lib/libadsp_default_listener.so|c743bfc1330e3a4ccefd56d52c9035cfd365a2b2
-vendor/lib/libadsprpc.so|c58fc8eb6c0919dc5c21e992a75996446d0107e5
-vendor/lib/libmdsprpc.so|85f8448bc9649fa618cbeb386efc2085c20ba1f7
-vendor/lib/libsdsprpc.so|e58239cc2cec4bad6d328b2f29295a247541ab1f
-vendor/lib64/libadsp_default_listener.so|41f91a64209c0431d87cee08999c5cfdc5dedb38
-vendor/lib64/libadsprpc.so|77bcb86aceb726f45ef853f10d27d86211db4429
-vendor/lib64/libmdsprpc.so|0e3d865eb12827de8bef517e54be1b42c4c82484
-vendor/lib64/libsdsprpc.so|f1f31d4a306dbd6fef2f1b54cf1c7410c37900aa
+# ADSP - from RMX2050_11.C.10 qssi-user-RKQ1.200903.002
+vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|f34d2b7067b6f2fd8c6b79ad4a9e1b3621ab5a6c
+vendor/lib/libadsp_default_listener.so|0376a56ab5d88e5d118e37f6e6371b30746a97e2
+vendor/lib/libadsprpc.so|1a65103c7891a1fd8019f9dad8d2ec90886fbd8e
+vendor/lib/libmdsprpc.so|1748f39b97ab5800c1269d082acb4f5a5f1d6eb2
+vendor/lib/libsdsprpc.so|a34724cd8864154124d50bdb838a7bee9aa2fa14
+vendor/lib64/libadsp_default_listener.so|0324e797f6fdd15680df7fdacc51f713e40b9806
+vendor/lib64/libadsprpc.so|b68759d2494f3ae742debe8e47711a060f282640
+vendor/lib64/libmdsprpc.so|bee4ab1670bd588dc32a40a3d7d2d32f894634f9
+vendor/lib64/libsdsprpc.so|b0d5ae800c878103f94f162647c559320107d452
 
-# ADSP modules - from LA.UM.9.11.r1-03900-NICOBAR.0
+# ADSP modules - from RMX2050_11.C.10 qssi-user-RKQ1.200903.002
 vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|eff059c5a29a44d205bd60ad24aecc46416e939e
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|1cdac354c585c0d236d77b0888ebd5894b333326
+vendor/lib/rfsa/adsp/libdepthmap_skel.so|b763ef53e1dfd30963f7a0a26dea7753f24e1926
 vendor/lib/rfsa/adsp/libdspCV_skel.so|c6034c389845a94a4054dd0fe9a0381adbf086e5
 vendor/lib/rfsa/adsp/libfastcvadsp.so|5c86de2533d60534ce5b07e6be13bcf988e4b03b
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|f3f79fd19ade4ec0947fd901d216e9c39ef5e276
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|79188b620f3fc48421267990d6dd20d738d6ddd4
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|50ac955393bfae796e5fcaccad0bd8c90bd5d16a
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|55d2c71535acdcbbdd7b0a3fe475249c8d99eb08
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|e7b555579924337dc72badc71bdd49c13664454b
+vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so|4659105d1ca963ddfab1560e21009107b8cc520d
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib/rfsa/adsp/libthread_blur_skel.so|b7f81ac2361e1a6292f5ab829940253fe418b72c
 
 # Alarm - from LA.UM.9.11.r1-03900-NICOBAR.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|bc906abd03e4a243201dde626b6580fd8a4f73ce
@@ -3321,9 +3326,6 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so|6dbe703a5a8389c342008c950aaec7a3a2
 -product/priv-app/ims/ims.apk|7e7ceab1d2843dd71c920ae77587132c76763313
 
 # Snapdragon Computer Vision Engine
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib64/libfastcvdsp_stub.so
