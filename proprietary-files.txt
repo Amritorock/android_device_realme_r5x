@@ -2712,12 +2712,12 @@ vendor/lib/libQSEEComAPI.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libwvhidl.so
 
-# DSP - from LA.UM.9.11.r1-03900-NICOBAR.0
-vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
+# DSP - from RMX2050_11.C.10 qssi-user-RKQ1.200903.002
+vendor/bin/dspservice|00dcd6e79d32426b15ed2148bf3c05082c400c9e
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
-vendor/lib/vendor.qti.hardware.dsp@1.0.so|f4375a7bf2e199ee091dc3b5a75caf0ffab63cda
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|ef373150851ed97f25d9df47942032fd95071fd3
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|b5075bcf4e885b01b25e7ecb3fdcf022977353ba
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
 
 # FM - from LA.UM.9.11.r1-03900-NICOBAR.0
 system_ext/lib/fm_helium.so|7ef734f43c11d1942eb4f1919e58bf2e7964e084
