@@ -2736,12 +2736,11 @@ vendor/lib/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/libsubsystem_control.so
 
-# Thermal - from ginkgo MIUI 21.3.3 China Beta
-vendor/bin/thermal-engine|6cd660e2b813896670a14be244d1046afe90064e
-vendor/lib/libthermalclient.so|0aab8039958acdd27af71c5c6923dcd7208f886f
-vendor/lib/libthermalfeature.so|52c35a4e2bc048839e4f9172cc2d299e2367a1fd
-vendor/lib64/libthermalclient.so|ed01fa6caeb9dfbddc0fafc197abe13f3c8b56f9
-vendor/lib64/libthermalfeature.so|f2b78560b6b87c19336ae48ea26d3af756123047
+# Thermal - from RMX2050_11.C.10
+vendor/bin/thermal-engine|75a541bb2e5005f9391c81d11f21748f1eef9deb
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
+vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
 # Time - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
