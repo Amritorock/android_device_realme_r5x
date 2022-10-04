@@ -181,6 +181,10 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor \
     libqti_vndfwk_detect.vendor
 
+# Google LILY_EXPERIENCE feature
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/lily_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lily_experience.xml
+
 # GNSS/GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
