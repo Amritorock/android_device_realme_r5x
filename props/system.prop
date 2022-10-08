@@ -15,7 +15,7 @@ persist.vendor.btstack.enable.splita2dp=false
 vendor.bluetooth.soc=cherokee
 
 # Camera
-camera.disable_zsl_mode=true
+camera.disable_zsl_mode=1
 persist.camera.aifb=1
 persist.camera.filter.version=1
 persist.dualcam.lpm.enable=1
