@@ -151,8 +151,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fling
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.min.fling_velocity=160 \
-    ro.max.fling_velocity=20000
+    ro.min.fling_velocity=10000 \
+    ro.max.fling_velocity=20000 \
+    windowsmgr.max_events_per_sec=100 \
+    ro.vendor.qti.cgroup_follow.enable=true \
+    persist.vendor.qti.inputopts.enable=true \
+    persist.vendor.qti.inputopts.movetouchslop=0.5 \
+    ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
