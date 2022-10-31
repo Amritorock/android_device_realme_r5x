@@ -39,3 +39,6 @@ debug.renderengine.backend=skiaglthreaded
 
 # Elixir Stuff
 org.elixir.device=Realme 5 Series
+
+# IMS
+ro.telephony.block_binder_thread_on_incoming_calls=false
