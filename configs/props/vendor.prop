@@ -102,7 +102,6 @@ vendor.qcom.bluetooth.soc=cherokee
 # Camera
 persist.vendor.camera.expose.aux=1
 persist.vendor.camera.perflock.enable=0
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture
 vendor.camera.not.cts.apk=1
 vendor.camera.not.ctsverify.apk=1
 persist.vendor.camera.eis.enable=1
