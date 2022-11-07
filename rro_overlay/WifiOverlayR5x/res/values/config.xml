@@ -65,9 +65,6 @@
     <!-- Integer delay in milliseconds before set wlan interface up during watchdog recovery -->
     <integer name="config_wifi_framework_recovery_timeout_delay">3000</integer>
 
-    <!-- Disable WPA2 to WPA3 auto-upgrade -->
-    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
-
     <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
     <bool name="config_wifi_softap_sae_supported">true</bool>
 
