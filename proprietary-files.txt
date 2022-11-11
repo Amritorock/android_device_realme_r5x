@@ -2277,10 +2277,6 @@ vendor/lib/libgcs.so|5429f4a5329421341d6460b7c218f035e0757cf0
 vendor/lib/liblistensoundmodel2.so|21c2a856584c301edda81b5fa3740d5ef2a96e8c
 vendor/lib/libsmwrapper.so|af37e8bd00fd4130094349c1d94e83c5b0c20550
 
-# Listen - Hardware
-vendor/lib/hw/sound_trigger.primary.trinket.so
-vendor/lib64/hw/sound_trigger.primary.trinket.so
-
 # Media (Codec2) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|83c2effb6f76cb095bae840d95a2026014d92fe9
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
