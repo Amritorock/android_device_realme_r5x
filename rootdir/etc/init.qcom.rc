@@ -1175,8 +1175,6 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     writepid /dev/cpuset/foreground/tasks
 
 on property:persist.sys.device_provisioned=1
-    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,7
-    setprop dalvik.vm.dex2oat-threads 6
 
 # NFC
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
