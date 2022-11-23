@@ -262,3 +262,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.aware.interface=wifi-aware0
+
+# Zygote
+PRODUCT_PROPERTY_OVERRIDES += \
+zygote.critical_window.minute=10
