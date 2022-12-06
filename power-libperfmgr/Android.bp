@@ -48,7 +48,7 @@ cc_binary {
     vintf_fragments: ["aidl/android.hardware.power-service.r5x.xml"],
     vendor: true,
     shared_libs: [
-        "android.hardware.power-V2-ndk_platform",
+        "android.hardware.power-V2-ndk",
         "libbase",
         "libcutils",
         "liblog",
@@ -57,7 +57,7 @@ cc_binary {
         "libdisppower-r5x",
         "libperfmgr",
         "libprocessgroup",
-        "pixel-power-ext-V1-ndk_platform",
+        "pixel-power-ext-V1-ndk",
     ],
     srcs: [
         "aidl/service.cpp",
