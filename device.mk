@@ -360,7 +360,8 @@ PRODUCT_PACKAGES += \
     WifiOverlayR5x \
     FrameworksOverlayR5x \
     TetheringConfigOverlayR5x \
-    BluetoothOverlayR5x
+    BluetoothOverlayR5x \
+    ApertureOverlay
 
 # Power
 PRODUCT_PACKAGES += \
