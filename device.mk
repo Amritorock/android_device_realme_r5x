@@ -355,6 +355,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
+# Overlays
+PRODUCT_PACKAGES += \
+    ApertureOverlay
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.r5x-libperfmgr \

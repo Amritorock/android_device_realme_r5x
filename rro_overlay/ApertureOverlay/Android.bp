@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "ApertureOverlay",
+    system_ext_specific: true,
+}
