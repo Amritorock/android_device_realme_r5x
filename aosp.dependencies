@@ -2,7 +2,7 @@
     {
         "repository":   "kernel_realme_r5x",
         "target_path":  "kernel/realme/r5x",
-        "branch":       "Chisato"
+        "branch":       "OSS"
     },
     {
         "repository":   "vendor_realme_r5x",
