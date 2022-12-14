@@ -1,0 +1,2 @@
+allow crash_dump vendor_overlay_file:file { read };
+allow crash_dump app_data_file:file { read map };
