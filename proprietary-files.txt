@@ -3499,6 +3499,16 @@ vendor/firmware/tp/19631/RA105A004.ini
 vendor/firmware/tp/19631/nt_hlt_fw.bin
 vendor/firmware/tp/19631/nt_hlt_fw_signed.bin
 vendor/firmware/tp/19631/RA105A0.bin
+vendor/firmware/tp/19743/ilitek_fw_inx_signed.bin
+vendor/firmware/tp/19743/ilitek_fw_xlgg3_signed.bin
+vendor/firmware/tp/19743/nt_hltg_fw.bin
+vendor/firmware/tp/19743/nt_hltg_fw_mp.bin
+vendor/firmware/tp/19743/nt_hltg_fw_signed.bin
+vendor/firmware/tp/19743/nt_hlt_fw.bin
+vendor/firmware/tp/19743/nt_hlt_fw_mp.bin
+vendor/firmware/tp/19743/nt_hlt_fw_signed.bin
+vendor/firmware/tp/19743/RA170A1.bin
+vendor/firmware/tp/19743/RA170X1.bin
 
 # TUI (Trusted User Interface) - from LA.UM.9.11.r1-03900-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
