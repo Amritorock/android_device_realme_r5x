@@ -34,3 +34,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="r5x" \
     PRIVATE_BUILD_DESC="trinket-user 10 QKQ1.200209.002 release-keys"
 
+# Build info
+BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ1A.221205.011/9244662:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.build.fingerprint=$(BUILD_FINGERPRINT)
