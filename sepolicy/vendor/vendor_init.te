@@ -15,11 +15,16 @@ allow vendor_init system_data_file:lnk_file { create };
 allow vendor_init wifi_data_file:dir { getattr };
 allow vendor_init vendor_camera_prop:property_service { set };
 
+allow vendor_init proc_sched:file { write };
+allow vendor_init proc_dirty:file { write };
+
 set_prop(vendor_init, vendor_fling_prop)
 set_prop(vendor_init, vendor_media_prop)
 set_prop(vendor_init, vendor_ims_prop)
 set_prop(vendor_init, vendor_radio_prop)
 set_prop(vendor_init, vendor_time_prop)
+
+get_prop(vendor_init, oppo_debug_prop)
 
 # Allow vendor init to access persist.vendor.fingerprint.fp_id
 get_prop(vendor_init, oppo_fingerprint_prop) 
