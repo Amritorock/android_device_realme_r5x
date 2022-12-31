@@ -96,7 +96,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture \
     vidc.enc.dcvs.extra-buff-count=2 \
     vendor.camera.not.cts.apk=1 \
-    vendor.camera.not.ctsverify.apk=1
+    vendor.camera.not.ctsverify.apk=1 \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.orca,com.instagram.android,org.telegram.messenger
 
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \
