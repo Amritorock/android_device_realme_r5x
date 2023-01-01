@@ -51,6 +51,10 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_downmigrate 75
     write /proc/sys/kernel/sched_child_runs_first 1
 
+    # Setup Cpu Default Scaling Frequency 
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1804800
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 2016000
+
     # Setup EAS tunables
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 1000
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 1000
