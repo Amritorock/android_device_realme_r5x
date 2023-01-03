@@ -14,6 +14,9 @@ vendor.fingerprint.optical.             u:object_r:oppo_fingerprint_prop:s0
 oppo.fingerprint.                       u:object_r:oppo_fingerprint_prop:s0
 oppo.fpc.sw.version                     u:object_r:oppo_fingerprint_prop:s0
 
+# Oppo Prjversion Prop
+ro.product.prjversion                   u:object_r:exported_default_prop:s0
+
 # GSM prop
 gsm.operator.numeric                    u:object_r:radio_prop:s0
 
