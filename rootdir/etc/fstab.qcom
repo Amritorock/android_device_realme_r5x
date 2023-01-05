@@ -61,4 +61,4 @@ odm						/odm			ext4	ro								wait,logical,first_stage_mount
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.0.auto*     /storage/usbotg    vfat    nosuid,nodev         wait,voldmanaged=usbotg:auto
 
 # ZRAM
-/dev/block/zram0                                        none               swap    defaults                                             zramsize=50%,max_comp_streams=8
+/dev/block/zram0                                        none               swap    defaults                                             zramsize=60%,max_comp_streams=8
