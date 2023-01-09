@@ -28,3 +28,4 @@ get_prop(vendor_init, oppo_debug_prop)
 
 # Allow vendor init to access persist.vendor.fingerprint.fp_id
 get_prop(vendor_init, oppo_fingerprint_prop) 
+set_prop(vendor_init, oppo_fingerprint_prop) 

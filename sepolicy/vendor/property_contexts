@@ -13,6 +13,8 @@ oppo.optical.                           u:object_r:oppo_fingerprint_prop:s0
 vendor.fingerprint.optical.             u:object_r:oppo_fingerprint_prop:s0
 oppo.fingerprint.                       u:object_r:oppo_fingerprint_prop:s0
 oppo.fpc.sw.version                     u:object_r:oppo_fingerprint_prop:s0
+persist.sys.fp.vendor                   u:object_r:oppo_fingerprint_prop:s0
+init.svc.fps_hal                        u:object_r:oppo_fingerprint_prop:s0
 
 # Oppo Exported Default Props
 ro.product.prjversion                   u:object_r:exported_default_prop:s0
