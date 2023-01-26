@@ -14,6 +14,9 @@ persist.vendor.btstack.absvolfeature=true
 persist.vendor.btstack.enable.splita2dp=false
 vendor.bluetooth.soc=cherokee
 
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Camera
 camera.disable_zsl_mode=1
 persist.camera.aifb=1
