@@ -1,3 +1,4 @@
 type nfc_hwservice, hwservice_manager_type;
 type hal_oppo_hwservice, hwservice_manager_type;
 type oppoalgo_daemon_hwservice, hwservice_manager_type;
+type hal_bt_channel_avoidance_hwservice, hwservice_manager_type;

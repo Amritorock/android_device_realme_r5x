@@ -1,3 +1,6 @@
+# Bluetooth
+vendor.qti.hardware.bt_channel_avoidance::IBTChannelAvoidance                              u:object_r:hal_bt_channel_avoidance_hwservice:s0
+
 # Camera
 vendor.oppo.hardware.camera.oppoAlgoProcessService::IOppoAlgoProcessService  u:object_r:hal_camera_hwservice:s0
 vendor.oppo.hardware.camera.oppopostproc::ICameraPostProc                    u:object_r:hal_camera_hwservice:s0
