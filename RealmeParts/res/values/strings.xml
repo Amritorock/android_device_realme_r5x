@@ -74,12 +74,7 @@
 
     <!-- Vibration Slider -->
     <string name="vibrator_intensity_control">Vibration</string>
-    <string name="vmax_override_mode_title">Override Vibration Intensity</string>
-    <string name="vmax_override_mode_summary">Overrides vibration intensity value of Notification for all events</string>
-    <string name="vmax_override_mode_footer">Uses the value set for incomming call vibration intensity</string>
     <string name="system_strength_title">System</string>
-    <string name="notification_strength_title">Notification</string>
-    <string name="call_strength_title">Call</string>
 
     <!-- USB fastcharge -->
     <string name="fastcharge_control">USB Fastcharge Control</string>

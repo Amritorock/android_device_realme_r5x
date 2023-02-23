@@ -31,8 +31,6 @@ import androidx.preference.TwoStatePreference;
 
 import com.realmeparts.settings.doze.DozeSettingsActivity;
 import com.realmeparts.settings.kcal.KCalSettingsActivity;
-import com.realmeparts.settings.vibration.CallVibratorStrengthPreference;
-import com.realmeparts.settings.vibration.NotificationVibratorStrengthPreference;
 import com.realmeparts.settings.vibration.VibratorStrengthPreference;
 
 public class RealmeParts extends PreferenceFragment {
@@ -43,12 +41,8 @@ public class RealmeParts extends PreferenceFragment {
     public static final String PREF_OTG_SWITCH = "otg";
     public static final String USB_OTG_SWITCH_PATH = "/sys/class/power_supply/usb/otg_switch";
 
-    public static final String PREF_VMAX_OVERRIDE_SWITCH = "vmax_override";
-    public static final String VMAX_OVERRIDE_PATH = "/sys/class/leds/vibrator/vmax_override";
-
     private static TwoStatePreference mUSBFastChgModeSwitch;
     private static TwoStatePreference mOTGModeSwitch;
-    private static TwoStatePreference mVmaxOverrideModeSwitch;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -83,19 +77,8 @@ public class RealmeParts extends PreferenceFragment {
             }
         });
 
-        mVmaxOverrideModeSwitch = (TwoStatePreference) findPreference(PREF_VMAX_OVERRIDE_SWITCH);
-        mVmaxOverrideModeSwitch.setEnabled(VibratorOverrideModeSwitch.isSupported());
-        mVmaxOverrideModeSwitch.setChecked(VibratorOverrideModeSwitch.isCurrentlyEnabled(this.getContext()));
-        mVmaxOverrideModeSwitch.setOnPreferenceChangeListener(new VibratorOverrideModeSwitch(getContext()));
-
         VibratorStrengthPreference mVibratorStrength = findPreference("vib_strength");
         mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
-
-        CallVibratorStrengthPreference mCallVibratorStrength = findPreference("call_vib_strength");
-        mCallVibratorStrength.setEnabled(CallVibratorStrengthPreference.isSupported());
-
-        NotificationVibratorStrengthPreference mNotificationVibratorStrength = findPreference("notif_vib_strength");
-        mNotificationVibratorStrength.setEnabled(NotificationVibratorStrengthPreference.isSupported());
 
         mUSBFastChgModeSwitch = (TwoStatePreference) findPreference(PREF_USB_FAST_CHARGE_SWITCH);
         mUSBFastChgModeSwitch.setEnabled(USBFastChgModeSwitch.isSupported());
