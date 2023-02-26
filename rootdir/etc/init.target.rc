@@ -499,6 +499,9 @@ service oppoalgo_daemon /vendor/bin/oppoalgo_daemon
 on property:sys.boot_completed=1
     start oppoalgo_daemon
 
+# Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 # Include logger service
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
     class main
