@@ -258,7 +258,7 @@ ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # SoC
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM6125
 
 # Time
