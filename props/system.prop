@@ -80,9 +80,6 @@ persist.mm.enable.prefetch=true
 # Netflix
 ro.netflix.bsp_rev=Q6125-17995-1
 
-# One handed mode
-ro.support_one_handed_mode=true
-
 # Radio
 persist.radio.VT_CAM_INTERFACE=1
 persist.vendor.qti.telephony.vt_cam_interface=1
