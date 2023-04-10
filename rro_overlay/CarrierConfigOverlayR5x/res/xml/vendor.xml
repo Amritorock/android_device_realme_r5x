@@ -2675,7 +2675,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="rtt_downgrade_supported_bool" value="true"/>
         <boolean name="rtt_auto_upgrade_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="070">
@@ -2692,7 +2692,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="rtt_auto_upgrade_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="080">
@@ -2726,7 +2726,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="rtt_auto_upgrade_bool" value="true" />
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="150">
@@ -2743,7 +2743,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="170">
@@ -2759,7 +2759,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="280">
@@ -2775,7 +2775,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="require_apn_filtering_with_radio_capability_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="380">
@@ -2791,7 +2791,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="410">
@@ -2810,7 +2810,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <string name="carrier_name_string"></string>
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
         <boolean name="require_apn_filtering_with_radio_capability_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="config_support_set_all_call_barring_over_ims" value="false"/>
     </carrier_config>
 
@@ -2827,7 +2827,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="680">
@@ -2844,7 +2844,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_merging_rtt_calls_bool" value="true"/>
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="950">
@@ -2864,7 +2864,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
             <item value="*82"/>
         </string-array>
         <boolean name="carrier_supports_caller_id_vertical_service_codes_bool" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="310" mnc="260">
@@ -2875,7 +2875,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_supports_wifi_only_bool" value="true"/>
         <boolean name="allow_one_way_accept_video_call" value="false" />
         <boolean name="carrier_call_composer_supported_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <boolean name="carrier_b2c_enriched_calling_supported_bool" value="true"/>
         <int name="default_rtt_mode_int" value="1" />
@@ -2886,7 +2886,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="160">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -2895,7 +2895,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="200">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -2910,7 +2910,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_supports_wifi_only_bool" value="true"/>
         <boolean name="allow_one_way_accept_video_call" value="false" />
         <boolean name="carrier_call_composer_supported_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <boolean name="carrier_b2c_enriched_calling_supported_bool" value="true"/>
         <int name="default_rtt_mode_int" value="1" />
@@ -2920,7 +2920,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="220">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -2929,7 +2929,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="230">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -2938,7 +2938,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="240">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -2947,7 +2947,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="250">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -2956,7 +2956,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="270">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -2976,7 +2976,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_supports_wifi_only_bool" value="true"/>
         <boolean name="allow_one_way_accept_video_call" value="false" />
         <boolean name="carrier_call_composer_supported_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <boolean name="carrier_b2c_enriched_calling_supported_bool" value="true"/>
         <int name="default_rtt_mode_int" value="1" />
@@ -2986,7 +2986,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="490">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -3018,7 +3018,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="660">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -3027,7 +3027,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="310" mnc="800">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_enable_mms_with_mobile_data_off" value="true" />
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="force_home_network_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
@@ -3052,7 +3052,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_volte_tty_supported_bool" value="false" />
         <boolean name="require_apn_filtering_with_radio_capability_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="311" mnc="480">
@@ -3064,7 +3064,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_call_composer_supported_bool" value="true"/>
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
         <boolean name="use_sms_callback_mode_bool" value="true"/>
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
         <boolean name="show_rtt_visibility_setting_bool" value="true" />
         <boolean name="ignore_rtt_mode_setting_bool" value="true" />
         <int name="default_rtt_mode_int" value="1" />
