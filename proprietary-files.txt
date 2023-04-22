@@ -2769,16 +2769,16 @@ vendor/firmware/f_1511.b06
 vendor/firmware/f_1511.b07
 vendor/firmware/f_1511.mdt
 
-# Fingerprint firmware Egis
-vendor/firmware/egista.b00
-vendor/firmware/egista.b01
-vendor/firmware/egista.b02
-vendor/firmware/egista.b03
-vendor/firmware/egista.b04
-vendor/firmware/egista.b05
-vendor/firmware/egista.b06
-vendor/firmware/egista.b07
-vendor/firmware/egista.mdt
+# Fingerprint firmware Egis - from trinket-user-9-PKQ1.190616.001-eng.root.20200515.044412-release-keys
+vendor/firmware/egista.b00|87d6069939087dec5501a5fa40ae6e04
+vendor/firmware/egista.b01|2819cfcc69e5389ab7f197f8707df99b
+vendor/firmware/egista.b02|9258df04d196667c303c9c9ca2a982ff
+vendor/firmware/egista.b03|1df32c9fc30b477da1652e9b0b150b37
+vendor/firmware/egista.b04|fd766d1b01eb36c509e2aaceca04d7e0
+vendor/firmware/egista.b05|c703f702f73ea8ed895a595854abb20d
+vendor/firmware/egista.b06|a112d30b7aea0d86b8762600fa084440
+vendor/firmware/egista.b07|9e4d7eb407c17a1b6e69c36d116bc53b
+vendor/firmware/egista.mdt|60c22131f3c3edc8075f6f11cd88ec85
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
