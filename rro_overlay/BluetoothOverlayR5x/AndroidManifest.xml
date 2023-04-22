@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.android.bluetooth.overlay.realme_r5x">
+    <overlay android:targetPackage="com.android.bluetooth" android:targetName="BluetoothCustomization" android:isStatic="true" />
+</manifest>
