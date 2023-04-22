@@ -2753,10 +2753,13 @@ vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/libets_teeclient_v2.so
+
+# Fingerprint ( Egis ) - from RMX2030EX_11_A.19
+vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service-rbs|36f15f53db8aa8c10898f8ff063e687b9501287c
+vendor/lib64/hw/libets_teeclient_v2.so|43d9cbdec565d041b21409a055640cbeca48d311
 
 # Fingerprint - from moto_troika 9/PSB29.105-27/fd362:user/release-keys
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs|ad879e7ed06f50c804e79fb9312614c4fdef49e5
 
 # Fingerprint firmware
 vendor/firmware/f_1511.b00
