@@ -25,9 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /vendor/etc/init/hw/init.oppo.face.rc
 import /vendor/etc/init/hw/init.oppo.fingerprints.rc
-import /vendor/etc/init/hw/init.oppo.product.rc
 import /vendor/etc/init/hw/init.oppo.reserve.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.msm.usb.configfs.rc

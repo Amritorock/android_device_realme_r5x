@@ -391,17 +391,5 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
     </Decoders>
     <Include href="media_codecs_google_video.xml" />
-    <!-- #ifdef VENDOR_EDIT-->
-    <!-- YunMang.Xiao@PSW.MM.MediaServer.Dolby. 2019/08/14, add for dolby -->
-    <Include href="media_codecs_dolby_audio.xml" />
-    <!-- #endif VENDOR_EDIT-->
-    <!-- #ifdef VENDOR_EDIT -->
-    <!-- dashuang.zhang@PSW.MM.MediaServer.Record.1194839, 2019/06/17, -->
-    <!-- Add for wechat video using voh264enc. -->
-    <Include href="media_codecs_oppo_video.xml" />
-    <!-- #endif //VENDOR_EDIT -->
-    <!--#ifdef VENDOR_EDIT-->
-    <!--//Dashuang.zhang@PSW.MM.MediaServer.Player.1179795, 2019/06/05, Add for ffmpeg integration-->
-    <Include href="media_codecs_ffmpeg.xml" />
     <!--#endif /* VENDOR_EDIT */-->
 </MediaCodecs>
