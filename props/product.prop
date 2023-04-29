@@ -5,7 +5,7 @@ ro.lmk.filecache_min_kb=153600
 ro.config.per_app_memcg=false
 
 # Graphics
-debug.hwui.renderer=skiagl
+debug.hwui.renderer=opengl
 renderthread.skia.reduceopstasksplitting=true 
 debug.renderengine.backend=skiaglthreaded
 
