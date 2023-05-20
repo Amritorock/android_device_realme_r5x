@@ -1,6 +1,7 @@
 # LMKD
 ro.config.low_ram=false
 ro.lmk.kill_timeout_ms=50
+ro.lmk.filecache_min_kb=153600
 ro.config.per_app_memcg=false
 
 # Graphics
