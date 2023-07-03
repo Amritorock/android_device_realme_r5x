@@ -536,6 +536,26 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
+    <carrier_config mcc="515" mnc="01">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="03">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="05">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="66">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
     <carrier_config mcc="405" mnc="840">
         <boolean name="carrier_vt_available_bool" value="false" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
