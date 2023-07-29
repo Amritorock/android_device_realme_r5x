@@ -95,10 +95,6 @@ telephony.lteOnCdmaDevice=1
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
-# WFD
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
-
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440

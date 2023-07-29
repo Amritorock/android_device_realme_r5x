@@ -472,10 +472,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>wifidisplaydshal</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.drm</name>
-        <transport>hwbinder</transport>
-    </hal>
     <!--eSE Powermanager-->
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
