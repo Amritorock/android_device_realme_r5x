@@ -206,6 +206,32 @@
              channels="2" />
     </EncoderProfile>
 
+    <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
+      	    <Video codec="h264"
+            	   bitRate="42000000"
+            	   width="4096"
+            	   height="2160"
+            	   frameRate="24" />
+
+            <Audio codec="aac"
+                   bitRate="96000"
+                   sampleRate="48000"
+                   channels="1" />
+        </EncoderProfile>
+
+        <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+            	   bitRate="42000000"
+            	   width="3840"
+            	   height="2160"
+            	   frameRate="30" />
+
+            <Audio codec="aac"
+                   bitRate="96000"
+                   sampleRate="48000"
+                   channels="1" />
+    	</EncoderProfile>
+
 <!-- #ifndef VENDOR_EDIT -->
 <!-- HuXin@PSW.MM.MediaServer.CTS.1784928, 2019/02/13, -->
 <!-- Remove for deleting 4K video recording -->
