@@ -23,7 +23,6 @@ import android.content.Intent;
 import android.provider.Settings;
 import android.util.Log;
 
-import com.realmeparts.settings.doze.DozeUtils;
 import com.realmeparts.settings.kcal.Utils;
 import com.realmeparts.settings.vibration.VibratorStrengthPreference;
 
@@ -35,7 +34,6 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Utils {
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
-        DozeUtils.checkDozeService(context);
         // System
         VibratorStrengthPreference.restore(context);
 

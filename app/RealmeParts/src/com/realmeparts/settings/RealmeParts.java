@@ -29,7 +29,6 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
 
-import com.realmeparts.settings.doze.DozeSettingsActivity;
 import com.realmeparts.settings.kcal.KCalSettingsActivity;
 import com.realmeparts.settings.vibration.VibratorStrengthPreference;
 
@@ -57,16 +56,6 @@ public class RealmeParts extends PreferenceFragment {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.realmeparts, rootKey);
-        Preference mDozePref = findPreference("doze");
-        mDozePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                Intent intent = new Intent(getContext(), DozeSettingsActivity.class);
-                startActivity(intent);
-                return true;
-            }
-        });
-
         Preference mKCal = findPreference("device_kcal");
         mKCal.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override

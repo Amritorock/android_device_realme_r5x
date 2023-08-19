@@ -31,8 +31,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/realmeparts"
@@ -79,10 +77,6 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".doze.DozeService"
-                 android:permission="RealmeDozeService">
-        </service>
-
         <service
             android:name=".UsbFastChgToggleService"
             android:icon="@drawable/ic_usb_fastcharge"
@@ -103,13 +97,6 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase">
-        </activity>
 
         <activity
             android:name=".kcal.KCalSettingsActivity"
