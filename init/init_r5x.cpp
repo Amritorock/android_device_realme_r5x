@@ -98,7 +98,7 @@ void setRMX(unsigned int variant)
     prop[0] = {
         build_desc,
         "realme/RMX1911/RMX1911:10/QKQ1.200209.002/1608537052:user/release-keys",
-        "RMX1911",
+        "Realme 5",
         "RMX1911",
     };
 
@@ -106,7 +106,7 @@ void setRMX(unsigned int variant)
     prop[1] = {
         build_desc,
         "realme/RMX1925/RMX1925:10/QKQ1.200209.002/1608537052:user/release-keys",
-        "RMX1925",
+        "Realme 5s",
         "RMX1925",
     };
 
@@ -114,7 +114,7 @@ void setRMX(unsigned int variant)
     prop[2] = {
         build_desc,
         "realme/RMX1927/RMX1927:10/QKQ1.200209.002/1608537052:user/release-keys",
-        "RMX1927",
+        "Realme 5 NFC",
         "RMX1927",
     };
 
@@ -122,7 +122,7 @@ void setRMX(unsigned int variant)
     prop[3] = {
         build_desc,
         "realme/RMX2030/RMX2030:10/QKQ1.200209.002/1608537052:user/release-keys",
-        "RMX2030",
+        "Realme 5i",
         "RMX2030",
     };
 
