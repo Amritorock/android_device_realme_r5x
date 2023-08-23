@@ -199,10 +199,6 @@ vendor.vidc.enc.disable_bframes=1
 vendor.vidc.enc.disable.pq=true
 ro.media.recorder-max-base-layer-fps=60
 
-# PASR
-vendor.power.pasr.enabled=true
-vendor.pasr.activemode.enabled=true
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
