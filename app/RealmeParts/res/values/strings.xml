@@ -35,7 +35,7 @@
 
     <!-- RealmeParts strings -->
     <string name="realmeparts">RealmeParts</string>
-    <string name="realmeparts_summary">Additional Tweaks</string>
+    <string name="realmeparts_summary">Additional Device Settings</string>
 
     <!-- Vibration Slider -->
     <string name="vibrator_intensity_control">Vibration</string>
@@ -112,4 +112,14 @@
     <string name="otg_mode_summary">Enable USB-OTG power supply for external headphones and flash drives</string>
     <string name="otg_mode_title">Enable USB-OTG</string>
     <string name="tile_otg_mode">Enable USB-OTG</string>
+
+    <!-- Audio -->
+    <string name="audio_title">Audio</string>
+
+    <string name="audio_gain_settings">Audio Amplification</string>
+
+    <!-- Audio amplification -->
+    <string name="headphone_gain">Headphone gain</string>
+    <string name="microphone_gain">Microphone gain</string>
+    <string name="speaker_gain">Speaker gain</string>
 </resources>
