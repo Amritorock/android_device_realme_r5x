@@ -28,6 +28,16 @@
                 android:fragment="com.realmeparts.settings.audio.SoundControlSettingsActivity"
                 android:title="@string/audio_gain_settings"
                 android:icon="@drawable/ic_audio" />
+         
+      <Preference
+                android:key="clear_speaker"
+                android:title="@string/clear_speaker_title"
+                android:summary="@string/clear_speaker_summary">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetClass="com.realmeparts.settings.speaker.ClearSpeakerActivity"
+                    android:targetPackage="com.realmeparts.settings" />
+         </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
