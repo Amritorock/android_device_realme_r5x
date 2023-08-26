@@ -100,7 +100,8 @@
 
         <activity
             android:name=".audio.SoundControlSettingsActivity"
-            android:exported="false"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase"
             android:label="@string/audio_gain_settings">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -112,7 +113,8 @@
         <activity
             android:name=".speaker.ClearSpeakerActivity"
             android:label="@string/clear_speaker_title"
-            android:theme="@style/Theme.Main">
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
