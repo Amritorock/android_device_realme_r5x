@@ -32,6 +32,7 @@
       <Preference
                 android:key="clear_speaker"
                 android:title="@string/clear_speaker_title"
+                android:icon="@drawable/ic_speaker_cleaner_icon"
                 android:summary="@string/clear_speaker_summary">
                 <intent
                     android:action="android.intent.action.MAIN"
