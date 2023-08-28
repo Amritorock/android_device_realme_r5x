@@ -67,7 +67,7 @@ public class ClearSpeakerFragment extends PreferenceFragment implements
                     mHandler.removeCallbacksAndMessages(null);
                     mHandler.postDelayed(() -> {
                         stopPlaying();
-                    }, 30000);
+                    }, 60000);
                     return true;
                 }
             }
