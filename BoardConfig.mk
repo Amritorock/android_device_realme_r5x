@@ -101,6 +101,9 @@ TARGET_KERNEL_SOURCE := kernel/realme/r5x
 TARGET_KERNEL_CONFIG := r5x_defconfig
 TARGET_KERNEL_NO_GCC := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/mmi_charging_enable
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

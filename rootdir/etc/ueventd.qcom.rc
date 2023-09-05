@@ -411,3 +411,6 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
 /sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-03/1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d300/leds/led:switch_0 brightness 0660 cameraserver camera
 /sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-03/1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d300/leds/led:torch_0 brightness 0660 cameraserver camera
 /sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-03/1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d300/leds/led:torch_1 brightness 0660 cameraserver camera
+
+# Charger
+/sys/class/power_supply/battery  mmi_charging_enable    0660    system  system
