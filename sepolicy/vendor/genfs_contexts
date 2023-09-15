@@ -30,6 +30,9 @@ genfscon sysfs /devices/virtual/wakeup/wakeup[2-97][2-97]/prevent_suspend_time_m
 genfscon sysfs /devices/virtual/wakeup/wakeup[2-97][2-97]/total_time_ms u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup[2-97][2-97]/wakeup_count u:object_r:sysfs_wakeup:s0
 
+# Lineage Health
+genfscon sysfs /class/power_supply/battery/mmi_charging_enable  u:object_r:sysfs_usb_supply:s0
+
 # Battery Saver
 genfscon sysfs /module/battery_saver/parameters/enabled  u:object_r:sysfs_battery_saver:s0
 
