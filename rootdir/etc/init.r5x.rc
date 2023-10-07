@@ -11,11 +11,6 @@ on boot
     chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
     chmod 0660 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
 
-on property:persist.sys.device_provisioned=1
-    # Use foreground cpuset for dex2oat
-    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,5,6,7
-    setprop dalvik.vm.dex2oat-threads 6
-
 on property:sys.boot_completed=1
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/schedtune.boost 0
