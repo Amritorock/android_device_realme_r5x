@@ -209,7 +209,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service \
+    android.hardware.nfc-service.nxp \
     nqnfcinfo \
     Tag \
     com.android.nfc_extras
@@ -294,8 +294,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/commonsys-intf/display \
-    vendor/qcom/opensource/wfd-commonsys \
-    vendor/nxp/opensource/pn5xx
+    vendor/qcom/opensource/wfd-commonsys
 
 # Task Profiles
 PRODUCT_COPY_FILES += \

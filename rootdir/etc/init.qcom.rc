@@ -830,11 +830,11 @@ service vendor.qti.hardware.display.allocator /vendor/bin/hw/vendor.qti.hardware
 on property:persist.sys.device_provisioned=1
 
 # NFC
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
-    class hal
+    class early_hal
     user nfc
-    group nfc
+    group nfc drmrpc system
     disabled
 
 on property:ro.boot.product.hardware.sku=nfc_ese

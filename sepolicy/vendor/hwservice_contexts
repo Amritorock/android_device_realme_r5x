@@ -10,10 +10,6 @@ vendor.oppo.hardware.biometrics.fingerprint::IBiometricsFingerprint          u:o
 vendor.egistec.hardware.fingerprint::IBiometricsFingerprintRbs               u:object_r:hal_fingerprint_hwservice:s0
 android.frameworks.fingerprintservice::IFingerprintHalService                u:object_r:hal_fingerprint_hwservice:s0
 
-# NFC
-vendor.nxp.nxpnfc::INxpNfc                                      u:object_r:nfc_hwservice:s0
-vendor.nxp.nxpese::INxpEse                                      u:object_r:nfc_hwservice:s0
-
 # Oppo
 vendor.oppo.hardware.hypnus::IHypnusUtil                        u:object_r:hal_oppo_hwservice:s0
 vendor.oppo.hardware.commondcs::ICommonDcsHalService            u:object_r:hal_oppo_hwservice:s0

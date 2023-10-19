@@ -73,9 +73,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
      hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
      hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml
 
-ODM_MANIFEST_SKUS += nfc_ese
-ODM_MANIFEST_NFC_ESE_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc_ese.xml
-
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
