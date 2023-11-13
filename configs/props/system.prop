@@ -15,9 +15,6 @@ ro.camera.sensor.aux2m=1
 ro.camera.temperature.limit=450
 vidc.enc.dcvs.extra-buff-count=2
 
-# Charger
-ro.charger.enable_suspend=true
-
 # CNE
 persist.vendor.cne.feature=1
 
