@@ -1,0 +1,1 @@
+dontaudit odrefresh self:capability { kill sys_admin };
