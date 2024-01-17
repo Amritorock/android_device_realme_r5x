@@ -16,10 +16,12 @@
 
 package com.realmeparts.settings.speaker;
 
-import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import androidx.fragment.app.Fragment;
+
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
 
@@ -27,11 +29,11 @@ public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
         ClearSpeakerFragment clearSpeakerFragment;
         if (fragment == null) {
             clearSpeakerFragment = new ClearSpeakerFragment();
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, clearSpeakerFragment)
                     .commit();
         }

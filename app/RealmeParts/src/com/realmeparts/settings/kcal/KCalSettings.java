@@ -20,7 +20,7 @@ package com.realmeparts.settings.kcal;
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.provider.Settings;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.Preference;
 
 import com.realmeparts.settings.FileUtils;
@@ -28,7 +28,7 @@ import com.realmeparts.settings.R;
 import com.realmeparts.settings.preference.SecureSettingSeekBarPreference;
 import com.realmeparts.settings.preference.SecureSettingSwitchPreference;
 
-public class KCalSettings extends PreferenceFragment implements
+public class KCalSettings extends PreferenceFragmentCompat implements
         Preference.OnPreferenceChangeListener, Utils {
 
     private SecureSettingSwitchPreference mEnabled;

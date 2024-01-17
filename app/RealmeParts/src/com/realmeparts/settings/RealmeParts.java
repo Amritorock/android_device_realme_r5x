@@ -20,7 +20,7 @@ package com.realmeparts.settings;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceCategory;
@@ -32,7 +32,7 @@ import androidx.preference.TwoStatePreference;
 import com.realmeparts.settings.kcal.KCalSettingsActivity;
 import com.realmeparts.settings.vibration.VibratorStrengthPreference;
 
-public class RealmeParts extends PreferenceFragment {
+public class RealmeParts extends PreferenceFragmentCompat {
 
     public static final String PREF_USB_FAST_CHARGE_SWITCH = "fastcharge";
     public static final String USB_FAST_CHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";

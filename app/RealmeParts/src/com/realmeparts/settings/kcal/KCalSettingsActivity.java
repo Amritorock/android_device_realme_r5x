@@ -18,11 +18,12 @@
 package com.realmeparts.settings.kcal;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import androidx.fragment.app.Fragment;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
@@ -37,10 +38,10 @@ public class KCalSettingsActivity extends CollapsingToolbarBaseActivity implemen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kcal);
 
-        Fragment fragment = getFragmentManager().findFragmentById(R.id.fragment_kcal);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_kcal);
         if (fragment == null) {
             mKCalSettingsFragment = new KCalSettings();
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_kcal, mKCalSettingsFragment)
                     .commit();
         } else {
@@ -64,7 +65,7 @@ public class KCalSettingsActivity extends CollapsingToolbarBaseActivity implemen
                 return true;
 
             case R.id.action_preset:
-                new PresetDialog().show(getFragmentManager(),
+                new PresetDialog().show(getSupportFragmentManager(),
                         KCalSettingsActivity.class.getName(), mKCalSettingsFragment);
                 return true;
 

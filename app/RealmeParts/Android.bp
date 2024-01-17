@@ -19,6 +19,7 @@ android_app {
     static_libs: [
         "androidx.annotation_annotation",
         "androidx.core_core",
+        "androidx.fragment_fragment",
         "androidx.preference_preference",
         "com.google.android.material_material",
     ],
