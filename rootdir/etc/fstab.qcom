@@ -57,7 +57,7 @@ odm						/odm			ext4	ro								wait,logical,first_stage_mount,readahead_size_kb=
 # and fails if it does not find it.
 /devices/platform/soc/4784000.sdhci/mmc_host*           /storage/sdcard1         auto    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto
 /devices/platform/soc/1da4000.ufshc_card/host*          /storage/sdcard1         auto    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto
-/devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.0.auto*     /storage/usbotg    vfat    nosuid,nodev         wait,voldmanaged=usbotg:auto
+/devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.0.auto*   auto                     auto    defaults                                             wait,voldmanaged=usbotg:auto
 
 # ZRAM
 /dev/block/zram0                                        none               swap    defaults                                             zramsize=60%
