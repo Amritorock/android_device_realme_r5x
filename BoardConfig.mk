@@ -6,8 +6,6 @@
 
 DEVICE_PATH := device/realme/r5x
 
-BOARD_VENDOR := realme
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
