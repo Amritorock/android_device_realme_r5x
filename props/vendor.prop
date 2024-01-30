@@ -147,6 +147,7 @@ ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
 
 # Display
+debug.sf.enable_gl_backpressure=1
 debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_client_composition_cache=1
 debug.sf.treat_170m_as_sRGB=1
