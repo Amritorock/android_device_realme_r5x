@@ -174,10 +174,6 @@ debug.sf.enable_egl_image_tracker=1
 # DRM
 drm.service.enabled=true
 
-# Fling
-ro.min.fling_velocity=160
-ro.max.fling_velocity=20000
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 

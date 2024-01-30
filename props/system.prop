@@ -47,6 +47,10 @@ ro.vendor.qti.va_odm.support=1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Fling
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # Graphics
 persist.hwc.enable_vds=1
 
