@@ -461,8 +461,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # Wifi
 PRODUCT_PACKAGES += \
