@@ -94,3 +94,6 @@
 
 # discard_max_bytes
 /sys/devices/platform/soc/4744000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/discard_max_bytes         u:object_r:vendor_sysfs_mmc_host:s0
+
+# read_ahead_kb
+/sys/devices/platform/soc/4744000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb    u:object_r:vendor_sysfs_mmc_host:s0
