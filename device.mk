@@ -265,7 +265,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
-    libstagefright_omx.vendor
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -323,6 +324,20 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor \
+    libcodec2_soft_avcdec \
+    libcodec2_soft_avcenc \
+    libcodec2_soft_h263dec \
+    libcodec2_soft_h263enc \
+    libcodec2_soft_mpeg4dec \
+    libcodec2_soft_mpeg4enc \
+    libcodec2_soft_vp8dec \
+    libcodec2_soft_vp8enc \
+    libcodec2_soft_vp9dec \
+    libcodec2_soft_vp9enc \
+    libcodec2_soft_hevcdec \
+    libcodec2_soft_hevcenc \
     libc2dcolorconvert \
     libmm-omxcore \
     libOmxAacEnc \
@@ -335,6 +350,7 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libplatformconfig \
     libstagefrighthw \
+    libstagefright_omx.vendor \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
 # Overlays
