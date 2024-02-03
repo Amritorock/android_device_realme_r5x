@@ -5,11 +5,11 @@ audio.sys.offload.pstimeout.secs=3
 # Bluetooth
 persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac
 persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.bt.a2dp.hal.implementation=true
 persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.btstack.absvolfeature=true
 persist.vendor.btstack.enable.splita2dp=false
 vendor.bluetooth.soc=cherokee
@@ -29,6 +29,7 @@ ro.camera.hfr.enable=1
 ro.camera.relight.enable=0
 ro.camera.sensor.aux2m=1
 ro.camera.temperature.limit=450
+vidc.enc.dcvs.extra-buff-count=2
 
 # Charger
 ro.charger.enable_suspend=true
@@ -37,6 +38,11 @@ ro.charger.enable_suspend=true
 persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=11
 persist.vendor.dpmhalservice.enable=1
+
+# Dalvik
+ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.dex2oat_thread_count=8
+persist.bg.dexopt.enable=true
 
 # Data
 persist.data.df.dev_name=rmnet_usb0
