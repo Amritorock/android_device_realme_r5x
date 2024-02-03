@@ -31,6 +31,8 @@ bluetooth.profile.sap.server.enabled?=true
 bluetooth.profile.ccp.server.enabled?=true
 bluetooth.profile.vcp.controller.enabled?=true
 persist.vendor.btstack.enable.lpa?=true
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
+
 
 # LMKD
 ro.config.low_ram=false
