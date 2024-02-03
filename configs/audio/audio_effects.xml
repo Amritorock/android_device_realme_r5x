@@ -39,20 +39,8 @@
         <library name="offload_bundle" path="libqcompostprocbundle.so"/>
         <library name="audio_pre_processing" path="libqcomvoiceprocessing.so"/>
         <library name="volume_listener" path="libvolumelistener.so"/>
-        <library name="audiosphere" path="libasphere.so"/>
-        <library name="shoebox" path="libshoebox.so"/>
         <library name="dirac_gef" path="libdiraceffect.so"/>
-
-        <!-- #ifdef VENDOR_EDIT-->
-        <!-- YunMang.Xiao@PSW.MM.Dolby, 2019/08/14, add for dolby -->
-        <!--DOLBY DAP-->
-        <library name="dap" path="libswdap.so"/>
-        <!--DOLBY END-->
-         <!--DOLBY VQE-->
-        <library name="vqe" path="libswvqe.so"/>
-        <!--DOLBY END-->
-        <!-- #endif VENDOR_EDIT-->
-	<library name="dirac" path="libdirac.so"/>
+        <library name="dirac" path="libdirac.so"/>
     </libraries>
     <effects>
         <effectProxy name="bassboost" library="proxy" uuid="14804144-a5ee-4d24-aa88-0002a5d5c51b">
@@ -98,45 +86,13 @@
         <effect name="alarm_helper" library="volume_listener" uuid="09f303e2-0590-11e5-8fdb-0025b32654a0"/>
         <effect name="voice_helper" library="volume_listener" uuid="0ace5c08-0590-11e5-ae9e-0025b32654a0"/>
         <effect name="notification_helper" library="volume_listener" uuid="0b776dde-0590-11e5-81ba-0025b32654a0"/>
-        <effect name="audiosphere" library="audiosphere" uuid="184e62ab-2d19-4364-9d1b-c0a40733866c"/>
-        <effect name="shoebox" library="shoebox" uuid="1eab784c-1a36-4b2a-b7fc-e34c44cab89e"/>
         <effect name="dirac_gef" library="dirac_gef" uuid="3799D6D1-22C5-43C3-B3EC-D664CF8D2F0D"/>
-
-        <!-- #ifdef VENDOR_EDIT-->
-        <!--YunMang.Xiao@PSW.MM.Dolby, 2019/08/14, add for dolby -->
-        <!--DOLBY DAP-->
-        <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
-        <!--DOLBY END-->
-        <!--DOLBY VQE-->
-        <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
-        <!--DOLBY END-->
-        <!-- #endif VENDOR_EDIT-->
         <effect name="dirac" library="dirac" uuid="e069d9e0-8329-11df-9168-0002a5d5c51b"/>
     </effects>
     <postprocess>
-    <!-- #ifndef VENDOR_EDIT-->
-        <!-- YunMang.Xiao@PSW.MM.Dolby, 2019/08/14, add for dolby -->
-    <!--
-        <stream type="music">
-            <apply effect="music_helper"/>
-        </stream>
-        <stream type="ring">
-            <apply effect="ring_helper"/>
-        </stream>
-        <stream type="alarm">
-            <apply effect="alarm_helper"/>
-        </stream> -->
-     <!-- #endif VENDOR_EDIT-->
         <stream type="voice_call">
             <apply effect="voice_helper"/>
         </stream>
-     <!-- #ifndef VENDOR_EDIT-->
-     <!-- YunMang.Xiao@PSW.MM.Dolby, 2019/08/14, add for dolby -->
-     <!--
-        <stream type="notification">
-            <apply effect="notification_helper"/>
-        </stream> -->
-     <!-- #endif VENDOR_EDIT-->
     </postprocess>
     <preprocess>
         <stream type="voice_communication">
