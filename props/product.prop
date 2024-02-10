@@ -7,6 +7,9 @@ ro.config.per_app_memcg=false
 # Fastbootd
 ro.fastbootd.available=true
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 debug.hwui.renderer=opengl
 renderthread.skia.reduceopstasksplitting=true 
