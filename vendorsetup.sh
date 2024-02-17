@@ -10,3 +10,7 @@ git clone --depth=1 https://github.com/Amritorock/packages_apps_ViPER4AndroidFX 
 # Display Hal
 rm -rf hardware/qcom-caf/sm8150/display
 git clone --depth=1 https://github.com/GinkgoHub/android_hardware_qcom_display.git -b lineage-21.0-caf-sm8150 hardware/qcom-caf/sm8150/display
+
+# Vibrator Hal
+rm -rf vendor/qcom/opensource/vibrator
+git clone --depth=1 https://github.com/PixelExperience/vendor_qcom_opensource_vibrator.git vendor/qcom/opensource/vibrator
