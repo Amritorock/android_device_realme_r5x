@@ -24,4 +24,4 @@ PRODUCT_MANUFACTURER := realme
 PRODUCT_NAME := aosp_r5x
 PRODUCT_MODEL := Realme 5 Series
 
-PRODUCT_GMS_CLIENTID_BASE := android-realme
+PRODUCT_GMS_CLIENTID_BASE := android-oppo
