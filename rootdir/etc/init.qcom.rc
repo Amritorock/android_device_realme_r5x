@@ -35,25 +35,8 @@ import /vendor/etc/init/init.realmeparts.rc
 import /vendor/etc/init/hw/init.r5x.rc
 
 on early-init
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-    chown system system /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug/tracing
-
-  # create symlink for vendor mount points
-    symlink /vendor/firmware_mnt /firmware
-    symlink /vendor/bt_firmware /bt_firmware
-    symlink /vendor/dsp /dsp
-
-  # Change ownership of hw_recovery related nodes
-    chown system graphics /sys/kernel/debug/dri/0/debug/dump
-    chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
-    chown system graphics /sys/kernel/debug/dri/0/debug/recovery_dbgbus
-    chown system graphics /sys/kernel/debug/dri/0/debug/recovery_vbif_dbgbus
-
     chown system system /sys/kernel/oppo_display/shutdownflag
     chmod 0666 /sys/kernel/oppo_display/shutdownflag
-
     chown system system /proc/touchpanel/oppo_tp_limit_enable
     chmod 0660 /proc/touchpanel/oppo_tp_limit_enable
     chown system system /proc/touchpanel/oppo_tp_direction
@@ -62,13 +45,14 @@ on early-init
     chmod 0660 /proc/touchpanel/double_tap_enable
     chown system system /proc/touchpanel/tp_fw_update
     chmod 0660 /proc/touchpanel/tp_fw_update
-
-    # Change ownership of sw_sync node
-    chown system graphics /sys/kernel/debug/sync/sw_sync
-    chmod 0666 /sys/kernel/debug/sync/sw_sync
-
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
+
+  # create symlink for vendor mount points
+    symlink /vendor/firmware_mnt /firmware
+    symlink /vendor/bt_firmware /bt_firmware
+    symlink /vendor/dsp /dsp
+
     # Load WIGIG platform driver
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
@@ -100,8 +84,7 @@ on post-fs
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
-    # Allow subsystem (modem etc) debugging
-    write /sys/kernel/debug/bootkpi/kpi_values "M - Start adsp"
+
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/devices/virtual/npu/msm_npu/boot 1
@@ -145,8 +128,6 @@ on boot
     chown bluetooth bluetooth /sys/module/hci_smd/parameters/hcismd_set
     chown system system /sys/module/msm_core/parameters/polling_interval
     chown system system /sys/module/msm_core/parameters/disabled
-    chown system system /sys/kernel/debug/msm_core/enable
-    chown system system /sys/kernel/debug/msm_core/ptable
     chown system system /sys/kernel/boot_slpi/ssr
     chown system system /sys/module/radio_iris_transport/parameters/fmsmd_set
     chmod 0660 /sys/module/bluetooth_power/parameters/power
