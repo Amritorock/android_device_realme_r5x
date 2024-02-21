@@ -63,6 +63,9 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 # VSync
 debug.cpurend.vsync=false
 
+# Logs
+persist.log.tag.OpenGLRenderer=S
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
