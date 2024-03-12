@@ -1,5 +1,0 @@
-device/realme/
-vendor/realme/
-kernel/realme/
-frameworks/base
-hardware/qcom-caf/sm8150/display

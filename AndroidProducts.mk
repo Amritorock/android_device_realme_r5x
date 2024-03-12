@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_r5x.mk
+    $(LOCAL_DIR)/derp_r5x.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_r5x-user \
-    aosp_r5x-userdebug \
-    aosp_r5x-eng
+    derp_r5x-user \
+    derp_r5x-userdebug \
+    derp_r5x-eng
