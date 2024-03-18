@@ -47,9 +47,6 @@ ro.fastbootd.available=true
 persist.sys.fuse.passthrough.enable=true
 
 # Graphics
-debug.hwui.renderer=opengl
-renderthread.skia.reduceopstasksplitting=true 
-debug.renderengine.backend=skiaglthreaded
 debug.sdm.support_writeback=0
 debug.sf.disable_hwc_overlays=1
 
