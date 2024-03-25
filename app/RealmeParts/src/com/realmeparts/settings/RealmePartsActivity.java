@@ -20,7 +20,6 @@ package com.realmeparts.settings;
 import android.app.ActionBar;
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class RealmePartsActivity extends CollapsingToolbarBaseActivity {
 
@@ -28,7 +27,7 @@ public class RealmePartsActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new RealmeParts())
+                .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new RealmeParts())
                 .commit();
     }
 }
