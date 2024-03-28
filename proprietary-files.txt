@@ -1923,7 +1923,7 @@ system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so|24f91ee12e79ebdd50f97cfc8
 system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so|6fe3f53c35085c34e3c46d7b75679a3447d5f0c0
 
 # CNE (vendor) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/app/CneApp/CneApp.apk|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
 vendor/app/IWlanService/IWlanService.apk|9ea57bfbf58799a564fcf498de9f5fe3506f7342
 vendor/bin/cnd|f86d7ff26cc8d3860eeb86d86512340c3fb083a2
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
