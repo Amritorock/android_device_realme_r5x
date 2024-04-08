@@ -1,6 +1,6 @@
-# Device Tree for Realme 5, Realme 5s, Realme 5i
+# Device Tree for realme 5, realme 5s, realme 5i
 
-The Realme 5, Realme 5s, Realme 5i are mid-range smartphones from Realme. These are announced and released in August 2019, November 2019,January 2020.
+The realme 5, realme 5s, realme 5i are mid-range smartphones from Realme. These are announced and released in August 2019, November 2019, January 2020 respectively.
 
 ## Device specifications
 
@@ -27,4 +27,4 @@ The Realme 5, Realme 5s, Realme 5i are mid-range smartphones from Realme. These 
 
 ## Device picture
 
-![Realme 5 Series](https://fdn2.gsmarena.com/vv/pics/realme/realme-5-rmx1911-2.jpg)
+![realme 5 Series](https://fdn2.gsmarena.com/vv/pics/realme/realme-5-rmx1911-2.jpg)
