@@ -1,3 +1,5 @@
+# Device proprietary files - from RMX1911EX_11_C.67, unless pinned
+
 # ADSP - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|77f5aaf6d773ee545e39bc5fdc99c65434c05379
