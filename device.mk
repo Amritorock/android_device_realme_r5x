@@ -379,7 +379,6 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.r5x-libperfmgr \
-    android.hardware.power.stats@1.0-service.pixel \
     libqti-perfd-client
 
 # Perf
