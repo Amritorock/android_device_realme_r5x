@@ -41,8 +41,6 @@ on early-init
     chmod 0660 /proc/touchpanel/oppo_tp_limit_enable
     chown system system /proc/touchpanel/oppo_tp_direction
     chmod 0660 /proc/touchpanel/oppo_tp_direction
-    chown system system /proc/touchpanel/double_tap_enable
-    chmod 0660 /proc/touchpanel/double_tap_enable
     chown system system /proc/touchpanel/tp_fw_update
     chmod 0660 /proc/touchpanel/tp_fw_update
     chown root system /dev/kmsg
