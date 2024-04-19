@@ -124,8 +124,6 @@ vendor/lib/hw/camera.trinket.so
 vendor/lib/libalgo.public.so
 vendor/lib/libbase64.so
 vendor/lib/libcamera_core_hwi.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2vop.so
 vendor/lib/libcvface_api.so
 vendor/lib/libdepthmap.so
 vendor/lib/libdepthmapwrapper.so
@@ -2526,16 +2524,16 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
-# Radio - EMBMS
+# Radio (EMBMS)
 -product/app/embms/embms.apk
 product/etc/permissions/embms.xml
 product/framework/embmslibrary.jar
 
-# Radio (Oppo)
+# Radio (oppo)
 vendor/lib/vendor.oppo.hardware.radio.opporadio@1.0.so
 vendor/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so
 
-# Radio - IMS
+# Radio (IMS)
 etc/permissions/com.qualcomm.qti.imscmservice.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
@@ -2601,18 +2599,16 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Ril- from X2
+# Radio - from RMX1991
 -product/app/QtiTelephonyService/QtiTelephonyService.apk|42a392ebebf4046dbd0939da10cc72903aed1d80
 product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
 product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
 product/framework/qcrilhook.jar|23768fda90519d799e682fd058ec85b7b5cd6f89
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|9624d9b375fd91f0ed7958f84b787aa0e7409d84
-vendor/lib/libmdmdetect.so|5b639151403b2119dcff7aa898ca8fcb9237c307
 vendor/lib64/deviceInfoServiceModule.so|6a1fda94e782b409f8dc3c92a95b4f1d4a88e8c2
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|45dc2a98bf87e65b5ca24e1ef1148c0832f31717
 
-# Ril - IMS - from X2
+# Radio (IMS) - from RMX1991
 -product/app/imssettings/imssettings.apk|bfbf063ca79ce15d130a9d3112fe5de898bedc99
 -product/app/uceShimService/uceShimService.apk|8428a8581bb4394eaf7a04669a8d0d4ae060391c
 product/lib64/lib-imsvideocodec.so|97cb937d5438f2e9a5d3149706b617330b76634a
