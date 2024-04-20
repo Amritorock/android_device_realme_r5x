@@ -2314,13 +2314,14 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.elf|e8812586b00768dfc502e82a8571c6da222687fd
 vendor/firmware/ipa_fws.mdt|6023a2b8533367aca7ec6a5b423021587a722439
 
-# Keystore
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
+# Keystore - from RMX2050_11_C.10
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|c5fe6ad946b5cc901cfb38002bf5fb039fd47ad7
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|26710162b144c80a84a04e5211bdcaaf3bd1c2b9
+vendor/lib64/libkeymasterdeviceutils.so|e18e85743b559afd0a0638568ba149bd045f8250
+vendor/lib64/libkeymasterprovision.so|8ca3e21fb270f6ef9075fbf93c9263f24fc3d0c4
+vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
+vendor/lib64/libqcbor.so|df6a3f00d7d49e482e0ca2937f5bd708fba32ae6
+vendor/lib64/libqtikeymaster4.so|a338e67abfd6facf66577f3c61404e46ec81669d
 
 # Listen - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/lib/libadpcmdec.so|297d8fecff85b6dc67ff19e788bcf3f1286014a0
