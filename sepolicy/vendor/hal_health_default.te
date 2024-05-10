@@ -3,3 +3,5 @@ allow hal_health_default sysfs_usb_supply:file { read open getattr };
 allow hal_health_default sysfs_hal_health_default:file { read open getattr };
 allow hal_health_default mnt_vendor_file:dir { search write };
 allow hal_health_default mnt_vendor_file:file { open read write };
+allow hal_health_default unlabeled:dir { search };
+allow hal_health_default unlabeled:file { read write };
