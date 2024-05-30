@@ -103,10 +103,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Crypto
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.volume.filenames_mode=aes-256-cts
-
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
@@ -139,10 +135,6 @@ PRODUCT_COPY_FILES += \
 # Display Device Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
-
-# DSP
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.dsp@1.0
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -242,11 +234,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom_ramdisk \
     fstab.qcom \
     init.class_main.sh \
-    init.oppo.face.rc \
-    init.oppo.face.sh \
     init.oppo.fingerprints.rc \
     init.oppo.fingerprints.sh \
-    init.oppo.product.rc \
     init.oppo.reserve.rc \
     init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
@@ -308,9 +297,7 @@ PRODUCT_PACKAGES += \
 
 # Netutils
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
-    libandroid_net \
-    netutils-wrapper-1.0
+    android.system.net.netd@1.0
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -387,12 +374,8 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# Platform 
+# Platform
 TARGET_BOARD_PLATFORM := trinket
-
-# QMI
-PRODUCT_PACKAGES += \
-    libjson
 
 # QTI
 PRODUCT_COPY_FILES += \
@@ -423,9 +406,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
     telephony-ext
 
 PRODUCT_COPY_FILES += \
@@ -514,10 +494,3 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/r5x/r5x-vendor.mk)
-
-# RealmeDirac
-$(call inherit-product, $(LOCAL_PATH)/RealmeDirac/dirac.mk)
-
-# Remove Unwanted Packages
-PRODUCT_PACKAGES += \
-    RemovePackages

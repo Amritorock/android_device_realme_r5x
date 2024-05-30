@@ -49,7 +49,6 @@ persist.sys.fuse.passthrough.enable=true
 
 # Graphics
 persist.hwc.enable_vds=1
-debug.cpurend.vsync=false
 
 # Force triple frame buffers
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
@@ -91,9 +90,6 @@ ro.telephony.default_network=22,22
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 persist.sys.fflag.override.settings_provider_model=false
 telephony.lteOnCdmaDevice=1
-
-# Seamless transfer
-sys.fflag.override.settings_seamless_transfer=true
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
