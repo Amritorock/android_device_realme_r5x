@@ -2228,34 +2228,17 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so|08b5b0331dac51be3abff7a85c91c6c9692b
 vendor/lib64/vendor.qti.gnss@4.0.so|ed1ba0b86f7ffdcc419faad49396cc17e20cfd50
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
 
-# GPU Firmware
-vendor/firmware/a225_pfp.fw
-vendor/firmware/a225_pm4.fw
-vendor/firmware/a225p5_pm4.fw
-vendor/firmware/a300_pfp.fw
-vendor/firmware/a300_pm4.fw
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
-vendor/firmware/a420_pfp.fw
-vendor/firmware/a420_pm4.fw
-vendor/firmware/a530_gpmu.fw2
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
-vendor/firmware/a530v1_pfp.fw
-vendor/firmware/a530v1_pm4.fw
-vendor/firmware/a530v2_seq.fw2
-vendor/firmware/a530v3_gpmu.fw2
-vendor/firmware/a530v3_seq.fw2
-vendor/firmware/a540_gpmu.fw2
-vendor/firmware/a610_zap.b00
-vendor/firmware/a610_zap.b01
-vendor/firmware/a610_zap.b02
-vendor/firmware/a610_zap.elf
-vendor/firmware/a610_zap.mdt
-vendor/firmware/a612_rgmu.bin
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
+# GPU Firmware - from RMX2050_11_C.10
+vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
+vendor/firmware/a610_zap.b01|95173a48a40c64705fe7ba9ae078effa10a83519
+vendor/firmware/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
+vendor/firmware/a610_zap.elf|2d60aa21f75df53551c29724e1c41446038c00f5
+vendor/firmware/a610_zap.mdt|006fbd60c4f0be1d672a3796130a66b7103efcb8
+vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
+vendor/firmware/a618_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
 
 # Graphics (Adreno) - from Spacewar qssi-user-14-UP1A.231005.007-2403172245-release-keys
 vendor/gpu/kbc/sequence_manifest.bin|cc050a8058904871b3cfabec74521d42f0a61a1f
@@ -2322,14 +2305,14 @@ vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 vendor/bin/hw/android.hardware.health@2.0-service.oppo
 vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
 
-# IPA
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
+# IPA Firmware - from RMX2050_11_C.10
+vendor/firmware/ipa_fws.b00|aade3e72dc69e9649b73fa9363985c0997437854
+vendor/firmware/ipa_fws.b01|1707c0b81be17d3de24abf022db0ef3282afb393
+vendor/firmware/ipa_fws.b02|a4f15a2345382514ef64d40f58dbaa3f1e35c4e7
+vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
+vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
+vendor/firmware/ipa_fws.elf|e8812586b00768dfc502e82a8571c6da222687fd
+vendor/firmware/ipa_fws.mdt|6023a2b8533367aca7ec6a5b423021587a722439
 
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
