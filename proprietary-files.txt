@@ -2140,10 +2140,10 @@ vendor/firmware/egista.b06|54c526bf0da1b8f8af8ed59c7c2634332ba71b2e
 vendor/firmware/egista.b07|33aac785a70c310768e2ae22aea9d032ca72f5da
 vendor/firmware/egista.mdt|bb0842e6aa938d2df2caf6d1d93e2fcd78e07b9c
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from RMX2050_11_C.10
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|74ff564ec413866644361401ef5cf8d55846ead5
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4d4ad0388d44d4a2387d72a52b970cc6ea851acf
 
 # GPS - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/garden_app|f811ffda5b09534277a44b849428182055674c84
