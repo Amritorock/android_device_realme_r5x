@@ -376,7 +376,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayR5x \
     TelephonyOverlayR5x \
-    SettingsProviderOverayR5x \
+    SettingsProviderOverlayR5x \
     SettingsOverlayR5x \
     SystemUIOverlayR5x \
     WifiOverlayR5x \
