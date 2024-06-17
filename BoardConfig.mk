@@ -74,7 +74,8 @@ DEVICE_MANIFEST_FILE := \
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
      $(DEVICE_PATH)/configs/manifests/framework_compatibility_matrix.xml \
-     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+     hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml
 
 ODM_MANIFEST_SKUS += nfc_ese
 ODM_MANIFEST_NFC_ESE_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc_ese.xml
