@@ -180,19 +180,15 @@ limitations under the License.
             <Limit name="measured-frame-rate-1280x720" range="35-51" />
             <Limit name="measured-frame-rate-1920x1080" range="18-29" />
         </MediaCodec>
-        <!-- $ifdef VENDOR_EDIT -->
-        <!-- Yugang.Ma@PSW.MM.MediaServer.Player, modify for CTS. 2020/02/27 -->
         <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="200-560" />
+            <Limit name="measured-frame-rate-176x144" range="441-549" />
             <Limit name="measured-frame-rate-352x288" range="288-420" />
         </MediaCodec>
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
-            <Limit name="measured-frame-rate-176x144" range="200-560" />
             <Limit name="measured-frame-rate-176x144" range="434-539" />
             <Limit name="measured-frame-rate-480x360" range="440-490" />
             <Limit name="measured-frame-rate-1280x720" range="100-145" />
         </MediaCodec>
-        <!-- #endif VENDOR_EDIT-->
         <MediaCodec name="c2.android.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
             <Limit name="measured-frame-rate-320x180" range="356-447" />
             <Limit name="measured-frame-rate-640x360" range="110-160" />

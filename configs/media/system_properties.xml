@@ -38,6 +38,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <property name="vidc_dec_sec_prefetch_size_output" value="3276800"/>
         <!-- Bitmask for arb mode: 1: AVC, 2: HEVC, 4: MPEG2 -->
         <property name="vidc_dec_arb_mode_override" value="7"/>
-        <!-- Changhao.Chen@Camera.Driver, 2020/02/18, modify for ocam video format user NV12 -->
-        <property name="vidc_enc_linear_color_format" value="1"/>
 </configs>
