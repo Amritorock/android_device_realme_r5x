@@ -228,7 +228,8 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0.vendor
+    android.hidl.manager@1.0.vendor \
+    libhidlmemory.vendor:64
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
@@ -426,7 +427,11 @@ PRODUCT_PACKAGES += \
     rild \
     libjson \
     librmnetctl \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    libxml2 \
+    libion.vendor \
+    libnetutils.vendor \
+    libsqlite.vendor:64
 
 PRODUCT_PACKAGES += \
     ims-ext-common \
