@@ -322,6 +322,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat
+
 # RealmeParts
 PRODUCT_PACKAGES += \
     RealmeParts
