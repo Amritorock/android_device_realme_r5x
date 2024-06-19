@@ -2004,11 +2004,11 @@ vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|c041dbfc99643e791e52c4e7f3a
 vendor/lib64/vendor.qti.latency@2.0.so|60ab3143325e855f8c72e3f603c28efe2e7227b9
 vendor/lib64/vendor.qti.latency@2.1.so|47f0d25338274af94764be9d39eabef8cf5ca790
 
-# ConfigStore - from LA.UM.9.11.r1-03900-NICOBAR.0
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|a80c7a4a326011b02edc5083b1a5bbcf7812299b
+# Configstore - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|81be3e1c39280c1bed769ff4e3bee25b4ef1195e
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|4d9ae1ef925f3f029dadc41012f014d478c46c75
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|4f4cf2014719b8d95816046df46ffcd22f14e3d5
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|adae94cab65e5b91553ba8c76a4bdda7b4fdd1f6
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|12d4edcd852196a531f688ed74d86ea10c4acb43
 
 # Dirac - from Xiaomi
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
