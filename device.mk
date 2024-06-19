@@ -300,6 +300,7 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat \
     ims-ext-common \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
