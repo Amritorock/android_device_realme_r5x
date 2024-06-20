@@ -2774,11 +2774,10 @@ vendor/firmware/tp/19743/nt_hltg_fw.bin
 vendor/firmware/tp/19743/nt_hltg_fw_mp.bin
 vendor/firmware/tp/19743/nt_hltg_fw_signed.bin
 
-# TUI (Trusted User Interface) - from LA.UM.9.11.r1-04500-NICOBAR.0
+# Trusted User Interface - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|16dc51cd62ce73adebdff600e764da481504962f
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|fc6047f4390979bd633f60bf74e637f3b44cadc8
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4ba792ee3234dca4cd7ebbd7b3f9003c800f51b4
 
 # WiFi
 vendor/bin/cnss-daemon
