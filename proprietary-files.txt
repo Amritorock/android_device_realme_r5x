@@ -2750,11 +2750,11 @@ vendor/lib/libthermalfeature.so|52c35a4e2bc048839e4f9172cc2d299e2367a1fd
 vendor/lib64/libthermalclient.so|ed01fa6caeb9dfbddc0fafc197abe13f3c8b56f9
 vendor/lib64/libthermalfeature.so|f2b78560b6b87c19336ae48ea26d3af756123047
 
-# Time services - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
-vendor/bin/time_daemon|8e1a7f986859684240f226ffb2d94ea744966a2a
+# Time - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
+vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib64/libtime_genoff.so|72cbb6847c67602904cf435d3878045a186c7ef5
+vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
 
 # Touchscreen firmware
 vendor/firmware/tp/19631/RA105A0.bin
