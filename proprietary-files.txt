@@ -2398,9 +2398,9 @@ vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
 vendor/lib/libpn553_fw.so
 
-# Peripheral manager - from LA.UM.9.11.r1-04500-NICOBAR.0
-vendor/bin/pm-proxy|6cfaaf498d9360af9d7c9e4675a1dc209454fe24
-vendor/bin/pm-service|4a50fd16c62ba27643eabb89d79c022d667bd8b2
+# Peripheral - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/pm-proxy|0704192692efb4b79e8cb1a2252625ad24468805
+vendor/bin/pm-service|1a48e2a015181b351374b99053fb5dee8e2750ee
 vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 
 # Postprocessing - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
