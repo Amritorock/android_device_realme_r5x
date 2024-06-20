@@ -2328,23 +2328,16 @@ vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
 vendor/lib64/libqcbor.so|df6a3f00d7d49e482e0ca2937f5bd708fba32ae6
 vendor/lib64/libqtikeymaster4.so|a338e67abfd6facf66577f3c61404e46ec81669d
 
-# Listen - from LA.UM.9.11.r1-04500-NICOBAR.0
+# Listen - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/lib/libadpcmdec.so|297d8fecff85b6dc67ff19e788bcf3f1286014a0
-vendor/lib/libcapiv2svacnn.so|aa20d352b6f91cfcbb528795e023d18bd78bbecf
+vendor/lib/libcapiv2svacnn.so|c897fbba664fcb0ea1951d3220d8db54ae0d7995
 vendor/lib/libcapiv2vop.so|1cceaefcc1ca55de5bc932a846091e6702c5d508
-vendor/lib/libgcs-calwrapper.so|074f537fbad1ff13e9ef252e23178971fa510e74
-vendor/lib/libgcs-ipc.so|ce900c796d5b511d8f79e7b1ff331a33037f1a47
-vendor/lib/libgcs-osal.so|413c0b9b767d8aa1da477f89b162d5b13604e0cf
-vendor/lib/libgcs.so|7b69e6c8ff51ec65f7199b3ad63579da7547a97b
-vendor/lib/liblistensoundmodel2.so|62f5993a95abad3a2e5fbff197517350162b0e5d
-vendor/lib/libsmwrapper.so|0fbf611c9a597f7c70bfd2363dfc7f465d1dafd5
-vendor/lib64/libcapiv2svacnn.so|7c6b36567a181291f11ef656c36518c85a4f1f66
-vendor/lib64/libcapiv2vop.so|13a1072a9e9479a80bfeb57ded2a0e63d6c8b35b
-vendor/lib64/libgcs-calwrapper.so|c0861f0385fbb1df63b39ed6ff523079716a5dde
-vendor/lib64/libgcs-ipc.so|e75e2f63ac09652682184eb29cc636dd4b759d90
-vendor/lib64/libgcs-osal.so|8cae7ac2c8a54dbe0d5910cf91b1db00a43da15b
-vendor/lib64/libgcs.so|d54dfd8ba21cf9b8ad7c9eac599ac820839bbdd9
-vendor/lib64/liblistensoundmodel2.so|858837867d16fd0609b134e6bb54803b85b3ee12
+vendor/lib/libgcs-calwrapper.so|83bbe657fcd045729c3b684cbd159cece9e8f138
+vendor/lib/libgcs-ipc.so|153240efc14608433ed7195b07e082edfd90dd6b
+vendor/lib/libgcs-osal.so|2f1ff749e6c2210d715486ac0d01046f2aa93abc
+vendor/lib/libgcs.so|5429f4a5329421341d6460b7c218f035e0757cf0
+vendor/lib/liblistensoundmodel2.so|21c2a856584c301edda81b5fa3740d5ef2a96e8c
+vendor/lib/libsmwrapper.so|af37e8bd00fd4130094349c1d94e83c5b0c20550
 
 # Listen - Hardware
 vendor/lib/hw/sound_trigger.primary.trinket.so
