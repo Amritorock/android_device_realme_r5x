@@ -73,22 +73,6 @@ persist.log.tag.b/223498680=S
 persist.log.tag.TrafficStats=S
 persist.log.tag.ContrastColorUtil=S
 
-# Media
-debug.stagefright.omx_default_rank.sw-audio=1
-media.settings.xml=/vendor/etc/media_profiles.xml
-ro.media.recorder-max-base-layer-fps=60
-media.stagefright.enable-player=true
-media.stagefright.enable-http=true
-media.stagefright.enable-aac=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
-mmp.enable.3g2=true
-media.aac_51_output_enabled=true
-vendor.mm.enable.qcom_parser=63963135
-persist.mm.enable.prefetch=true
-
 # Netflix
 ro.netflix.bsp_rev=Q6125-17995-1
 
