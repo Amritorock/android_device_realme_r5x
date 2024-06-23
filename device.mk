@@ -14,6 +14,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/pn5xx \
     hardware/google/interfaces
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
