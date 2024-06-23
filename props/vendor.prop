@@ -181,13 +181,10 @@ persist.vendor.ims.disableQXDMLogs=1
 ro.hardware.keystore_desede=true
 
 # Media
-debug.stagefright.omx_default_rank.sw-audio=1
-debug.stagefright.omx_default_rank=0
-media.stagefright.thumbnail.prefer_hw_codecs=true
-vendor.vidc.dec.enable.downscalar=1
-vendor.vidc.enc.disable_bframes=1
-vendor.vidc.enc.disable.pq=true
-ro.media.recorder-max-base-layer-fps=60
+debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=1000
+vendor.qc2.venc.avgqp.enable=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
