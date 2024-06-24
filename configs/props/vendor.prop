@@ -221,6 +221,7 @@ ro.soc.model=SM6125
 persist.vendor.delta_time.enable=true
 
 # USB
+sys.usb.mtp.batchcancel=1
 vendor.usb.controller=4e00000.dwc3
 vendor.usb.device=4e00000.ssusb
 vendor.usb.diag.func.name=diag
@@ -229,7 +230,7 @@ vendor.usb.qdss.inst.name=qdss
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
-vendor.usb.use_ffs_mtp=0
+vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=0
 
 # Wi-Fi
