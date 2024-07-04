@@ -342,6 +342,7 @@ PRODUCT_PACKAGES += \
     libplatformconfig \
     libstagefrighthw \
     libstagefright_omx.vendor \
+    libstagefright_softomx_plugin.vendor \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
 # Overlays
