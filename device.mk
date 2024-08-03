@@ -418,6 +418,9 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # VNDK
+PRODUCT_PACKAGES += \
+    libutils.vendor
+
 BOARD_SHIPPING_API_LEVEL := 30
 
 PRODUCT_COPY_FILES += \
