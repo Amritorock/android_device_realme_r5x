@@ -84,7 +84,7 @@ static inline size_t memscpy (void *p_Dest, size_t q_DestSize, const void *p_Src
 }
 
 /*API for boot kpi marker prints  */
-inline int loc_boot_kpi_marker(const char * pFmt __unused, ...)
+inline int loc_boot_kpi_marker(const char * pFmt, ...)
 {
     return -1;
 }

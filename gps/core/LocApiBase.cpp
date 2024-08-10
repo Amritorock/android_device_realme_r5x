@@ -489,6 +489,8 @@ void LocApiBase::reportQwesCapabilities
     const std::unordered_map<LocationQwesFeatureType, bool> &featureMap
 )
 {
+    //Set Qwes feature status map in ContextBase
+    ContextBase::setQwesFeatureStatus(featureMap);
     // loop through adapters, and deliver to all adapters.
     TO_ALL_LOCADAPTERS(mLocAdapters[i]->reportQwesCapabilities(featureMap));
 }
@@ -900,33 +902,33 @@ void LocApiBase::
 DEFAULT_IMPL()
 
 void LocApiBase::
-    getRobustLocationConfig(uint32_t /*sessionId*/, LocApiResponse* /*adapterResponse*/)
+    getRobustLocationConfig(uint32_t sessionId, LocApiResponse* /*adapterResponse*/)
 DEFAULT_IMPL()
 
 void LocApiBase::
-    configMinGpsWeek(uint16_t /*minGpsWeek*/,
+    configMinGpsWeek(uint16_t minGpsWeek,
                      LocApiResponse* /*adapterResponse*/)
 DEFAULT_IMPL()
 
 void LocApiBase::
-    getMinGpsWeek(uint32_t /*sessionId*/, LocApiResponse* /*adapterResponse*/)
+    getMinGpsWeek(uint32_t sessionId, LocApiResponse* /*adapterResponse*/)
 DEFAULT_IMPL()
 
 LocationError LocApiBase::
-    setParameterSync(const GnssConfig& /*gnssConfig*/)
+    setParameterSync(const GnssConfig& gnssConfig)
 DEFAULT_IMPL(LOCATION_ERROR_SUCCESS)
 
 void LocApiBase::
-    getParameter(uint32_t /*sessionId*/, GnssConfigFlagsMask /*flags*/, LocApiResponse* /*adapterResponse*/)
+    getParameter(uint32_t sessionId, GnssConfigFlagsMask flags, LocApiResponse* /*adapterResponse*/)
 DEFAULT_IMPL()
 
 void LocApiBase::
-    configConstellationMultiBand(const GnssSvTypeConfig& /*secondaryBandConfig*/,
+    configConstellationMultiBand(const GnssSvTypeConfig& secondaryBandConfig,
                                  LocApiResponse* /*adapterResponse*/)
 DEFAULT_IMPL()
 
 void LocApiBase::
-    getConstellationMultiBandConfig(uint32_t /*sessionId*/, LocApiResponse* /*adapterResponse*/)
+    getConstellationMultiBandConfig(uint32_t sessionId, LocApiResponse* /*adapterResponse*/)
 DEFAULT_IMPL()
 
 int64_t ElapsedRealtimeEstimator::getElapsedRealtimeEstimateNanos(int64_t curDataTimeNanos,
@@ -1034,7 +1036,7 @@ bool ElapsedRealtimeEstimator::getCurrentTime(
     struct timespec sinceBootTime;
     struct timespec sinceBootTimeTest;
     bool clockGetTimeSuccess = false;
-    const uint32_t MAX_TIME_DELTA_VALUE_NANOS = 15000;
+    const uint32_t MAX_TIME_DELTA_VALUE_NANOS = 2000000; // 2 milli-seconds
     const uint32_t MAX_GET_TIME_COUNT = 20;
     /* Attempt to get CLOCK_REALTIME and CLOCK_BOOTIME in succession without an interruption
     or context switch (for up to MAX_GET_TIME_COUNT times) to avoid errors in the calculation */
