@@ -2592,8 +2592,8 @@ product/lib64/lib-imsvideocodec.so|97cb937d5438f2e9a5d3149706b617330b76634a
 product/lib64/lib-imsvt.so|50b549ab9f0cbdf45ad051521099eb7861381ae8
 product/lib64/lib-imsvtextutils.so|dbf6d45873e8b4f06cdedc4f1efee886ede702f8
 product/lib64/lib-imsvtutils.so|1627429094c78171be5f6275cecdbcab4ecce1cf
-product/lib64/libimscamera_jni.so|41fd9faa10818c9f7c5a14d372a07f79b0ca0daa
-product/lib64/libimsmedia_jni.so|448795a73bbf72fc0c9876f86a13769139ea8022
+product/lib64/libimscamera_jni.so;SYMLINK=product/priv-app/ims/lib/arm64/libimscamera_jni.so|41fd9faa10818c9f7c5a14d372a07f79b0ca0daa
+product/lib64/libimsmedia_jni.so;SYMLINK=product/priv-app/ims/lib/arm64/libimsmedia_jni.so|448795a73bbf72fc0c9876f86a13769139ea8022
 product/lib64/vendor.qti.imsrtpservice@2.0.so|6ef5cd72d34c20e82cb0e58681a4aae9b0dac99a
 product/lib64/vendor.qti.imsrtpservice@2.1.so|6dbe703a5a8389c342008c950aaec7a3a260a055
 -product/priv-app/ims/ims.apk|7e7ceab1d2843dd71c920ae77587132c76763313
