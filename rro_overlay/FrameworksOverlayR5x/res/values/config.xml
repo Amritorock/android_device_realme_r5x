@@ -470,4 +470,7 @@
         <item>org.codeaurora.snapcam</item>
         <item>org.lineageos.aperture</item>
     </string-array>
+
+    <!-- PowerOffAlarmService -->
+    <bool name="config_powerOffAlarmEnabled">true</bool>
 </resources>
