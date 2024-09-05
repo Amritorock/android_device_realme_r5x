@@ -484,7 +484,8 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libutils.vendor
+    libutils.vendor \
+    libcrypto-v33
 
 BOARD_SHIPPING_API_LEVEL := 30
 
