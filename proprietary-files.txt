@@ -2291,7 +2291,6 @@ vendor/lib64/libqcodec2.so|ebcb7ae53c292d689b57450120e280c5797cfaa1
 # Media (VPP) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
 vendor/etc/init/vppservice.rc|24c089e0e413cbb3fa6daaf0af4215870bdf1b8e
-vendor/lib64/libOmxVpp.so|e10d0e04a35e7d517fb6554b3a3a8d777404052a
 vendor/lib64/libvppclient.so|e63252fe6692c05bb4192cdf2054fc252f9d2f9f
 vendor/lib64/libvpphvx.so|d92a352a9990c77b5724784e8c827637b850d53e
 vendor/lib64/libvpplibrary.so|71152f530320f55862c1f4afc1957597f4c8e9f0
@@ -2299,18 +2298,6 @@ vendor/lib64/libvpptestutils.so|5e2b2b2b4c9e52effb6931496e83ba019de50a56
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so|e336f4a3d0a50ee985639db6a8a70ec9817144ee
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|7ae61a9c75d4a17f0aad5969ce1a27cd5b0552ae
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|85a4e2ca843525db5c76486dbee4c5c7a672ee8d
-
-# Media (OMX) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/lib/libOmxAacDec.so|ce4efb1349b5989eb74bd54f82e8f74974df814b
-vendor/lib/libOmxAlacDec.so|342573d77212cf263c5f9df7a6af48f4f8803197
-vendor/lib/libOmxAmrDec.so|4f9fc2f9ed5c4869ad7485004ca88974434c990f
-vendor/lib/libOmxAmrwbplusDec.so|58f8d503060d04b1aacb0166d8d380860868f97a
-vendor/lib/libOmxApeDec.so|da7197cc21e9a0bda53f237499fd5c6806461337
-vendor/lib/libOmxDsdDec.so|93832f5a8e016a0cd419fca916f29a7987d4af9e
-vendor/lib/libOmxEvrcDec.so|9d5f1457de836c5e86b7f6b99bc7a8b29d05afb3
-vendor/lib/libOmxG711Dec.so|2c3a8f5c52c4c76c7e47d78995b9022a28e01242
-vendor/lib/libOmxQcelp13Dec.so|5c859845e9803a3702c361cc3e2e802f4d3ae303
-vendor/lib/libOmxWmaDec.so|17f0f77fb9a27a8381c8dbc77d6aac5c303ac453
 
 # Native libraries permissions
 vendor/etc/public.libraries.txt
