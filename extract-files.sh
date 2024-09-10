@@ -74,9 +74,6 @@ function blob_fixup() {
        vendor/lib/libOPPORectify.so|vendor/lib/libarcsoft_beautyshot_lite_image.so|vendor/lib/libarcsoft_hdr_couple_api.so|vendor/lib/libarcsoft_high_dynamic_range_couple.so|vendor/lib/libarcsoft_picauto.so|vendor/lib/libblur_channel.so|vendor/lib/libthread_blur.so|vendor/lib/libdepthmap.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
-       vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc)
-            sed -i "s|0|1|g" "${2}"
-            ;;
 
     esac
 }

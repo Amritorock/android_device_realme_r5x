@@ -2147,10 +2147,10 @@ vendor/firmware/egista.b06|54c526bf0da1b8f8af8ed59c7c2634332ba71b2e
 vendor/firmware/egista.b07|33aac785a70c310768e2ae22aea9d032ca72f5da
 vendor/firmware/egista.mdt|bb0842e6aa938d2df2caf6d1d93e2fcd78e07b9c
 
-# Gatekeeper - from RMX2050_11_C.10
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|74ff564ec413866644361401ef5cf8d55846ead5
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4d4ad0388d44d4a2387d72a52b970cc6ea851acf
+# Gatekeeper - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|6e6249eb7df66b3941cc21d213fabde557daf76e
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|14819df15693c737fb2a51bf89fe826200286006
 
 # GPS - from LA.UM.9.15.2.r1-09800-KAMORTA.QSSI14.0
 vendor/bin/garden_app|f03490aa94b121d0d1d82b8715612785bc2a38f9
@@ -2282,14 +2282,15 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.elf|e8812586b00768dfc502e82a8571c6da222687fd
 vendor/firmware/ipa_fws.mdt|6023a2b8533367aca7ec6a5b423021587a722439
 
-# Keystore - from RMX2050_11_C.10
-vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|c5fe6ad946b5cc901cfb38002bf5fb039fd47ad7
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|26710162b144c80a84a04e5211bdcaaf3bd1c2b9
-vendor/lib64/libkeymasterdeviceutils.so|e18e85743b559afd0a0638568ba149bd045f8250
-vendor/lib64/libkeymasterprovision.so|8ca3e21fb270f6ef9075fbf93c9263f24fc3d0c4
-vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
-vendor/lib64/libqcbor.so|df6a3f00d7d49e482e0ca2937f5bd708fba32ae6
-vendor/lib64/libqtikeymaster4.so|a338e67abfd6facf66577f3c61404e46ec81669d
+# Keystore - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|0e0aa56f9ad9b1832eeb39db82eed1f021d7e244
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9816f37e7487295e29a19d05c4a3e6b7b0ec35ea
+vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service-default-qti.xml|478d11fc12dd7c6a85b543cf163bec217aea3148
+vendor/lib64/libkeymasterdeviceutils.so|15af23f261554c47b5f490f0fe68c15abe87cda8
+vendor/lib64/libkeymasterprovision.so|6d774511459d24cc7f814546296537a77d35c454
+vendor/lib64/libkeymasterutils.so|2392abef423c0610d9625670f1ff3063532e9bc1
+vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
+vendor/lib64/libqtikeymaster4.so|cb423cacf556d81b73542c15392a075ee2ab4def
 
 # Listen - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/lib/libadpcmdec.so|297d8fecff85b6dc67ff19e788bcf3f1286014a0
