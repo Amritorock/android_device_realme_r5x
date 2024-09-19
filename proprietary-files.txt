@@ -2270,7 +2270,9 @@ vendor/lib64/libsdmextension.so|76ef1430f700480509b5f991e031447fea9ddb01
 vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Health
+vendor/bin/hw/android.hardware.health@2.0-service
 vendor/bin/hw/android.hardware.health@2.0-service.oppo
+vendor/etc/init/android.hardware.health@2.0-service.rc
 vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
 
 # IPA Firmware - from RMX2050_11_C.10
