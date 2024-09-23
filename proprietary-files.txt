@@ -2309,12 +2309,13 @@ vendor/lib/libsmwrapper.so|af37e8bd00fd4130094349c1d94e83c5b0c20550
 vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib64/hw/sound_trigger.primary.trinket.so
 
-# Media (Codec2) - from sunfish-user 13 TQ3A.230805.001.S1 10786265 release-keys
-vendor/bin/hw/vendor.qti.media.c2@1.0-service|af91cb2facd9f86db88b328358ad504cc2d9b6f1
+# Media (Codec2) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|83c2effb6f76cb095bae840d95a2026014d92fe9
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
+vendor/etc/media_codecs_c2.xml|af8e4eeb99fc26e7cfe4c507798a6b9b14fd400d
 vendor/etc/seccomp_policy/codec2.vendor.base.policy|9fb4b5fa4b4feaa1c0b7e224606c76b872d2b645
-vendor/lib/libmedia_ecoservice.so|5ffba5d7fc21686155246c9f390e1426b5a46044
-vendor/lib/libqcodec2.so|c61060e03b769e21d4c36f679c5ac7ae7865e4e0
+vendor/lib/libqcodec2.so|c5673b5f377fc855f1467ea2b3c3ed47ca68bbfb
+vendor/lib64/libqcodec2.so|ebcb7ae53c292d689b57450120e280c5797cfaa1
 
 # Media (VPP) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
