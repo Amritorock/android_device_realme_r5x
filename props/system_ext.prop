@@ -1,5 +1,4 @@
 # Media
-debug.stagefright.omx_default_rank.sw-audio=1
 media.settings.xml=/vendor/etc/media_profiles.xml
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
