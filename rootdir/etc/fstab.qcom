@@ -59,8 +59,8 @@ odm                                             /odm                    erofs   
 # Need to have this entry in here even though the mount point itself is no longer needed.
 # The update_engine code looks for this entry in order to determine the boot device address
 # and fails if it does not find it.
-/devices/platform/soc/4784000.sdhci/mmc_host*           /storage/sdcard1         auto    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto
-/devices/platform/soc/1da4000.ufshc_card/host*          /storage/sdcard1         auto    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto
+/devices/platform/soc/4784000.sdhci/mmc_host*           /storage/sdcard1         vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
+/devices/platform/soc/1da4000.ufshc_card/host*          /storage/sdcard1         vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
 /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.0.auto*   auto                     auto    defaults                                             wait,voldmanaged=usbotg:auto
 
 # ZRAM
