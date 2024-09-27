@@ -209,13 +209,6 @@
     <!-- True if the firmware supports p2p MAC randomization -->
     <bool name="config_wifi_p2p_mac_randomization_supported">true</bool>
 
-    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
-    <bool name="config_cleanupUnusedFingerprints">false</bool>
-
-     <!-- Whether to post reset runnable for all clients. Needed for some older
-         vendor fingerprint HAL implementations. -->
-    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
-
     <!-- The list of components which should be automatically disabled for a specific device. -->
     <string-array name="config_deviceDisabledComponents" translatable="false">
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
@@ -427,9 +420,6 @@
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
-
-    <!-- Whether to cancel fingerprint operation if not idle -->
-    <bool name="config_fpCancelIfNotIdle">true</bool>
 
     <!-- Enable Night display, which requires HWC 2.0. -->
     <bool name="config_nightDisplayAvailable">true</bool>
