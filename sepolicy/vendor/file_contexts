@@ -30,6 +30,7 @@
 /dev/block/platform/soc/4804000.ufshc/by-name/oppodycnvbk		                                              u:object_r:modem_efs_partition_device:s0
 /dev/block/mmcblk0p36                                u:object_r:modem_efs_partition_device:s0
 /dev/block/platform/soc/4744000\.sdhci/by-name/system   u:object_r:system_block_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/vendor   u:object_r:system_block_device:s0
 
 # oppoVersion
 /proc/oppoVersion(/.*)?                                            u:object_r:proc_oppoversion:s0
