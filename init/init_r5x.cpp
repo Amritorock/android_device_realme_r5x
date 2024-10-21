@@ -77,6 +77,27 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+void load_dalvikvm_props() {
+    struct sysinfo sys;
+    sysinfo(&sys);
+    if (sys.totalram > 3072ull * 1024 * 1024) {
+        // from - phone-xhdpi-4096-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "8m");
+        property_override("dalvik.vm.heapgrowthlimit", "192m");
+        property_override("dalvik.vm.heaptargetutilization", "0.6");
+        property_override("dalvik.vm.heapmaxfree", "16m");
+        property_override("dalvik.vm.heapminfree", "8m");
+    } else {
+        // from - phone-xhdpi-2048-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "8m");
+        property_override("dalvik.vm.heapgrowthlimit", "192m");
+        property_override("dalvik.vm.heaptargetutilization", "0.75");
+        property_override("dalvik.vm.heapmaxfree", "8m");
+        property_override("dalvik.vm.heapminfree", "512k");
+   }
+    property_override("dalvik.vm.heapsize", "512m");
+}
+
 void init_fp_properties()
 {
     char const *fp_name_file = "/proc/fp_id";
@@ -190,4 +211,5 @@ void init_device_model()
 void vendor_load_properties() {
     init_device_model();
     init_fp_properties();
+    load_dalvikvm_props();
 }
