@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/realme/r5x
 
+# Inherit the proprietary files
+include vendor/realme/r5x/BoardConfigVendor.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -58,6 +61,7 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Display
+TARGET_DISABLED_UBWC := true
 TARGET_USES_HWC2 := true
 TARGET_USES_DRM_PP := true
 TARGET_USES_GRALLOC1 := true
@@ -115,9 +119,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
 KERNEL_LD := LD=ld.lld
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 
-# Media
-TARGET_DISABLED_UBWC := true
-
 # NFC
 TARGET_USES_NQ_NFC := true
 
@@ -169,9 +170,10 @@ TARGET_BOARD_PLATFORM := trinket
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -189,7 +191,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH := 2022-09-05
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
@@ -212,6 +214,3 @@ WIFI_DRIVER_STATE_OFF := "OFF"
 WIFI_DRIVER_STATE_ON := "ON"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-
-# Inherit the proprietary files
-include vendor/realme/r5x/BoardConfigVendor.mk
