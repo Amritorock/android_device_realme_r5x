@@ -1,0 +1,33 @@
+# Audio
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
+
+# Bluetooth
+persist.bluetooth.bqr.event_mask=14
+persist.bluetooth.bqr.min_interval_ms=500
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.bt.a2dp.mac_whitelist=false
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.btstack.absvolfeature=true
+persist.vendor.btstack.enable.splita2dp=false
+vendor.bluetooth.soc=cherokee
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.kill_timeout_ms=50
+ro.lmk.filecache_min_kb=153600
+ro.config.per_app_memcg=false
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles.xml
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+vendor.mm.enable.qcom_parser=12091405
+persist.mm.enable.prefetch=true

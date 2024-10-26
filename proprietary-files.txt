@@ -2353,6 +2353,9 @@ vendor/lib/libFlacSwDec.so|6b17d0965c9f8bddab3ffd59e7bb16e92bb68d85
 -vendor/lib/libMpeg4SwEncoder.so|059da5028bf45c9407a388b88612a7e958ef3753
 vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
 
+# Native libraries permissions
+vendor/etc/public.libraries.txt
+
 # NFC (Configs)
 vendor/etc/sn100u_bootup.pnscr
 vendor/etc/sn100u_ese_disableIso.pnscr
