@@ -24,7 +24,6 @@ set_prop(vendor_init, vendor_media_prop)
 set_prop(vendor_init, vendor_ims_prop)
 set_prop(vendor_init, vendor_radio_prop)
 set_prop(vendor_init, vendor_time_prop)
-set_prop(vendor_init, vendor_power_prop)
 
 get_prop(vendor_init, oppo_debug_prop)
 

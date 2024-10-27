@@ -312,7 +312,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.r5x-libperfmgr \
+    android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
 
 # Perf
@@ -402,7 +402,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display \
     vendor/qcom/opensource/wfd-commonsys \
     vendor/nxp/opensource/pn5xx \
-    hardware/google/interfaces
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/qcom-caf/common/libqti-perfd-client
 
 # Tetheroffload
 PRODUCT_PACKAGES += \

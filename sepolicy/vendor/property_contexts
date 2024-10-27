@@ -61,9 +61,6 @@ persist.oppo.                           u:object_r:oppo_debug_prop:s0
 # Oppo wlan prop
 persist.oppo.wlan.                      u:object_r:oppo_wlan_prop:s0
 
-# Power
-vendor.powerhal.                               u:object_r:vendor_power_prop:s0
-
 # Thermal
 vendor.thermal.config                            u:object_r:vendor_thermal_prop:s0
 
