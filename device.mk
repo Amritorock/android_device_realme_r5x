@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.class_main.sh \
     init.oppo.fingerprints.rc \
     init.oppo.fingerprints.sh \
@@ -162,11 +163,8 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.target.rc \
     init.r5x.rc \
+    init.recovery.qcom.rc \
     ueventd.qcom.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
-    $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_r5x)
 
