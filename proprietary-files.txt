@@ -2321,7 +2321,9 @@ vendor/etc/sn100u_pnx_ese_sn.pnscr
 vendor/etc/sn100u_pnx_ndi.pnscr
 vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
-vendor/lib/libpn553_fw.so
+
+# NFC 
+vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
 
 # Peripheral - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/pm-proxy|0704192692efb4b79e8cb1a2252625ad24468805
