@@ -5,6 +5,7 @@ service fps_hal.r5x /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-s
     class late_start
     user system
     group system input uhid
+    task_profiles ProcessCapacityHigh MaxPerformance
 
 service fps_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
     # "class hal" causes a race condition on some devices due to files created
@@ -13,6 +14,7 @@ service fps_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-s
     class late_start
     user system
     group system input uhid
+    task_profiles ProcessCapacityHigh MaxPerformance
 
 service ets_hal.rbs /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
     # "class hal" causes a race condition on some devices due to files created
@@ -22,6 +24,7 @@ service ets_hal.rbs /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-s
     user system
     group system input uhid
     disabled
+    task_profiles ProcessCapacityHigh MaxPerformance
 
 service ets_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service-rbs
     # "class hal" causes a race condition on some devices due to files created
@@ -31,6 +34,7 @@ service ets_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-s
     user system
     group system input uhid
     disabled
+    task_profiles ProcessCapacityHigh MaxPerformance
 
 on property:persist.vendor.fingerprint.fp_id=E_520 && property:init.svc.fps_hal=running && property:init.svc.fps_hal.r5x=running
     stop fps_hal
