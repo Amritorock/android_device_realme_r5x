@@ -51,6 +51,10 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq 1804800
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl 1
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 902400
+
+    # Uclamp tuning
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 96
+    write /proc/sys/kernel/sched_util_clamp_min 128
     
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
