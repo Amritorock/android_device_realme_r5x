@@ -29,8 +29,3 @@ genfscon proc /devinfo        u:object_r:proc_devinfo:s0
 # Flash
 genfscon proc /qcom_flash         u:object_r:proc_flash:s0
 genfscon proc /qcom_flash1        u:object_r:proc_flash:s0
-
-# RealmeParts
-genfscon sysfs /kernel/sound_control/headphone_gain                                                                                         u:object_r:sysfs_headphonegain:s0
-genfscon sysfs /kernel/sound_control/mic_gain                                                                                               u:object_r:sysfs_micgain:s0
-genfscon sysfs /kernel/sound_control/speaker_gain                                                                                                   u:object_r:sysfs_speakergain:s0

@@ -22,12 +22,6 @@
     <PreferenceCategory
         android:key="audio"
         android:title="@string/audio_title">
-
-      <PreferenceScreen
-                android:key="sound"
-                android:fragment="com.realmeparts.settings.audio.SoundControlSettingsActivity"
-                android:title="@string/audio_gain_settings"
-                android:icon="@drawable/ic_audio" />
          
       <Preference
                 android:key="clear_speaker"
