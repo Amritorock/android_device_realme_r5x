@@ -113,17 +113,8 @@
     <string name="otg_mode_title">Enable USB-OTG</string>
     <string name="tile_otg_mode">Enable USB-OTG</string>
 
-    <!-- Audio -->
-    <string name="audio_title">Audio</string>
-
-    <string name="audio_gain_settings">Audio Amplification</string>
-
-    <!-- Audio amplification -->
-    <string name="headphone_gain">Headphone gain</string>
-    <string name="microphone_gain">Microphone gain</string>
-    <string name="speaker_gain">Speaker gain</string>
-
     <!-- Clear speaker -->
+    <string name="audio_title">Audio</string>
     <string name="clear_speaker_title">Clear speaker</string>
     <string name="clear_speaker_summary">Play a 60-second audio to clear the speaker</string>
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.\n\nWARNING: Ensure that any headphones are unplugged.</string>

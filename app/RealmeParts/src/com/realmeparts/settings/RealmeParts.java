@@ -29,7 +29,6 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
 
-import com.realmeparts.settings.audio.SoundControlSettingsActivity;
 import com.realmeparts.settings.kcal.KCalSettingsActivity;
 import com.realmeparts.settings.vibration.VibratorStrengthPreference;
 
@@ -43,7 +42,6 @@ public class RealmeParts extends PreferenceFragment {
 
     private static TwoStatePreference mUSBFastChgModeSwitch;
     private static TwoStatePreference mOTGModeSwitch;
-    private Preference mAudioPref;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -67,16 +65,6 @@ public class RealmeParts extends PreferenceFragment {
                 return true;
             }
         });
-
-        mAudioPref = findPreference("sound");
-                mAudioPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                     @Override
-                     public boolean onPreferenceClick(Preference preference) {
-                         Intent intent = new Intent(getContext(), SoundControlSettingsActivity.class);
-                         startActivity(intent);
-                         return true;
-                     }
-                });
 
         VibratorStrengthPreference mVibratorStrength = findPreference("vib_strength");
         mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());

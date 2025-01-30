@@ -25,9 +25,6 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import androidx.preference.PreferenceManager;
 
-import com.realmeparts.settings.audio.SoundControlSettings;
-import com.realmeparts.settings.audio.SoundControlFileUtils;
-
 public class Startup extends BroadcastReceiver {
 
     private static final String TAG = "Startup";
@@ -41,14 +38,6 @@ public class Startup extends BroadcastReceiver {
         restore(USBFastChgModeSwitch.getFile(), enabled);
         enabled = sharedPrefs.getBoolean(RealmeParts.PREF_OTG_SWITCH, false);
         restore(OTGModeSwitch.getFile(), enabled);
-
-        int gain = Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_HEADPHONE_GAIN, 4);
-        SoundControlFileUtils.setValue(SoundControlSettings.HEADPHONE_GAIN_PATH, gain + " " + gain);
-        SoundControlFileUtils.setValue(SoundControlSettings.MICROPHONE_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_MICROPHONE_GAIN, 0));
-        SoundControlFileUtils.setValue(SoundControlSettings.SPEAKER_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                SoundControlSettings.PREF_SPEAKER_GAIN, 0));
     }
 
     private boolean hasRestoredTunable(Context context) {

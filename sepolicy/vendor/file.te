@@ -48,7 +48,4 @@ type pps_socket, file_type;
 type kcal_sysfs, sysfs_type, fs_type;
 type sysfs_usb_fastcharge, sysfs_type, fs_type;
 type vibrator_dev, sysfs_type, fs_type;
-type sysfs_headphonegain, sysfs_type, fs_type;
-type sysfs_micgain, sysfs_type, fs_type;
-type sysfs_speakergain, sysfs_type, fs_type;
 

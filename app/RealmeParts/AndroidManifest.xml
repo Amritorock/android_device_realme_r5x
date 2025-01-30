@@ -95,18 +95,6 @@
         </service>
 
         <activity
-            android:name=".audio.SoundControlSettingsActivity"
-            android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:label="@string/audio_gain_settings">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.sound" />
-        </activity>
-
-        <activity
             android:name=".speaker.ClearSpeakerActivity"
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase"
