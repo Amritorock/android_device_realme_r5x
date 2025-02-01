@@ -1,3 +1,4 @@
 allow cameraserver init:unix_stream_socket { connectto };
 allow cameraserver property_socket:sock_file rw_file_perms;
 allow cameraserver sysfs_torch:file rw_file_perms;
+allow cameraserver sysfs_leds:dir r_dir_perms;
