@@ -95,35 +95,34 @@ vendor/lib64/libaudio_log_utils.so
 # Audio Power Amplifier
 vendor/firmware/tfa98xx.cnt
 
-# Bluetooth - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+# Bluetooth - from sweet_V816.0.3.0.THGMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|07d96d0d3c4a500b14ea3c97e02b9eb5ee2bbc4d
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|f625d9c7b54b2a6cccc3df0988eb57026a7a7259
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|3d133dab1eb6f04f2089b5460ec6870da9783437
-vendor/lib64/libbt-hidlclient.so|ff301380cf3c0ff68d2b7fcda3ba428ebf0a859e
-vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
-
-# Bluetooth (A2DP) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/lib/hw/audio.bluetooth_qti.default.so|6ce26888f5b67e3e211a7cfe11554d842162ae07
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|7d9503fce83522d27bcdae531a4e0b320281f85f
-vendor/lib/btaudio_offload_if.so|a6a47f8397048e0286d6291b1996d6af16cbe241
-vendor/lib/libbluetooth_audio_session_qti.so|0b306bac29ba1beff74c9e84785f0e77efb4402c
-vendor/lib64/hw/audio.bluetooth_qti.default.so|e5f1e800b423d026070c263e6d1120ca9665c427
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|8bfbc542d600d4986b7c42281ffccfa75094ca5b
-vendor/lib64/btaudio_offload_if.so|8123f7b390fb69e80df8e28d069521b743633246
-vendor/lib64/libbluetooth_audio_session_qti.so|78bb8ada323d87a93600009557949bd1552877f0
-
-# Bluetooth (Configstore) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|63a1b4493c77f382a137110be07078333951deb2
+vendor/lib/hw/audio.bluetooth_qti.default.so|797f53fc4b362f558715075772c860ab9dfdfdbc
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|cc076ce39bdb7361de30904802124808b79c5d14
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|9f2f7bb47fac7b3b2a89d443ed73f3d378dd88d5
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6a950eaa3066fcba19e1d94a04e5823059a951a8
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|de18f44f36a89f8fb8c8b6f5d2e0bff73acaabea
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|b2d984f5f0ed37f70b63a22d4d351d38b5c5e372
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|a9685a3bc4d4c5a0afbd915ec7babd2ba3e929ff
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|3e1a8c52d73ef5e67bea68610906627226aabe21
-
-# Bluetooth (SAR) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6a950eaa3066fcba19e1d94a04e5823059a951a8
+vendor/lib/btaudio_offload_if.so|86c60ff5a8b3d126d9405ee32f86d2c8fcb5545a
+vendor/lib/libbluetooth_audio_session_qti.so|c002af8f4c67ac6ad600a628b70c9102948edb73
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|86cc0f1597348f374cdc6551f9e7a606e6982ee6
+vendor/lib/libbtnv.so|887149605c2f810e9e996354d24d2fdd39d13e5c
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|42595c79d388cc5ba1c2f50a0caa20640d5d5708
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|b719b696b47d5ba10547bc7a969dd527e61ba650
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|63ca2d9fc30224461e89e3f234950ff0d30791ec
+vendor/lib64/hw/audio.bluetooth_qti.default.so|020a74bcde87e85a187eb4c79e381caa3c1ee198
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|113d8adc4d319083b8b030bfc46e14ec2d06f275
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|7055804712673437e54c27f77400cb139c5ac79c
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|156ec51ccb53f667605cf99422abf9357888b4b6
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|a9685a3bc4d4c5a0afbd915ec7babd2ba3e929ff
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|3e1a8c52d73ef5e67bea68610906627226aabe21
+vendor/lib64/btaudio_offload_if.so|709a4e0953007f9ac7eb54f80be391f46b560cbe
+vendor/lib64/libbluetooth_audio_session_qti.so|634e87227091fee5436ec16a11fcaa30185354fa
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so|0eb6923b6652ff586c7d92d9628e6be72462a567
+vendor/lib64/libbt-hidlclient.so|ff301380cf3c0ff68d2b7fcda3ba428ebf0a859e
+vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|23706dcfa35cc6f7dee934e13886c19a56a9aa12
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a6b0d3978b3506d
 
