@@ -134,10 +134,10 @@ vendor/lib/hw/camera.trinket.so
 vendor/lib/imx386_PdafLibrary.so
 vendor/lib/libDxHdcp.so
 vendor/lib/libSNPE.so
-vendor/lib/libSTDualCamCaptureBokeh.so
+vendor/lib/libSTDualCamCaptureBokeh.so;DISABLE_CHECKELF
 vendor/lib/libSTdisp.so
-vendor/lib/libVDBlurlessAPI_v2.so
-vendor/lib/libVDDualCameraBlurlessAPI.so
+vendor/lib/libVDBlurlessAPI_v2.so;DISABLE_CHECKELF
+vendor/lib/libVDDualCameraBlurlessAPI.so;DISABLE_CHECKELF
 vendor/lib/libVDPostureDetection.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libalgo.public.so
@@ -146,7 +146,7 @@ vendor/lib/libbase64.so
 vendor/lib/libc++_shared.so
 vendor/lib/libcamera_core_hwi.so
 vendor/lib/libcvface_api.so
-vendor/lib/libdepthmap.so
+vendor/lib/libdepthmap.so;DISABLE_CHECKELF
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libhal_dbg.so
@@ -169,11 +169,11 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib/libsnpe_dsp_domains_v2.so
+vendor/lib/libsnpe_dsp_domains_v2.so;DISABLE_CHECKELF
 vendor/lib/libsnpeml.so
-vendor/lib/libstblur_capture_api.so
+vendor/lib/libstblur_capture_api.so;DISABLE_CHECKELF
 vendor/lib/libstface_fd_api.so
-vendor/lib/libstface_seg_ocl.so
+vendor/lib/libstface_seg_ocl.so;DISABLE_CHECKELF
 vendor/lib/libstfaceunlockocl.so
 vendor/lib/libswresample.so
 vendor/lib/libswscale.so
@@ -1677,7 +1677,7 @@ vendor/lib/liboppoalgolib.so
 vendor/lib/liboppocamalgo_daemon.so
 vendor/lib/libst_personblur.so
 vendor/lib/libst_segmentation.so
-vendor/lib/libthread_blur.so
+vendor/lib/libthread_blur.so;DISABLE_CHECKELF
 vendor/lib/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so
 vendor/lib/vendor.oppo.hardware.camera.oppoHalAssist@1.0.so
 vendor/lib64/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl.so
@@ -1715,7 +1715,7 @@ vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_gc02m0_mono1.so
 vendor/lib/libmmcamera_gc2375h.so
@@ -1877,7 +1877,7 @@ vendor/lib64/libmmcamera2_q3a_core.so
 vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera2_stats_lib.so
 vendor/lib64/libmmcamera_dbg.so
-vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
@@ -2156,7 +2156,7 @@ vendor/lib64/liblbs_core.so|46d8033a4058de2ff88bbd87f34f547047c3638b
 vendor/lib64/libloc_api_v02.so|03d11f71546d8105292d622cff81e153761f4ddd
 vendor/lib64/libloc_api_wds.so|d359c51a23fa6706c979547196086a816aeeb556
 vendor/lib64/libloc_qwes_iface.so|e2d2d16163ca33ae11bffd63893a151d09f710f1
-vendor/lib64/libloc_ril_client.so|49cdc0200323e081c2a2ba4763a8e7d4f4826ead
+vendor/lib64/libloc_ril_client.so;DISABLE_DEPS|49cdc0200323e081c2a2ba4763a8e7d4f4826ead
 vendor/lib64/libloc_socket.so|d5ce9f5403a34fb826b86fe68e9b07f64bfabcab
 vendor/lib64/liblocationservice.so|f71e388d1d3252ac89ec669ee6850e8ac2ec27b1
 vendor/lib64/liblocationservice_glue.so|afc93b3326dfafbdce6a35085cbea9454190d5d0
@@ -2560,7 +2560,7 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-ltedirectdisc.so
-vendor/lib64/libril-qc-qmi-1.so
+vendor/lib64/libril-qc-qmi-1.so;DISABLE_CHECKELF
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
