@@ -384,10 +384,11 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/qcom-caf/common/libqti-perfd-client \
     vendor/qcom/opensource/commonsys-intf/display \
     vendor/qcom/opensource/wfd-commonsys \
-    vendor/nxp/opensource/pn5xx \
-    hardware/google/interfaces
+    vendor/nxp/opensource/pn5xx
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
