@@ -49,3 +49,5 @@ type kcal_sysfs, sysfs_type, fs_type;
 type sysfs_usb_fastcharge, sysfs_type, fs_type;
 type vibrator_dev, sysfs_type, fs_type;
 
+# Torch
+type sysfs_torch, fs_type, sysfs_type;
