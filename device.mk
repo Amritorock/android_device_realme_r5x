@@ -392,6 +392,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
+# UFFD GC
+OVERRIDE_ENABLE_UFFD_GC := false
+
 # Update
 AB_OTA_UPDATER := false
 PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
