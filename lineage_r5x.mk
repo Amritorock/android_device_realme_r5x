@@ -8,20 +8,24 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common AxionAOSP stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from r5x device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := r5x
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := aosp_r5x
+PRODUCT_NAME := lineage_r5x
 PRODUCT_MODEL := realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+# AxionAOSP stuff
+AXION_CAMERA_REAR_INFO := 12,8,2,2
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := Amrito_Karmokar
+AXION_PROCESSOR := Snapdragon_665™
+TARGET_ENABLE_BLUR := true
+
