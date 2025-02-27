@@ -21,13 +21,6 @@ on property:persist.vendor.hvdcp_opti.start=1
     chown root system /sys/class/power_supply/bms/esr_nominal
 
 on property:vendor.post_boot.parsed=1
-    # Setup cpusets
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-2,5-7
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/restricted/cpus 0-3
-
     # Setup default schedTune value for foreground/top-app
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 1
