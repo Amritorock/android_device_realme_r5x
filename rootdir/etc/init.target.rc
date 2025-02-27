@@ -88,22 +88,9 @@ on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
     mkdir /data/vendor/dolby 0770 media media
 
-# For cpusets initialize for Silver Only first and then Silver + Gold
-# Silver Only configuration cannot work with 0-7
 on boot
     start vendor.rmt_storage
     start rfs_access
-    write /dev/cpuset/top-app/cpus 0-3
-    write /dev/cpuset/audio-app/cpus 1-2
-    write /dev/cpuset/foreground/cpus 0-3
-    write /dev/cpuset/foreground/boost/cpus 0-3
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-7
-    write /dev/cpuset/system-background/cpus 0-7
 
     # Freezer setup
     write /dev/freezer/frozen/freezer.killable 1
