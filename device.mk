@@ -191,6 +191,9 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_r5x)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/security/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
@@ -316,9 +319,6 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
-
-# UFFD GC
-OVERRIDE_ENABLE_UFFD_GC := false
 
 # Update
 AB_OTA_UPDATER := false
