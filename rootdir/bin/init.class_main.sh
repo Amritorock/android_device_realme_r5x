@@ -86,8 +86,6 @@ case "$baseband" in
         # Make sure both rild, qcrild are not running at same time.
         # This is possible with vanilla aosp system image.
         start vendor.qcrild
-    else
-        start vendor.ril-daemon
     fi
 
     case "$baseband" in
@@ -108,16 +106,11 @@ case "$baseband" in
     if [ "$multisim" = "dsds" ] || [ "$multisim" = "dsda" ]; then
         if [ "$qcrild_status" = "true" ]; then
           start vendor.qcrild2
-        else
-          start vendor.ril-daemon2
         fi
     elif [ "$multisim" = "tsts" ]; then
         if [ "$qcrild_status" = "true" ]; then
           start vendor.qcrild2
           start vendor.qcrild3
-        else
-          start vendor.ril-daemon2
-          start vendor.ril-daemon3
         fi
     fi
 
@@ -137,16 +130,4 @@ case "$baseband" in
         *)
             ;;
     esac
-esac
-
-#
-# Allow persistent faking of bms
-# User needs to set fake bms charge in persist.vendor.bms.fake_batt_capacity
-#
-fake_batt_capacity=`getprop persist.vendor.bms.fake_batt_capacity`
-case "$fake_batt_capacity" in
-    "") ;; #Do nothing here
-    * )
-    echo "$fake_batt_capacity" > /sys/class/power_supply/battery/capacity
-    ;;
 esac
