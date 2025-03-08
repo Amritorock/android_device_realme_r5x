@@ -24,12 +24,6 @@
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
 
-    <!-- Battery Health -->
-    <bool name="config_supportBatteryHealth">true</bool>
-    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_counter</string>
-    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-
     <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
          enough dynamic range to have at least as many distinct intensity levels as defined here.
