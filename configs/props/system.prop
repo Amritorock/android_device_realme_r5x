@@ -1,3 +1,6 @@
+# Brightness
+sys.brightness.disable_gamma_conversion=true
+
 # Camera
 camera.disable_zsl_mode=1
 persist.camera.aifb=1
