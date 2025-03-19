@@ -2095,7 +2095,6 @@ vendor/lib64/libalipay_factory.so
 vendor/lib64/libhypnusclient.so
 vendor/lib64/librpmbengclient.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
-vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
