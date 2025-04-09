@@ -1,3 +1,7 @@
+# Axion Tunings
+genfscon proc /sys/vm/dirty_writeback_centisecs                                                    u:object_r:proc_dirty:s0
+genfscon proc /sys/vm/vfs_cache_pressure                                                           u:object_r:proc_drop_caches:s0
+
 # Touchpanel
 genfscon proc /touchpanel              u:object_r:proc_touchpanel:s0
 
