@@ -246,6 +246,7 @@ persist.vendor.delta_time.enable=true
 
 # USB
 sys.usb.mtp.batchcancel=1
+ro.usb.uvc.disable_video_encode_flag=true
 ro.usb.uvc.enabled=true
 vendor.usb.controller=4e00000.dwc3
 vendor.usb.device=4e00000.ssusb
