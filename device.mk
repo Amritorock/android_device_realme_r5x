@@ -114,6 +114,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml
 
+$(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,true)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey

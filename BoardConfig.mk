@@ -53,7 +53,6 @@ TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.r5x
 # Display
 USE_OPENGL_RENDERER := true
 TARGET_SCREEN_DENSITY := 288
-TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/fs/config.fs
