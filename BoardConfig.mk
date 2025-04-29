@@ -81,7 +81,6 @@ ODM_MANIFEST_SKUS += nfc_ese
 ODM_MANIFEST_NFC_ESE_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc_ese.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_r5x
 TARGET_RECOVERY_DEVICE_MODULES := libinit_r5x
 
 # Kernel
