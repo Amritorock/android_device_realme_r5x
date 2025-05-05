@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2021-2026 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -45,9 +45,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Build
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
-
-# Camera
-TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.r5x
 
 # Display
 TARGET_SCREEN_DENSITY := 288
