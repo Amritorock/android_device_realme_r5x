@@ -42,6 +42,8 @@ persist.log.tag.wificond=S
 persist.log.tag.b/223498680=S
 persist.log.tag.TrafficStats=S
 persist.log.tag.ContrastColorUtil=S
+persist.log.tag.QC2Buf=W
+persist.log.tag.QC2V4l2Codec=E
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles.xml
