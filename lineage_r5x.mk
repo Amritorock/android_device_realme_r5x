@@ -22,32 +22,17 @@ PRODUCT_MODEL := realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-# Lunch banner maintainer variable
+# Inherit rising vendor configs
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+RISING_MAINTAINER := TrustedHacker
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_INCLUDE_GOOGLE_DIALER := true
+
+# Rising specific prop overrides
 RISING_MAINTAINER="TrustedHacker"
-
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Snapdragon_665™" \
     RisingMaintainer="TrustedHacker"
 
-RISING_MAINTAINER := TrustedHacker
-
-# Disable/enable blur support, false by default
-TARGET_ENABLE_BLUR := true
-
-# Whether to ship aperture camera, false by default
-PRODUCT_NO_CAMERA := false
-
-# Whether to ship lawnchair launcher, false by default
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-
-# GMS build flags, false by default
-# ship with GMS packages, replaces default AOSP packages with Google manufactured packages.
-WITH_GMS := true
-
-# These flags needs WITH_GMS set to true
-# Whether to ship pixel launcher and set it as default launcher, false by default
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-
-# Whether to ship prebuilt Google Dialer and Messages, false by default
-TARGET_INCLUDE_GOOGLE_DIALER := true
