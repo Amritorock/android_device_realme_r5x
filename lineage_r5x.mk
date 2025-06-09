@@ -21,9 +21,3 @@ PRODUCT_NAME := lineage_r5x
 PRODUCT_MODEL := realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
-
-# AxionAOSP stuff
-CAMERA_REAR_INFO := 12,8,2,2
-CAMERA_FRONT_INFO := 8
-MAINTAINER := Trusted Hacker
-PROCESSOR := Snapdragon_665™
