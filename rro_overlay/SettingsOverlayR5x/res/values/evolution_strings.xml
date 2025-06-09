@@ -12,7 +12,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="build_maintainer_summary">Christopher Keith Irvine (MAdMIZ)</string>
+    <string name="build_maintainer_summary">Trusted Hacker</string>
     <string name="build_device_url">https://t.me/EvolutionX</string>
-    <string name="build_maintainer_donate_url" translatable="false">https://t.me/MAdMiZ</string>
+    <string name="build_maintainer_donate_url" translatable="false">https://t.me/hexextropy</string>
 </resources>
