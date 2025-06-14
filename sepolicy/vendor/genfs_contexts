@@ -11,17 +11,8 @@ genfscon proc /fp_id                     u:object_r:proc_oppo_fp:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm660@0:qcom,qpnp-smb2/power_supply/ac     u:object_r:sysfs_usb_supply:s0
 
 # Wakeup
-genfscon sysfs /devices/platform/soc/1610000.qcom,msm-eud/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pmi632@2:qcom,qpnp-smb5/dual_role_usb/otg_default/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pmi632@2:qcom,qpnp-smb5/power_supply/ac/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/5c0c000.qcom,cci/5c0c000.qcom,cci:qcom,camera@0/video4linux/video3/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/5c0c000.qcom,cci/5c0c000.qcom,cci:qcom,camera@1/video4linux/video4/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/5c0c000.qcom,cci/5c0c000.qcom,cci:qcom,camera@2/video4linux/video5/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/5c0c000.qcom,cci/5c0c000.qcom,cci:qcom,camera@3/video4linux/video6/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/5c0c000.qcom,cci/5c0c000.qcom,cci:qcom,camera@4/video4linux/video7/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/c800000.qcom,icnss/wakeup u:object_r:sysfs_wakeup:s0
 
 # Devinfo
 genfscon proc /devinfo        u:object_r:proc_devinfo:s0
