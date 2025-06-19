@@ -16,8 +16,8 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService-Soong
+#PRODUCT_PACKAGES += \
+#    AntHalService-Soong
 
 # Audio
 PRODUCT_PACKAGES += \
