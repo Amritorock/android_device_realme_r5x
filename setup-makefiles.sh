@@ -45,23 +45,7 @@ function lib_to_package_fixup_vendor_variants() {
 
     case "$1" in
             com.qualcomm.qti.dpm.api@1.0 | \
-            com.qualcomm.qti.imscmservice@2.0 | \
-            com.qualcomm.qti.imscmservice@2.1 | \
-            com.qualcomm.qti.imscmservice@2.2 | \
-            com.qualcomm.qti.uceservice@2.0 | \
-            com.qualcomm.qti.uceservice@2.1 | \
-            vendor.qti.hardware.data.cne.internal.api@1.0 | \
-            vendor.qti.hardware.data.cne.internal.constants@1.0 | \
-            vendor.qti.hardware.data.cne.internal.server@1.0 | \
-            vendor.qti.hardware.data.connection@1.0 | \
-            vendor.qti.hardware.data.connection@1.1 | \
-            vendor.qti.hardware.data.dynamicdds@1.0 | \
-            vendor.qti.hardware.data.iwlan@1.0 | \
-            vendor.qti.hardware.data.qmi@1.0 | \
-            vendor.qti.hardware.fm@1.0 | \
-            vendor.qti.ims.callinfo@1.0 | \
-            vendor.qti.ims.rcsconfig@1.0 | \
-            vendor.qti.ims.rcsconfig@1.1)
+            vendor.qti.hardware.fm@1.0)
             echo "${1}_vendor"
             ;;
             libgrallocutils | \
