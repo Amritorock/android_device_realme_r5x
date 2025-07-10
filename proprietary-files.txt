@@ -2655,8 +2655,12 @@ vendor/lib/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/libsubsystem_control.so
 
-# Thermal - from RMX2050_11.C.10
-vendor/bin/thermal-engine|75a541bb2e5005f9391c81d11f21748f1eef9deb
+# Thermal - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/thermal-engine|c0f7dc730227266d9fbe01a4c730a1ee91a60254
+vendor/etc/thermal-engine-high.conf|646948a5d3a378feb1595c63c578407af6f70b90
+vendor/etc/thermal-engine-map.conf|8cee010443a42052353f3134894dc8d6b2280a23
+vendor/etc/thermal-engine-nolimits.conf|4ba48db70f7afd6f0e4387859c3ebe91ac723eb1
+vendor/etc/thermal-engine-normal.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
 vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
