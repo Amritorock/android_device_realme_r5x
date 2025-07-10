@@ -2061,10 +2061,8 @@ vendor/lib64/libwvhidl.so|88258aef48f7b828fa488451deb3cdb72f8744f4
 vendor/bin/dspservice|a7344fc3d27a49df30858ebc3f73ee5818e752d4
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|8fcb647d22144c0ce005eae37e05e786d2b045be
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
-
-# DSP - from RMX2050_11_C.10
-vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
 
 # FM (system) - from LA.QSSI.15.0.r1-14500-qssi.0
 system_ext/lib64/fm_helium.so|63a119fb67a51136d738c0fa2b65c6713b3ab077
@@ -2248,13 +2246,11 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.elf|e8812586b00768dfc502e82a8571c6da222687fd
 vendor/firmware/ipa_fws.mdt|6023a2b8533367aca7ec6a5b423021587a722439
 
-# Keystore
-vendor/lib/libqcbor.so
-
 # Keystore - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|0e0aa56f9ad9b1832eeb39db82eed1f021d7e244
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9816f37e7487295e29a19d05c4a3e6b7b0ec35ea
 vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service-default-qti.xml|478d11fc12dd7c6a85b543cf163bec217aea3148
+vendor/lib/libqcbor.so|e6907a4f9da62793c7e821fc5388c76c48f8774f
 vendor/lib64/libkeymasterdeviceutils.so|15af23f261554c47b5f490f0fe68c15abe87cda8
 vendor/lib64/libkeymasterprovision.so|6d774511459d24cc7f814546296537a77d35c454
 vendor/lib64/libkeymasterutils.so|2392abef423c0610d9625670f1ff3063532e9bc1
@@ -2318,9 +2314,6 @@ vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
 vendor/bin/pm-proxy|0704192692efb4b79e8cb1a2252625ad24468805
 vendor/bin/pm-service|1a48e2a015181b351374b99053fb5dee8e2750ee
 vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
-
-# Peripheral
-vendor/lib/libperipheral_client.so
 
 # Postprocessing - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/vendor.display.color@1.0-service|495d31da9fd57eda184abcbd1b42d51d53a055ad
