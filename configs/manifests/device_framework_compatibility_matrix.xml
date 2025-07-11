@@ -1,0 +1,78 @@
+<compatibility-matrix version="4.0" type="framework">
+<hal format="hidl" optional="true">
+    <name>android.hardware.gatekeeper</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IBluetoothSar</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>IGatekeeper</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.vibrator</name>
+    <version>1.0</version>
+    <interface>
+        <name>IVibrator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.egistec.hardware.fingerprint</name>
+    <version>4.0</version>
+    <interface>
+        <name>IBiometricsFingerprintRbs</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.nxp.nxpese</name>
+    <version>1.0</version>
+    <interface>
+        <name>INxpEse</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.nxp.nxpnfc</name>
+    <version>1.0</version>
+    <interface>
+        <name>INxpNfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oppo.hardware.biometrics.fingerprint</name>
+    <version>2.0-1</version>
+    <interface>
+        <name>IBiometricsFingerprint</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oppo.hardware.camera.oppoAlgoProcessService</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOppoAlgoProcessService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oppo.hardware.camera.oppoHalAssist</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOppoHalAssist</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.oppo.hardware.hypnus</name>
+    <version>1.0</version>
+    <interface>
+        <name>IHypnusUtil</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+</compatibility-matrix>
