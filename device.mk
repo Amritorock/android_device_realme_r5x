@@ -236,6 +236,9 @@ PRODUCT_PACKAGES += \
     BluetoothOverlayR5x \
     ApertureOverlay
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
