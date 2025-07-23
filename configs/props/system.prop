@@ -29,6 +29,9 @@ persist.data.df.dev_name=rmnet_usb0
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Launcher
+ro.launcher.blur.appLaunch=0
+
 # Logs
 persist.log.tag.OpenGLRenderer=S
 persist.log.tag.AnalyticsService=S
