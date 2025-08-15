@@ -157,6 +157,10 @@ vendor.display.qdcm.mode_combine=1
 # DRM
 drm.service.enabled=true
 
+# HWUI
+debug.hwui.target_cpu_time_percent=30
+debug.hwui.use_hint_manager=true
+
 # IMS
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
