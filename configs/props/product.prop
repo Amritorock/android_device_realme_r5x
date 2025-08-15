@@ -1,9 +1,6 @@
 # BPF
 ro.bpf.kver_override=5.4.299
 
-# Fastbootd
-ro.fastbootd.available=true
-
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
