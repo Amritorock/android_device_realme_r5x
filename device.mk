@@ -167,6 +167,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.r5x.rc \
     init.recovery.qcom.rc \
+    init.uclamp.rc \
     ueventd.qcom.rc
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_r5x)
