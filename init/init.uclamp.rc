@@ -1,0 +1,135 @@
+# UClamp tunings
+on init
+    # Setup permission
+    chown system system /dev/cpuctl/background/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/background/cpu.uclamp.max
+    chown system system /dev/cpuctl/background/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/background/cpu.uclamp.min
+    chown system system /dev/cpuctl/background/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/background/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/camera-daemon/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.uclamp.max
+    chown system system /dev/cpuctl/camera-daemon/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.uclamp.min
+    chown system system /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/dex2oat/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.uclamp.max
+    chown system system /dev/cpuctl/dex2oat/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.uclamp.min
+    chown system system /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.max
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.min
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/foreground_window/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.uclamp.max
+    chown system system /dev/cpuctl/foreground_window/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.uclamp.min
+    chown system system /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/nnapi-hal/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/nnapi-hal/cpu.uclamp.max
+    chown system system /dev/cpuctl/nnapi-hal/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/nnapi-hal/cpu.uclamp.min
+    chown system system /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/rt/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/rt/cpu.uclamp.max
+    chown system system /dev/cpuctl/rt/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/rt/cpu.uclamp.min
+    chown system system /dev/cpuctl/rt/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/rt/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/system/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/system/cpu.uclamp.max
+    chown system system /dev/cpuctl/system/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/system/cpu.uclamp.min
+    chown system system /dev/cpuctl/system/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/system/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/system-background/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/system-background/cpu.uclamp.max
+    chown system system /dev/cpuctl/system-background/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/system-background/cpu.uclamp.min
+    chown system system /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive
+
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.max
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.max
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.min
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
+
+    # Boot time
+    write /dev/cpuctl/background/cpu.uclamp.min 100
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.min 100
+    write /dev/cpuctl/dex2oat/cpu.uclamp.min 100
+    write /dev/cpuctl/foreground/cpu.uclamp.min 100
+    write /dev/cpuctl/foreground_window/cpu.uclamp.min 100
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.min 100
+    write /dev/cpuctl/rt/cpu.uclamp.min 100
+    write /dev/cpuctl/system/cpu.uclamp.min 100
+    write /dev/cpuctl/system-background/cpu.uclamp.min 100
+    write /dev/cpuctl/top-app/cpu.uclamp.min 100
+
+on property:sys.boot_completed=1
+    # background
+    write /dev/cpuctl/background/cpu.uclamp.max 70
+    write /dev/cpuctl/background/cpu.uclamp.min 0
+    write /dev/cpuctl/background/cpu.uclamp.latency_sensitive 0
+
+    # camera-daemon
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.max max
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.min 0
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
+
+    # dex2oat
+    write /dev/cpuctl/dex2oat/cpu.uclamp.max max
+    write /dev/cpuctl/dex2oat/cpu.uclamp.min 20
+    write /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive 0
+
+    # foreground
+    write /dev/cpuctl/foreground/cpu.uclamp.max 70
+    write /dev/cpuctl/foreground/cpu.uclamp.min 0
+    write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 0
+
+    # foreground_window
+    write /dev/cpuctl/foreground_window/cpu.uclamp.max 70
+    write /dev/cpuctl/foreground_window/cpu.uclamp.min 10
+    write /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive 0
+
+    # nnapi-hal
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.max max
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.min 0
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive 1
+
+    # rt
+    write /dev/cpuctl/rt/cpu.uclamp.max max
+    write /dev/cpuctl/rt/cpu.uclamp.min 0
+    write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 1
+
+    # system
+    write /dev/cpuctl/system/cpu.uclamp.max 80
+    write /dev/cpuctl/system/cpu.uclamp.min 0
+    write /dev/cpuctl/system/cpu.uclamp.latency_sensitive 0
+
+    # system-background
+    write /dev/cpuctl/system-background/cpu.uclamp.max 50
+    write /dev/cpuctl/system-background/cpu.uclamp.min 0
+    write /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive 0
+
+    # top-app
+    write /dev/cpuctl/top-app/cpu.uclamp.max max
+    write /dev/cpuctl/top-app/cpu.uclamp.min 0
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
