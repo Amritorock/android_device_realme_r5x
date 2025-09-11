@@ -1496,6 +1496,7 @@ vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 vendor/bin/qseecomd|6d039e936dc833fbac9c121ca19c885b0066e555
 vendor/etc/init/qseecomd.rc|0ebfb7c5d1d2459be4fdac951a182dc486f3bda7
 vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
+vendor/lib/libQSEEComAPI.so|2446ad4653cd242f66b46e80cfedbf1b92e84be6
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
 vendor/lib64/libGPreqcancel_svc.so|285337b6c490b2c08af93168a377c72020d2d78b
 vendor/lib64/libQSEEComAPI.so|776f247b11a43af4d75db7ff04cd663cc7fd720f
@@ -1523,7 +1524,6 @@ vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|75103a18355966370895526dc9afb6adff4b755b
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|a9ce64f68c86725c06c1b1429e90b04ff96ebf60
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/lib/libQSEEComAPI.so|21a9b89ddcf5f753129437484d3ffd0e5baca88c
 vendor/lib64/libwvhidl.so|88258aef48f7b828fa488451deb3cdb72f8744f4
 
 # DSP - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
