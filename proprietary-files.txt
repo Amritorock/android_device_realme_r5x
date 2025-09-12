@@ -1517,9 +1517,6 @@ vendor/lib64/libsi.so|77faf2818d08764f1c408f2ba26bfdbb5a0e8afb
 vendor/lib64/libssd.so|071e356c537195fc1fab8c725e3e70850711dff9
 vendor/lib64/libtrustedapploader.so|e9ebd0130381cf60219d4c511a8e6908684cb7ab
 
-# DRM - from mata OPM1.170911.254
-vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
-
 # DRM (Widevine) - from ginkgo-user 11 RKQ1.201004.002 V12.5.12.0.RCOEUXM release-keys
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|75103a18355966370895526dc9afb6adff4b755b
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|a9ce64f68c86725c06c1b1429e90b04ff96ebf60
