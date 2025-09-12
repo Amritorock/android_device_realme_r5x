@@ -59,7 +59,6 @@ function blob_fixup() {
     case "${1}" in
         vendor/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
        vendor/lib/libsnsdiaglog.so|vendor/lib/libsnsapi.so|vendor/lib64/libsnsapi.so)
