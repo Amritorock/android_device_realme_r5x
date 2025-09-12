@@ -182,7 +182,7 @@ vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libvideoutils.so
 vendor/lib64/libalgo.public.so
-vendor/lib64/libmpbase.so 
+vendor/lib64/libmpbase.so
 
 # Camera actuators
 vendor/lib/libactuator_ad5816g.so
@@ -1773,7 +1773,7 @@ vendor/etc/sn100u_pnx_ndi.pnscr
 vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
 
-# NFC 
+# NFC
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
 
 # Peripheral - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
@@ -2040,9 +2040,9 @@ vendor/lib/libsensorcal.so|a2c57e1c171a88c6217d56db4004db0dd7ff8be7
 vendor/lib/libsensorslog.so|64b197386e364647ebd61f0c7350f5973cb8ae94
 vendor/lib/libsns_device_mode_stub.so|319b608b1e0a2f0685b01d0fa7fcf20eec82d902
 vendor/lib/libsns_fastRPC_util.so|f87bb0d1b85e35491f2ae45be091fec41b39c6a4
-vendor/lib/libsnsapi.so|b354a31b91e71857b9a4ec9fc6a01e805755b540
 vendor/lib/libsns_low_lat_stream_stub.so|1e57aad2afc4422878e80ff46cedd668a62097d1
-vendor/lib/libsnsdiaglog.so|6d452a12068a363c803a7b6a32208404583cd3f8
+vendor/lib/libsnsapi.so|5a1461c44a55794e2ff7237a3ac61ffc96d7d1cb
+vendor/lib/libsnsdiaglog.so|5fe7e7fda662145c24cc5d86c24aa8e7c7c6c3c3
 vendor/lib/libssc.so|9f3c492ec44dd40695bd62b94fc221bee814d6c5
 vendor/lib/libssc_default_listener.so|def819068b7b54c6d31f3fc81deb5c7adae9ce2f
 vendor/lib/sensors.ssc.so|f4a74898706c071d65b7e8e9308870777d3e5734
@@ -2050,8 +2050,8 @@ vendor/lib64/libsensorcal.so|0e79cc13746e5b37296d47b665ad54a720b2f2bd
 vendor/lib64/libsensorslog.so|edcdb60ef262024efae67595d118d3c8eb405cc4
 vendor/lib64/libsns_device_mode_stub.so|1b369afa6c49c0195a889452808b7f9288a1a50e
 vendor/lib64/libsns_fastRPC_util.so|09896f58457ca3fadf127359133aa43b9f8eea0f
-vendor/lib64/libsnsapi.so|7a5603406f6585f102af99bb0040ca6a93ff7df9
 vendor/lib64/libsns_low_lat_stream_stub.so|69ccf6ea1bdc75c6a15c51df88680092ebf7117e
+vendor/lib64/libsnsapi.so|f5b3d1e1840652a2bcad25620f5d9f415b6570bb
 vendor/lib64/libsnsdiaglog.so|53ca60e6bbb739f7db83493a74da186b7cb7eccc
 vendor/lib64/libssc.so|1ac6334be3d748aabf173b44b5c76d3ceca97423
 vendor/lib64/libssc_default_listener.so|d4dffb70de26f4ffe1a9c467b9d5f6c8cfaad045
@@ -2067,8 +2067,6 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|f45c18014542796af2e2be3
 
 # Sensors configs - from RMX2050_11_C.10
 odm/etc/sensor/sensor_config.json|38bd730720a8732e998d982210200ba263667513
-vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
-vendor/etc/sensors/sns_reg_config|891e6e552b64c29b61744dd53ea373ea0ce0aa40
 vendor/etc/sensors/config/alsps.json|e68ea11eb552dc8edba201c438f520ab5b1d088a
 vendor/etc/sensors/config/bmi160_0.json|8ce274e89f8f5c724ea9d4bb9f25003fca179195
 vendor/etc/sensors/config/lsm6ds3c_0.json|ae4b9bd11d6a93a7060a3b686a73f7fd7dc47b95
@@ -2213,6 +2211,8 @@ vendor/etc/sensors/proto/sns_tilt_to_wake.proto|b598675e5ee2a8de4266d0efdbe8d22d
 vendor/etc/sensors/proto/sns_timer.proto|f6aef1b9a0f84906c6c9aad131975b4ace00204b
 vendor/etc/sensors/proto/sns_ultra_violet.proto|60be3ed3b397385bd62e562b72f01fc7b887fb1e
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto|f35ad5c8ade4f36caa9a71dff2523ddaf2f2c7ed
+vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
+vendor/etc/sensors/sns_reg_config|891e6e552b64c29b61744dd53ea373ea0ce0aa40
 
 # Thermal - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/bin/thermal-engine|c0f7dc730227266d9fbe01a4c730a1ee91a60254
