@@ -1969,7 +1969,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/liblqe.so
-vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_nr_fusion.so
