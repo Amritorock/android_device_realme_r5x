@@ -242,15 +242,15 @@ vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service
 vendor/bin/mm-qcamera-app
 
 # Camera calibration files
-etc/camera/Charming.cng
-etc/camera/M_Verify_Faster_Common_wp.model
-etc/camera/doubleloss_large.model
-etc/camera/faceTpl0.rgb32
-etc/camera/faceTpl1.rgb32
-etc/camera/gasryuv.model
-etc/camera/merged_model
-etc/camera/merged_model_post
-etc/camera/skinSeg.model
+system/etc/camera/Charming.cng
+system/etc/camera/M_Verify_Faster_Common_wp.model
+system/etc/camera/doubleloss_large.model
+system/etc/camera/faceTpl0.rgb32
+system/etc/camera/faceTpl1.rgb32
+system/etc/camera/gasryuv.model
+system/etc/camera/merged_model
+system/etc/camera/merged_model_post
+system/etc/camera/skinSeg.model
 vendor/etc/DxHDCP.cfg
 
 # Camera chromatix
