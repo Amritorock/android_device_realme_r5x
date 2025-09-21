@@ -1712,6 +1712,9 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.elf|e8812586b00768dfc502e82a8571c6da222687fd
 vendor/firmware/ipa_fws.mdt|6023a2b8533367aca7ec6a5b423021587a722439
 
+# IRQ balance - from RMX2050_11_C.10
+vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
+
 # Keystore - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|0e0aa56f9ad9b1832eeb39db82eed1f021d7e244
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9816f37e7487295e29a19d05c4a3e6b7b0ec35ea
