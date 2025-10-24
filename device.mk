@@ -239,10 +239,9 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlayR5x \
     NcmTetheringOverlay \
     BluetoothOverlayR5x \
-    ApertureOverlay
-
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    ApertureOverlay \
+    LineageSDKOverlayR5x \
+    LineageSettingsOverlayR5x
 
 # Partitions
 PRODUCT_PACKAGES += \
