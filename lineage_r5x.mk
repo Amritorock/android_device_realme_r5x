@@ -30,3 +30,7 @@ AXION_PROCESSOR := Snapdragon_665™
 TARGET_ENABLE_BLUR := true
 TARGET_PREBUILT_BCR := false
 TORCH_STR_SUPPORTED := true
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
