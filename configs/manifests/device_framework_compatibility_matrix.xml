@@ -1,17 +1,5 @@
 <compatibility-matrix version="4.0" type="framework">
 <hal format="hidl" optional="true">
-    <name>android.hardware.gatekeeper</name>
-    <version>1.0-1</version>
-    <interface>
-        <name>IBluetoothSar</name>
-        <instance>default</instance>
-    </interface>
-    <interface>
-        <name>IGatekeeper</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.egistec.hardware.fingerprint</name>
     <version>4.0</version>
     <interface>
