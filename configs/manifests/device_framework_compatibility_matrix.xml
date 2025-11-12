@@ -12,14 +12,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>android.hardware.vibrator</name>
-    <version>1.0</version>
-    <interface>
-        <name>IVibrator</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.egistec.hardware.fingerprint</name>
     <version>4.0</version>
     <interface>
