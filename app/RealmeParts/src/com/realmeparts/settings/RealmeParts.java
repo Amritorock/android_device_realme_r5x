@@ -24,10 +24,11 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
 
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import com.realmeparts.settings.kcal.KCalSettingsActivity;
 import com.realmeparts.settings.vibration.VibratorStrengthPreference;
 
-public class RealmeParts extends PreferenceFragmentCompat {
+public class RealmeParts extends SettingsBasePreferenceFragment {
 
     public static final String PREF_USB_FAST_CHARGE_SWITCH = "fastcharge";
     public static final String USB_FAST_CHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
