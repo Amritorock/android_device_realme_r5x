@@ -17,7 +17,6 @@
 
 package com.realmeparts.settings;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 

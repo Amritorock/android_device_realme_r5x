@@ -20,13 +20,8 @@ package com.realmeparts.settings;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceFragment;
 import androidx.preference.Preference;
-import androidx.preference.ListPreference;
-import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceManager;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
 
 import com.realmeparts.settings.kcal.KCalSettingsActivity;
