@@ -224,6 +224,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayR5x \
+    LauncherOverlayR5x \
     TelephonyOverlayR5x \
     SettingsProviderOverlayR5x \
     SettingsOverlayR5x \
