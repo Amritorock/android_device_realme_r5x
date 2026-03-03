@@ -112,7 +112,7 @@ $(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,true)
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm@latest-service.clearkey
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
