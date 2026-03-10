@@ -133,10 +133,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FM2
 
-# fwk-detect
-PRODUCT_PACKAGES += \
-    libvndfwk_detect_jni.qti.vendor
-
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti:64 \
