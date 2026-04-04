@@ -1,0 +1,11 @@
+cc_library_static {
+    name: "libperfmgr-ext-r5x",
+    vendor: true,
+    srcs: [
+        "power-mode.cpp",
+    ],
+    shared_libs: [
+        "android.hardware.power-V6-ndk",
+        "libbase",
+    ],
+}
