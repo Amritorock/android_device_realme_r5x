@@ -122,9 +122,10 @@ $(foreach p, $(call to-upper, $(BOARD_R5X_DYNPART_PARTITION_LIST)), \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 # Partitions - Reserved Sizes
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 150000000
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 150000000
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 150000000
+ifneq ($(WITH_GMS), true)
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+endif
+
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 150000000
 
 # Platform
