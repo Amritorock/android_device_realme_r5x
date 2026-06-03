@@ -56,7 +56,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
-$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Bluetooth
 PRODUCT_PACKAGES += \
