@@ -234,7 +234,8 @@ PRODUCT_PACKAGES += \
     BluetoothOverlayR5x \
     ApertureOverlay \
     LineageSDKOverlayR5x \
-    LineageSettingsOverlayR5x
+    LineageSettingsOverlayR5x \
+    RILFrameworksOverlayR5x
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage

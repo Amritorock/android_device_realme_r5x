@@ -39,4 +39,21 @@
         <instance>default</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+     <name>android.hardware.radio.config</name>
+     <version>1.0-3</version>
+      <interface>
+        <name>IRadioConfig</name>
+       <instance>default</instance>
+    </interface>
+ </hal>
+ <hal format="hidl" optional="true">
+     <name>vendor.qti.hardware.radio.uim_remote_client</name>
+     <version>1.0-2</version>
+     <interface>
+     <name>IUimRemoteServiceClient</name>
+     <instance>uimRemoteClient0</instance>
+     <instance>uimRemoteClient1</instance>
+     </interface>
+</hal>
 </compatibility-matrix>

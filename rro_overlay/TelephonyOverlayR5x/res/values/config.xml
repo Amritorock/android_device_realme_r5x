@@ -27,4 +27,7 @@
 
     <!-- Whether or not to support RCS User Capability Exchange -->
     <bool name="config_rcs_user_capability_exchange_enabled">false</bool>
+
+    <!-- Show RTT option in Accessibility menu -->
+    <bool name="config_support_rtt">true</bool>
 </resources>
