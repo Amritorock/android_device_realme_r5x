@@ -725,7 +725,6 @@ on charger
     start charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
-    start vendor.power_off_alarm
 
 #add poweroffhandler
 service poweroffhandler /system/vendor/bin/poweroffhandler
