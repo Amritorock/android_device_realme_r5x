@@ -35,12 +35,6 @@ sh_binary {
     vendor: true,
 }
 
-sh_binary {
-    name: "set_baseband.sh",
-    src: "bin/set_baseband.sh",
-    vendor: true,
-}
-
 // fstab
 prebuilt_etc {
     name: "fstab.qcom",
