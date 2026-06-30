@@ -1,0 +1,6 @@
+service vendor.health-default-r5x /system/bin/hw/android.hardware.health-service.r5x
+    class hal
+    user system
+    group system
+    capabilities WAKE_ALARM
+    file /dev/kmsg w

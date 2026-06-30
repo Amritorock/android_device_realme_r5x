@@ -148,7 +148,8 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.qti
+    android.hardware.health-service.r5x \
+    android.hardware.health-service.r5x_recovery
 
 # Init
 PRODUCT_PACKAGES += \
