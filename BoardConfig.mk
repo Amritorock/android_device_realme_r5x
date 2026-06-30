@@ -85,6 +85,7 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.android_dt_dir=/non-existent \
     androidboot.boot_devices=soc/4744000.sdhci
 
+TARGET_KERNEL_CLANG_VERSION := r563880c
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_OFFSET := 0x00008000
