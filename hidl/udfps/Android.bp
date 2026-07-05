@@ -1,0 +1,20 @@
+//
+// Copyright (C) 2022-2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libudfpshandlerfactory_egistec",
+    srcs: ["UdfpsHandler.cpp"],
+    vendor: true,
+    header_libs: ["egistecfingerprint_headers"],
+}
+
+cc_library_headers {
+    name: "egistecfingerprint_headers",
+    export_include_dirs: ["include"],
+    vendor: true,
+    header_libs: ["libhardware_headers"],
+    export_header_lib_headers: ["libhardware_headers"],
+}

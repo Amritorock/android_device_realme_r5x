@@ -1654,9 +1654,6 @@ vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# Fingerprint - from moto_troika 9/PSB29.105-27/fd362:user/release-keys
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs|ad879e7ed06f50c804e79fb9312614c4fdef49e5
-
 # Fingerprint firmware
 vendor/firmware/f_1511.b00
 vendor/firmware/f_1511.b01
