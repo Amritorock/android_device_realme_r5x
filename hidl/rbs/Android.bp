@@ -1,0 +1,61 @@
+soong_config_module_type {
+    name: "rbs_fingerprint_hidl_2_3_needs_ini_relocation",
+    module_type: "cc_defaults",
+    config_namespace: "EGISTEC_RBS_FINGERPRINT",
+    bool_variables: [
+        "needs_ini_relocation",
+    ],
+    properties: ["cflags"],
+}
+
+rbs_fingerprint_hidl_2_3_needs_ini_relocation {
+    name: "rbs_fingerprint_hidl_2_3_needs_ini_relocation_defaults",
+    soong_config_variables: {
+        needs_ini_relocation: {
+            cflags: ["-D_NEEDS_INI_RELOCATION"],
+        },
+    },
+}
+
+cc_defaults {
+    name: "rbs_fingerprint_hidl_2_3_defaults",
+    defaults: ["hidl_defaults", "rbs_fingerprint_hidl_2_3_needs_ini_relocation_defaults"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.rbs.xml"],
+    vendor: true,
+    relative_install_path: "hw",
+    srcs: [
+        "BiometricsFingerprint.cpp",
+        "service.cpp",
+    ],
+
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "liblog",
+        "libhidlbase",
+        "libhardware",
+        "libutils",
+        "android.hardware.biometrics.fingerprint@2.1",
+        "android.hardware.biometrics.fingerprint@2.2",
+        "android.hardware.biometrics.fingerprint@2.3",
+    ],
+
+    static_libs: [
+        "libudfpshandlerfactory_egistec",
+    ],
+
+    header_libs: ["egistecfingerprint_headers"],
+}
+
+cc_binary {
+    name: "android.hardware.biometrics.fingerprint@2.3-service.rbs",
+    defaults: ["rbs_fingerprint_hidl_2_3_defaults"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.rbs.rc"],
+}
+
+cc_binary {
+    name: "android.hardware.biometrics.fingerprint@2.3-service.rbs-qsee",
+    defaults: ["rbs_fingerprint_hidl_2_3_defaults"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.rbs-qsee.rc"],
+    cflags: ["-D_HAS_QSEE", "-D_USES_TIMEOUTSEC"],
+}
