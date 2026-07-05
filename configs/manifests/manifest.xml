@@ -329,11 +329,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <transport>hwbinder</transport>
         <fqname>@1.0::ITouchCompanion/TouchCompanionService</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.1::IBiometricsFingerprint/default</fqname>
-    </hal>
     <!-- CapabilityConfigStore HAL Service  -->
     <hal format="hidl">
         <name>vendor.qti.hardware.capabilityconfigstore</name>
