@@ -14,3 +14,4 @@ type vendor_time_prop, property_type;
 type dirac_prop, property_type;
 
 vendor_internal_prop(vendor_charger_prop)
+type apk_verity_prop, property_type;
