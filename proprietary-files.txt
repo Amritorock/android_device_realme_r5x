@@ -1551,6 +1551,7 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|adae94cab65e
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|12d4edcd852196a531f688ed74d86ea10c4acb43
 
 # Display
+system/lib/vndk-29/android.frameworks.displayservice@1.0.so:vendor/lib/android.frameworks.displayservice@1.0.so
 vendor/etc/qdcm_calib_data_ili9881h_hdp_video_truly_auo_panel.xml
 vendor/etc/qdcm_calib_data_nt36525b_hdp_video_hlt_boe_panel.xml
 vendor/etc/qdcm_calib_data_nt36672_truly_fhd_video_mode_dsi_panel.xml
