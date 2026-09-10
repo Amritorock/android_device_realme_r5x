@@ -81,3 +81,6 @@
 
 # Health HAL (renamed from the qti binary that device/qcom/sepolicy_vndr labels)
 /vendor/bin/hw/android\.hardware\.health-service\.r5x    u:object_r:hal_health_default_exec:s0
+
+# QG battery parameters persisted across reboots
+/mnt/vendor/persist/bms(/.*)?	u:object_r:vendor_persist_bms_file:s0

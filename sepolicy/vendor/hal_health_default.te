@@ -5,3 +5,13 @@ allow hal_health_default mnt_vendor_file:dir { search write };
 allow hal_health_default mnt_vendor_file:file { open read write };
 allow hal_health_default unlabeled:dir { search };
 allow hal_health_default unlabeled:file { read write };
+
+# Hand the saved parameters back to the QG fuel gauge and raise
+# soc_notify_ready on the bms supply
+allow hal_health_default vendor_sysfs_battery_supply:dir r_dir_perms;
+allow hal_health_default vendor_sysfs_battery_supply:file rw_file_perms;
+allow hal_health_default vendor_sysfs_battery_supply:lnk_file r_file_perms;
+
+# Restore and persist the QG battery parameters across reboots
+allow hal_health_default vendor_persist_bms_file:dir { search read write open create getattr add_name remove_name };
+allow hal_health_default vendor_persist_bms_file:file { create open read write getattr append map };

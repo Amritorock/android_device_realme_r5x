@@ -54,3 +54,6 @@ type sysfs_torch, fs_type, sysfs_type;
 
 # KernelSpace Battery Saver
 type sysfs_battery_saver, fs_type, sysfs_type;
+
+# QG battery parameters persisted across reboots
+type vendor_persist_bms_file, file_type;

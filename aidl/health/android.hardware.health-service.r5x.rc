@@ -1,6 +1,6 @@
 service vendor.health-default /vendor/bin/hw/android.hardware.health-service.r5x
     class hal
-    user system
+    user root
     group system
     capabilities WAKE_ALARM BLOCK_SUSPEND
     file /dev/kmsg w
