@@ -21,17 +21,17 @@ void onClientDeath(void* cookie) {
     }
 }
 
-Session::Session(fingerprint_device_t* device, int userId, std::shared_ptr<ISessionCallback> cb,
+Session::Session(FingerprintDevice* device, int userId, std::shared_ptr<ISessionCallback> cb,
                  LockoutTracker lockoutTracker)
     : mDevice(device), mLockoutTracker(lockoutTracker), mUserId(userId), mCb(cb) {
     mDeathRecipient = AIBinder_DeathRecipient_new(onClientDeath);
 
     auto path = std::format("/data/vendor_de/{}/fpdata/", userId);
-    mDevice->set_active_group(mDevice, mUserId, path.c_str());
+    mDevice->setActiveGroup(mUserId, path.c_str());
 }
 
 ndk::ScopedAStatus Session::generateChallenge() {
-    uint64_t challenge = mDevice->pre_enroll(mDevice);
+    uint64_t challenge = mDevice->preEnroll();
     ALOGI("generateChallenge: %ld", challenge);
     mCb->onChallengeGenerated(challenge);
 
@@ -40,7 +40,7 @@ ndk::ScopedAStatus Session::generateChallenge() {
 
 ndk::ScopedAStatus Session::revokeChallenge(int64_t challenge) {
     ALOGI("revokeChallenge: %ld", challenge);
-    mDevice->post_enroll(mDevice);
+    mDevice->postEnroll();
     mCb->onChallengeRevoked(challenge);
 
     return ndk::ScopedAStatus::ok();
@@ -50,7 +50,7 @@ ndk::ScopedAStatus Session::enroll(const HardwareAuthToken& hat,
                                    std::shared_ptr<ICancellationSignal>* out) {
     hw_auth_token_t authToken;
     translate(hat, authToken);
-    int error = mDevice->enroll(mDevice, &authToken, mUserId, 60);
+    int error = mDevice->enroll(&authToken, mUserId, 60);
     if (error) {
         ALOGE("enroll failed: %d", error);
         mCb->onError(Error::UNABLE_TO_PROCESS, error);
@@ -63,7 +63,7 @@ ndk::ScopedAStatus Session::enroll(const HardwareAuthToken& hat,
 ndk::ScopedAStatus Session::authenticate(int64_t operationId,
                                          std::shared_ptr<ICancellationSignal>* out) {
     checkSensorLockout();
-    int error = mDevice->authenticate(mDevice, operationId, mUserId);
+    int error = mDevice->authenticate(operationId, mUserId);
     if (error) {
         ALOGE("authenticate failed: %d", error);
         mCb->onError(Error::UNABLE_TO_PROCESS, error);
@@ -82,7 +82,7 @@ ndk::ScopedAStatus Session::detectInteraction(std::shared_ptr<ICancellationSigna
 }
 
 ndk::ScopedAStatus Session::enumerateEnrollments() {
-    int error = mDevice->enumerate(mDevice);
+    int error = mDevice->enumerate();
     if (error) {
         ALOGE("enumerate failed: %d", error);
     }
@@ -94,7 +94,7 @@ ndk::ScopedAStatus Session::removeEnrollments(const std::vector<int32_t>& enroll
     ALOGI("removeEnrollments, size: %zu", enrollmentIds.size());
 
     for (int32_t fid : enrollmentIds) {
-        int error = mDevice->remove(mDevice, mUserId, fid);
+        int error = mDevice->remove(mUserId, fid);
         if (error) {
             ALOGE("remove failed: %d", error);
         }
@@ -103,14 +103,14 @@ ndk::ScopedAStatus Session::removeEnrollments(const std::vector<int32_t>& enroll
 }
 
 ndk::ScopedAStatus Session::getAuthenticatorId() {
-    uint64_t auth_id = mDevice->get_authenticator_id(mDevice);
+    uint64_t auth_id = mDevice->getAuthenticatorId();
     ALOGI("getAuthenticatorId: %ld", auth_id);
     mCb->onAuthenticatorIdRetrieved(auth_id);
     return ndk::ScopedAStatus::ok();
 }
 
 ndk::ScopedAStatus Session::invalidateAuthenticatorId() {
-    uint64_t auth_id = mDevice->get_authenticator_id(mDevice);
+    uint64_t auth_id = mDevice->getAuthenticatorId();
     ALOGI("invalidateAuthenticatorId: %ld", auth_id);
     mCb->onAuthenticatorIdInvalidated(auth_id);
     return ndk::ScopedAStatus::ok();
@@ -179,7 +179,7 @@ ndk::ScopedAStatus Session::setIgnoreDisplayTouches(bool /*shouldIgnore*/) {
 }
 
 ndk::ScopedAStatus Session::cancel() {
-    int ret = mDevice->cancel(mDevice);
+    int ret = mDevice->cancel();
 
     if (ret == 0) {
         mCb->onError(Error::CANCELED, 0 /* vendorCode */);
@@ -355,7 +355,10 @@ void Session::notify(const fingerprint_msg_t* msg) {
             ALOGD("onEnumerate(fid=%d, gid=%d, rem=%d)", msg->data.enumerated.finger.fid,
                   msg->data.enumerated.finger.gid, msg->data.enumerated.remaining_templates);
             static std::vector<int> enrollments;
-            enrollments.push_back(msg->data.enumerated.finger.fid);
+            // Both backends report fid 0 to mean "nothing enrolled".
+            if (msg->data.enumerated.finger.fid != 0) {
+                enrollments.push_back(msg->data.enumerated.finger.fid);
+            }
             if (msg->data.enumerated.remaining_templates == 0) {
                 mCb->onEnrollmentsEnumerated(enrollments);
                 enrollments.clear();

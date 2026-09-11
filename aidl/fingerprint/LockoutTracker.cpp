@@ -6,11 +6,8 @@
  */
 
 #include "LockoutTracker.h"
-#include <fingerprint.sysprop.h>
 #include <util/Util.h>
 #include "Fingerprint.h"
-
-using namespace ::android::fingerprint::lineage;
 
 namespace aidl::android::hardware::biometrics::fingerprint {
 
