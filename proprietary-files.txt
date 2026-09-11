@@ -87,14 +87,6 @@ vendor/etc/acdbdata/19631/adsp_avs_config.acdb
 vendor/etc/acdbdata/19631/workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Audio-Hardware
-vendor/lib/hw/audio.primary.trinket.so
-vendor/lib/libaudioEngineerTest.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib64/hw/audio.primary.trinket.so
-vendor/lib64/libaudioEngineerTest.so
-vendor/lib64/libaudio_log_utils.so
-
 # Audio Power Amplifier
 vendor/firmware/tfa98xx.cnt
 
