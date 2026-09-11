@@ -1,0 +1,62 @@
+# fingerprint.sysprop
+# module becomes static class (Java) / namespace (C++) for serving API
+module: "android.fingerprint.lineage.FingerprintHalProperties"
+owner: Vendor
+
+# type of fingerprint sensor (default: none)
+prop {
+    prop_name: "persist.vendor.fingerprint.type"
+    type: String
+    scope: Internal
+    access: ReadWrite
+    enum_values: "udfps|udfps_optical|side|home|rear"
+    api_name: "type"
+}
+
+# sensor location
+#    <x>|<y>|<radius>|<display> in pixel, can have multiple values separated by comma
+prop {
+    prop_name: "persist.vendor.fingerprint.sensor_location"
+    type: String
+    scope: Internal
+    access: ReadWrite
+    api_name: "sensor_location"
+}
+
+# sensor id (default: 0)
+prop {
+    prop_name: "persist.vendor.fingerprint.sensor_id"
+    type: Integer
+    scope: Internal
+    access: ReadWrite
+    api_name: "sensor_id"
+}
+
+# sensor strength (default: 2)
+# [0=CONVENIENCE, 1=WEAK, 2=STRONG]
+prop {
+    prop_name: "persist.vendor.fingerprint.sensor_strength"
+    type: Integer
+    scope: Internal
+    access: ReadWrite
+    api_name: "sensor_strength"
+}
+
+# whether support navigation guestures (default: false)
+prop {
+    prop_name: "persist.vendor.fingerprint.navigation_gesture"
+    type: Boolean
+    scope: Internal
+    access: ReadWrite
+    api_name: "navigation_gesture"
+}
+
+# whether support detect interaction (default: false)
+prop {
+    prop_name: "persist.vendor.fingerprint.detect_interaction"
+    type: Boolean
+    scope: Internal
+    access: ReadWrite
+    api_name: "detect_interaction"
+}
+
