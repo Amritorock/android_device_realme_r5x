@@ -150,6 +150,22 @@
           }
         }
       ]
+    },
+    {
+      "Name": "SCHED_QOS_NONE",
+      "Actions": []
+    },
+    {
+      "Name": "SCHED_QOS_SENSITIVE_STANDARD",
+      "Actions": []
+    },
+    {
+      "Name": "SCHED_QOS_SENSITIVE_EXTREME",
+      "Actions": []
+    },
+    {
+      "Name": "PreferHighCapSet",
+      "Actions": []
     }
   ]
 }
