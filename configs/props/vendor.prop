@@ -240,6 +240,7 @@ debug.sf.early.sf.duration=15666666
 debug.sf.early.app.duration=13666666
 debug.sf.earlyGl.sf.duration=15666666
 debug.sf.earlyGl.app.duration=13666666
+debug.sf.enable_adpf_cpu_hint=true
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
