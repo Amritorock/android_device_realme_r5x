@@ -12,3 +12,8 @@ allow hal_power_default proc:file { open write };
 # Kernel Space Battery Saver
 allow hal_power_default sysfs_battery_saver:dir r_dir_perms;
 allow hal_power_default sysfs_battery_saver:file rw_file_perms;
+
+allow hal_power_default appdomain:process setsched;
+allow hal_power_default self:capability sys_nice;
+allow hal_power_default vendor_latency_device:chr_file { open write };
+allow hal_power_default sysfs_early_wakeup:file { open write };

@@ -1,6 +1,10 @@
 # Touchpanel
 genfscon proc /touchpanel              u:object_r:proc_touchpanel:s0
 
+# Display
+genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup        u:object_r:sysfs_early_wakeup:s0
+genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-crtc-1/early_wakeup        u:object_r:sysfs_early_wakeup:s0
+
 # Oppo Project Version
 genfscon proc /oppoVersion                      u:object_r:proc_oppoversion:s0
 
